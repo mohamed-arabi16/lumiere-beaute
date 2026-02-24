@@ -95,35 +95,35 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| FNDTN-01 | — | Pending |
-| FNDTN-02 | — | Pending |
-| FNDTN-03 | — | Pending |
-| FNDTN-04 | — | Pending |
-| FNDTN-05 | — | Pending |
-| FNDTN-06 | — | Pending |
-| FNDTN-07 | — | Pending |
-| FNDTN-08 | — | Pending |
-| FNDTN-09 | — | Pending |
-| NAV-01 | — | Pending |
-| NAV-02 | — | Pending |
-| HOME-01 | — | Pending |
-| HOME-02 | — | Pending |
-| HOME-03 | — | Pending |
-| HOME-04 | — | Pending |
-| HOME-05 | — | Pending |
-| SRVC-01 | — | Pending |
-| SRVC-02 | — | Pending |
-| ACAD-01 | — | Pending |
-| ACAD-02 | — | Pending |
-| CNTC-01 | — | Pending |
-| CNTC-02 | — | Pending |
-| CNTC-03 | — | Pending |
+| FNDTN-01 | Phase 1 | Pending |
+| FNDTN-02 | Phase 1 | Pending |
+| FNDTN-03 | Phase 1 | Pending |
+| FNDTN-04 | Phase 1 | Pending |
+| FNDTN-05 | Phase 1 | Pending |
+| FNDTN-06 | Phase 2 | Pending |
+| FNDTN-07 | Phase 2 | Pending |
+| FNDTN-08 | Phase 1 | Pending |
+| FNDTN-09 | Phase 1 | Pending |
+| NAV-01 | Phase 2 | Pending |
+| NAV-02 | Phase 2 | Pending |
+| HOME-01 | Phase 4 | Pending |
+| HOME-02 | Phase 4 | Pending |
+| HOME-03 | Phase 4 | Pending |
+| HOME-04 | Phase 4 | Pending |
+| HOME-05 | Phase 4 | Pending |
+| SRVC-01 | Phase 4 | Pending |
+| SRVC-02 | Phase 4 | Pending |
+| ACAD-01 | Phase 5 | Pending |
+| ACAD-02 | Phase 5 | Pending |
+| CNTC-01 | Phase 5 | Pending |
+| CNTC-02 | Phase 5 | Pending |
+| CNTC-03 | Phase 5 | Pending |
 
 **Coverage:**
 - v1 requirements: 23 total
-- Mapped to phases: 0
-- Unmapped: 23
+- Mapped to phases: 23
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-02-24*
-*Last updated: 2026-02-24 after initial definition*
+*Last updated: 2026-02-24 after roadmap creation — all 23 v1 requirements mapped*
