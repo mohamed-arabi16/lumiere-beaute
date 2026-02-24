@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+@theme {
+  /* 10 brand teal-green colors (light to dark) */
+  --color-celadon-100: #99e2b4;
+  --color-celadon-200: #88d4ab;
+  --color-mint-leaf-300: #78c6a3;
+  --color-mint-leaf-400: #67b99a;
+  --color-seagrass-500: #56ab91;
+  --color-seagrass-600: #469d89;
+  --color-jungle-teal-700: #358f80;
+  --color-blue-spruce-800: #248277;
+  --color-deep-ocean-900: #14746f;
+  --color-stormy-teal-950: #036666;
+
+  /* Semantic surface colors */
+  --color-surface-ivory: #F4FAF7;
+  --color-surface-dark: #082F2D;
+  --color-surface-dark-card: #0C4744;
+
+  /* Typography */
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-body: "Inter", system-ui, -apple-system, sans-serif;
+  --font-arabic: "Noto Sans Arabic", "Cairo", sans-serif;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+html {
+  background-color: var(--color-surface-ivory);
+  color: #1a1a1a;
+}
+html.dark {
+  background-color: var(--color-surface-dark);
+  color: var(--color-celadon-100);
+}
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Arabic language overrides — Cormorant Garamond has no Arabic glyphs */
+:lang(ar) {
+  font-family: var(--font-arabic);
+  font-size: 1.2em;
+  line-height: 1.8;
+}
+:lang(ar) h1,
+:lang(ar) h2,
+:lang(ar) h3,
+:lang(ar) h4 {
+  font-family: var(--font-arabic);
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+/* CSS gradient placeholder classes — all image slots use these (FNDTN-09) */
+.placeholder-gradient-primary {
+  background-image: linear-gradient(
+    135deg,
+    var(--color-seagrass-500) 0%,
+    var(--color-deep-ocean-900) 100%
+  );
+}
+.placeholder-gradient-card {
+  background-image: linear-gradient(
+    160deg,
+    var(--color-mint-leaf-300) 0%,
+    var(--color-jungle-teal-700) 60%,
+    var(--color-stormy-teal-950) 100%
+  );
+}
+.placeholder-gradient-hero {
+  background-image: linear-gradient(
+    180deg,
+    var(--color-celadon-100) 0%,
+    var(--color-seagrass-600) 50%,
+    var(--color-deep-ocean-900) 100%
+  );
+}
+.placeholder-aspect-hero {
+  aspect-ratio: 16 / 9;
+  min-height: 400px;
+}
+.placeholder-aspect-card {
+  aspect-ratio: 4 / 3;
+}
+.placeholder-aspect-portrait {
+  aspect-ratio: 3 / 4;
+}
