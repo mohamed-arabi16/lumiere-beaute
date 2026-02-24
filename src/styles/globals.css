@@ -21,7 +21,7 @@
   /* Typography */
   --font-display: "Cormorant Garamond", Georgia, serif;
   --font-body: "Inter", system-ui, -apple-system, sans-serif;
-  --font-arabic: "Noto Sans Arabic", "Cairo", sans-serif;
+  --font-arabic: "Tajawal", "Cairo", sans-serif;
 }
 
 @custom-variant dark (&:where(.dark, .dark *));
