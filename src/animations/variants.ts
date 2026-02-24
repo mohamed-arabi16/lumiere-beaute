@@ -67,3 +67,54 @@ export const pageFadeVariants: Variants = {
     },
   },
 };
+
+/**
+ * Vertical fade-up variant for scroll-reveal sections.
+ * Used by FadeInSection as the whileInView target.
+ * Vertical-only (y) — no RTL complication; vertical axis has no reading direction.
+ * The [0.22, 1, 0.36, 1] ease matches the luxury page transition easing.
+ */
+export const fadeInUpVariants: Variants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.55,
+      ease: [0.22, 1, 0.36, 1] as [number, number, number, number],
+    },
+  },
+};
+
+/**
+ * Parent container variant factory for staggered child reveals.
+ * Returns variants with staggerChildren + delayChildren configured.
+ * Children must use staggerItemVariants (or any variant with 'hidden'/'visible' keys).
+ *
+ * @param staggerDelay - seconds between each child; 0.06 works for up to 20 cards
+ */
+export const staggerContainerVariants = (staggerDelay = 0.06): Variants => ({
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: staggerDelay,
+      delayChildren: 0.05,
+    },
+  },
+});
+
+/**
+ * Child item variant for use inside StaggerContainer.
+ * Opacity + translateY only — no layout recalculation on any frame.
+ */
+export const staggerItemVariants: Variants = {
+  hidden: { opacity: 0, y: 16 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.4,
+      ease: [0.22, 1, 0.36, 1] as [number, number, number, number],
+    },
+  },
+};
