@@ -1,10 +1,42 @@
 <!doctype html>
-<html lang="en">
+<html lang="tr">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>lumiere-beaute</title>
+
+    <!-- BLOCKING: runs synchronously before CSS paints to prevent FOUC -->
+    <!-- Must be FIRST in <head> before any stylesheet link -->
+    <script>
+      (function() {
+        // Restore dark/light mode from localStorage or fall back to system preference
+        var saved = localStorage.getItem('theme');
+        if (saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+          document.documentElement.classList.add('dark');
+        }
+
+        // Restore language + direction from localStorage; fallback to Turkish
+        var lang = localStorage.getItem('i18nextLng') || 'tr';
+        var supported = ['tr', 'en', 'ar'];
+        // Normalize locale variants like 'ar-SA' → 'ar', 'en-US' → 'en'
+        if (supported.indexOf(lang) === -1) {
+          var base = lang.split('-')[0];
+          lang = supported.indexOf(base) !== -1 ? base : 'tr';
+        }
+        document.documentElement.lang = lang;
+        document.documentElement.dir = (lang === 'ar') ? 'rtl' : 'ltr';
+      })();
+    </script>
+
+    <!-- Google Fonts: preconnect for performance, then font stylesheet -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@400;500&family=Noto+Sans+Arabic:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Lumiere Beaute</title>
   </head>
   <body>
     <div id="root"></div>
