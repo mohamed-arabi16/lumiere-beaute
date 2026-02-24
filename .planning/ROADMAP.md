@@ -31,7 +31,13 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. Clicking the theme toggle switches between warm ivory (light) and forest-at-dusk teal (dark) instantly, and the preference survives a page reload
   4. All image slots render CSS gradient placeholders in the brand teal palette rather than broken image icons
   5. Headings display in Cormorant Garamond and body text in Inter across all three languages, with Arabic body text rendering at the appropriate size compensation
-**Plans**: TBD
+**Plans**: 4 plans
+
+Plans:
+- [ ] 01-01-PLAN.md — Infra bootstrap: Vite 7 downgrade, TypeScript setup, @tailwindcss/vite install, i18n packages
+- [ ] 01-02-PLAN.md — CSS system: globals.css color tokens + dark mode + typography + gradients, index.html blocking script + Google Fonts
+- [ ] 01-03-PLAN.md — Providers: i18n config + trilingual locales, ThemeProvider + AppProviders + hooks + main.tsx
+- [ ] 01-04-PLAN.md — Verification: ThemeTestComponent exercising all Phase 1 success criteria + human verify
 
 ### Phase 2: Shell
 **Goal**: The complete application shell exists — routing, page transitions, and a fully functional navbar — so that pages can be built into a working, navigable structure
@@ -100,7 +106,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation | 0/TBD | Not started | - |
+| 1. Foundation | 0/4 | Planned | - |
 | 2. Shell | 0/TBD | Not started | - |
 | 3. Shared Components | 0/TBD | Not started | - |
 | 4. Homepage and Services | 0/TBD | Not started | - |
@@ -109,4 +115,4 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6
 
 ---
 *Roadmap created: 2026-02-24*
-*Last updated: 2026-02-24 after initial creation*
+*Last updated: 2026-02-24 after Phase 1 planning — 4 plans created*
