@@ -9,11 +9,11 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Foundation
 
-- [ ] **FNDTN-01**: User sees consistent teal-green color system across all pages (10 named colors, 100-900 scales via Tailwind v4 @theme)
-- [ ] **FNDTN-02**: User can toggle between light mode (warm ivory) and dark mode (forest-at-dusk teal), preference persists across sessions
-- [ ] **FNDTN-03**: User can switch between Turkish, English, and Arabic via language selector
-- [ ] **FNDTN-04**: Arabic users see fully mirrored RTL layout (navigation, text, cards, animations)
-- [ ] **FNDTN-05**: User's browser language is auto-detected on first visit, falling back to Turkish
+- [x] **FNDTN-01**: User sees consistent teal-green color system across all pages (10 named colors, 100-900 scales via Tailwind v4 @theme)
+- [x] **FNDTN-02**: User can toggle between light mode (warm ivory) and dark mode (forest-at-dusk teal), preference persists across sessions
+- [x] **FNDTN-03**: User can switch between Turkish, English, and Arabic via language selector
+- [x] **FNDTN-04**: Arabic users see fully mirrored RTL layout (navigation, text, cards, animations)
+- [x] **FNDTN-05**: User's browser language is auto-detected on first visit, falling back to Turkish
 - [ ] **FNDTN-06**: User experiences cinematic full-screen transitions when navigating between pages
 - [ ] **FNDTN-07**: User has a fully functional experience on mobile (390px) through desktop (1440px)
 - [ ] **FNDTN-08**: User sees Cormorant Garamond headings, Inter body text, and appropriate Arabic typeface for AR content
@@ -95,11 +95,11 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| FNDTN-01 | Phase 1 | Pending |
-| FNDTN-02 | Phase 1 | Pending |
-| FNDTN-03 | Phase 1 | Pending |
-| FNDTN-04 | Phase 1 | Pending |
-| FNDTN-05 | Phase 1 | Pending |
+| FNDTN-01 | Phase 1 | Complete |
+| FNDTN-02 | Phase 1 | Complete |
+| FNDTN-03 | Phase 1 | Complete |
+| FNDTN-04 | Phase 1 | Complete |
+| FNDTN-05 | Phase 1 | Complete |
 | FNDTN-06 | Phase 2 | Pending |
 | FNDTN-07 | Phase 2 | Pending |
 | FNDTN-08 | Phase 1 | Pending |

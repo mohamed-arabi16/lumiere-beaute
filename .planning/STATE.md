@@ -10,30 +10,31 @@ See: .planning/PROJECT.md (updated 2026-02-24)
 ## Current Position
 
 Phase: 1 of 6 (Foundation)
-Plan: 0 of TBD in current phase
-Status: Ready to plan
-Last activity: 2026-02-24 — Roadmap created; 23 v1 requirements mapped across 6 phases
+Plan: 1 of 4 in current phase
+Status: In progress
+Last activity: 2026-02-24 — Completed 01-01 (project infrastructure bootstrap)
 
-Progress: [░░░░░░░░░░] 0%
+Progress: [█░░░░░░░░░] 5%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 0
-- Average duration: —
-- Total execution time: 0 hours
+- Total plans completed: 1
+- Average duration: 2 min
+- Total execution time: 0.03 hours
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
-| - | - | - | - |
+| 01-foundation | 1/4 | 2 min | 2 min |
 
 **Recent Trend:**
-- Last 5 plans: —
+- Last 5 plans: 2 min
 - Trend: —
 
 *Updated after each plan completion*
+| Phase 01-foundation P01 | 2 | 2 tasks | 7 files |
 
 ## Accumulated Context
 
@@ -46,6 +47,10 @@ Recent decisions affecting current work:
 - [Pre-phase]: All horizontal Framer Motion animations use variant functions with custom={isRTL} prop — no static x values
 - [Pre-phase]: AnimatedOutlet pattern (not direct Outlet) required for AnimatePresence page transitions
 - [Pre-phase]: Blocking script in index.html prevents flash of wrong theme/language on load
+- [01-01]: Downgraded Vite 8.0.0-beta.13 to 7.3.1 stable — @tailwindcss/vite peer requires ^5||^6||^7
+- [01-01]: Tailwind v4 uses @tailwindcss/vite Vite plugin, not PostCSS config — no postcss.config.js ever
+- [01-01]: vite.config.js remains .js (not .ts); tsconfig.node.json references it for IDE tooling
+- [01-01]: i18next v25 + react-i18next v16 pinned together for peer compatibility
 
 ### Pending Todos
 
@@ -61,5 +66,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-02-24
-Stopped at: Roadmap and STATE.md created; ready to run /gsd:plan-phase 1
+Stopped at: Completed 01-01-PLAN.md (project infrastructure bootstrap)
 Resume file: None
