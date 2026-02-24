@@ -15,14 +15,14 @@ Requirements for initial release. Each maps to roadmap phases.
 - [x] **FNDTN-04**: Arabic users see fully mirrored RTL layout (navigation, text, cards, animations)
 - [x] **FNDTN-05**: User's browser language is auto-detected on first visit, falling back to Turkish
 - [x] **FNDTN-06**: User experiences cinematic full-screen transitions when navigating between pages
-- [ ] **FNDTN-07**: User has a fully functional experience on mobile (390px) through desktop (1440px)
+- [x] **FNDTN-07**: User has a fully functional experience on mobile (390px) through desktop (1440px)
 - [x] **FNDTN-08**: User sees Cormorant Garamond headings, Inter body text, and appropriate Arabic typeface for AR content
 - [x] **FNDTN-09**: All image slots display CSS gradient placeholders that match the brand aesthetic
 
 ### Navigation
 
-- [ ] **NAV-01**: User can navigate all pages via a responsive navbar with language switcher and theme toggle
-- [ ] **NAV-02**: Mobile user can access navigation via an animated hamburger menu
+- [x] **NAV-01**: User can navigate all pages via a responsive navbar with language switcher and theme toggle
+- [x] **NAV-02**: Mobile user can access navigation via an animated hamburger menu
 
 ### Home
 
@@ -101,11 +101,11 @@ Which phases cover which requirements. Updated during roadmap creation.
 | FNDTN-04 | Phase 1 | Complete |
 | FNDTN-05 | Phase 1 | Complete |
 | FNDTN-06 | Phase 2 | Complete |
-| FNDTN-07 | Phase 2 | Pending |
+| FNDTN-07 | Phase 2 | Complete |
 | FNDTN-08 | Phase 1 | Complete |
 | FNDTN-09 | Phase 1 | Complete |
-| NAV-01 | Phase 2 | Pending |
-| NAV-02 | Phase 2 | Pending |
+| NAV-01 | Phase 2 | Complete |
+| NAV-02 | Phase 2 | Complete |
 | HOME-01 | Phase 4 | Pending |
 | HOME-02 | Phase 4 | Pending |
 | HOME-03 | Phase 4 | Pending |

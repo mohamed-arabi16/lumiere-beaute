@@ -10,16 +10,16 @@ See: .planning/PROJECT.md (updated 2026-02-24)
 ## Current Position
 
 Phase: 2 of 6 (Shell)
-Plan: 1 of 4 in current phase
+Plan: 2 of 4 in current phase
 Status: In progress
-Last activity: 2026-02-24 — Completed 02-01 (Router infrastructure and RTL animation variants)
+Last activity: 2026-02-25 — Completed 02-02 (Navigation components: Navbar, LanguageSwitcher, ThemeToggle, MobileMenu)
 
-Progress: [████░░░░░░] 42%
+Progress: [████░░░░░░] 44%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 4
+- Total plans completed: 5 (4 Phase 1 + 1 Phase 2 + 02-02)
 - Average duration: 2 min
 - Total execution time: 0.1 hours
 
@@ -28,7 +28,7 @@ Progress: [████░░░░░░] 42%
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
 | 01-foundation | 4/4 | 11 min | 3 min |
-| 02-shell | 1/4 | 2 min | 2 min |
+| 02-shell | 2/4 | 4 min | 2 min |
 
 **Recent Trend:**
 - Last 5 plans: 2 min
@@ -40,6 +40,7 @@ Progress: [████░░░░░░] 42%
 | Phase 01-foundation P03 | 2 | 2 tasks | 9 files |
 | Phase 01-foundation P04 | 5 | 2 tasks | 2 files |
 | Phase 02-shell P01 | 2 | 2 tasks | 11 files |
+| Phase 02-shell P02 | 2 | 2 tasks | 4 files |
 
 ## Accumulated Context
 
@@ -69,6 +70,9 @@ Recent decisions affecting current work:
 - [02-01]: BrowserRouter added as outermost wrapper in AppProviders — wraps ThemeProvider + I18nextProvider
 - [02-01]: pageTransitionVariants uses function-form initial/exit for RTL-aware AnimatePresence direction
 - [02-01]: Cubic-bezier ease typed as [number,number,number,number] tuple for framer-motion v12 TypeScript strictness
+- [02-02]: NAV_LINKS defined outside Navbar component as const for stable reference across renders
+- [02-02]: MobileMenu placed inside <header> but outside <nav> — ensures full-viewport overlay for AnimatePresence
+- [02-02]: end={link.to === '/'} on home NavLink prevents index route from matching all paths as active
 
 ### Pending Todos
 
@@ -83,6 +87,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-02-24
-Stopped at: Completed 02-01-PLAN.md (Router infrastructure, BrowserRouter provider, RTL animation variants)
+Last session: 2026-02-25
+Stopped at: Completed 02-02-PLAN.md (Navigation components: Navbar, LanguageSwitcher, ThemeToggle, MobileMenu)
 Resume file: None
