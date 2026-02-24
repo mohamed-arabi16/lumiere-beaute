@@ -10,16 +10,16 @@ See: .planning/PROJECT.md (updated 2026-02-24)
 ## Current Position
 
 Phase: 3 of 6 (Shared Components)
-Plan: 1 of 4 in current phase — COMPLETE
-Status: Phase 3 in progress — 03-01 complete, ready for 03-02
-Last activity: 2026-02-25 — Completed 03-01 (MotionConfig provider + scroll-reveal/stagger variant exports)
+Plan: 3 of 4 in current phase — COMPLETE
+Status: Phase 3 in progress — 03-01, 03-02, 03-03 complete, ready for 03-04
+Last activity: 2026-02-25 — Completed 03-03 (TypewriterText + Button, Card, Typography UI primitives)
 
-Progress: [███████░░░] 68%
+Progress: [█████████░] 78%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 9 (4 Phase 1 + 4 Phase 2 + 1 Phase 3)
+- Total plans completed: 11 (4 Phase 1 + 4 Phase 2 + 3 Phase 3)
 - Average duration: 3 min
 - Total execution time: 0.5 hours
 
@@ -29,7 +29,7 @@ Progress: [███████░░░] 68%
 |-------|-------|-------|----------|
 | 01-foundation | 4/4 | 11 min | 3 min |
 | 02-shell | 4/4 | 21 min | 5 min |
-| 03-shared-components | 1/4 | 2 min | 2 min |
+| 03-shared-components | 3/4 | 9 min | 3 min |
 
 **Recent Trend:**
 - Last 5 plans: 2 min
@@ -45,6 +45,8 @@ Progress: [███████░░░] 68%
 | Phase 02-shell P03 | 2 | 2 tasks | 7 files |
 | Phase 02-shell P04 | 15 | 2 tasks | 3 files |
 | Phase 03-shared-components P01 | 2 | 2 tasks | 2 files |
+| Phase 03-shared-components P02 | 2 | 2 tasks | 2 files |
+| Phase 03-shared-components P03 | 5 | 2 tasks | 4 files |
 
 ## Accumulated Context
 
@@ -88,6 +90,13 @@ Recent decisions affecting current work:
 - [03-01]: MotionConfig imported from framer-motion (not motion/react) — project only has framer-motion installed
 - [03-01]: MotionConfig placed outermost (outside BrowserRouter) — prevents theme-toggle re-renders from interrupting in-progress animations
 - [03-01]: staggerContainerVariants implemented as factory function with default staggerDelay=0.06 — allows per-instance configuration
+- [03-02]: FadeInSection uses amount:0.2 — triggers when 20% visible, prevents premature trigger before element enters viewport
+- [03-02]: StaggerContainer uses amount:0.1 — lower threshold for grids taller than viewport so stagger starts on first visible row
+- [03-02]: staggerItemVariants re-exported from StaggerContainer — page sections only need one import instead of two
+- [03-03]: Import from framer-motion (not motion/react) — motion/react is an alternate package not installed; consistent with 03-01 fix
+- [03-03]: tagMap lookup for TypewriterText element type — type-safe, avoids TypeScript index-signature errors on motion[Tag]
+- [03-03]: TypewriterText uses animate='visible' (not whileInView) — hero headline is always above fold, fires immediately on mount
+- [03-03]: Button uses logical spacing ps-6/pe-6 (not pl-/pr-) — RTL-safe per locked Phase 1 decision
 
 ### Pending Todos
 
@@ -103,5 +112,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-02-25
-Stopped at: Completed 03-01-PLAN.md (MotionConfig provider + scroll-reveal/stagger variants)
+Stopped at: Completed 03-03-PLAN.md (TypewriterText + Button, Card, Typography UI primitives)
 Resume file: None
