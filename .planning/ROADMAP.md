@@ -85,7 +85,15 @@ Plans:
   4. The testimonials section displays at least three client quotes with attribution
   5. On the Services page, clicking a category tab filters the visible treatment cards to that category with an animated transition, and all 20+ treatments are accessible across the tabs
   6. Each treatment card displays the treatment name, a brief description, duration, and price
-**Plans**: TBD
+**Plans**: 6 plans
+
+Plans:
+- [ ] 04-01-PLAN.md — Content foundation: TypeScript interfaces + trilingual locale JSON (stats, teasers, testimonials, 20 treatments)
+- [ ] 04-02-PLAN.md — Hero + Stats sections: parallax gradient HeroSection + animated count-up StatsSection
+- [ ] 04-03-PLAN.md — Teaser + Testimonials sections: ServicesTeaserSection, AcademyTeaserSection, TestimonialsSection
+- [ ] 04-04-PLAN.md — HomePage composition: replace Phase 3 scaffold, compose all 5 sections
+- [ ] 04-05-PLAN.md — ServicesPage: CategoryTabs with animated underline, TreatmentGrid with AnimatePresence filter
+- [ ] 04-06-PLAN.md — Human verify: all 6 Phase 4 success criteria confirmed interactively
 
 ### Phase 5: Academy and Contact
 **Goal**: Visitors can view both certification courses and submit a booking inquiry or open a pre-filled WhatsApp conversation
