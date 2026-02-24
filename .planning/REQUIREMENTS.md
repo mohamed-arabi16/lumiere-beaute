@@ -16,8 +16,8 @@ Requirements for initial release. Each maps to roadmap phases.
 - [x] **FNDTN-05**: User's browser language is auto-detected on first visit, falling back to Turkish
 - [ ] **FNDTN-06**: User experiences cinematic full-screen transitions when navigating between pages
 - [ ] **FNDTN-07**: User has a fully functional experience on mobile (390px) through desktop (1440px)
-- [ ] **FNDTN-08**: User sees Cormorant Garamond headings, Inter body text, and appropriate Arabic typeface for AR content
-- [ ] **FNDTN-09**: All image slots display CSS gradient placeholders that match the brand aesthetic
+- [x] **FNDTN-08**: User sees Cormorant Garamond headings, Inter body text, and appropriate Arabic typeface for AR content
+- [x] **FNDTN-09**: All image slots display CSS gradient placeholders that match the brand aesthetic
 
 ### Navigation
 
@@ -102,8 +102,8 @@ Which phases cover which requirements. Updated during roadmap creation.
 | FNDTN-05 | Phase 1 | Complete |
 | FNDTN-06 | Phase 2 | Pending |
 | FNDTN-07 | Phase 2 | Pending |
-| FNDTN-08 | Phase 1 | Pending |
-| FNDTN-09 | Phase 1 | Pending |
+| FNDTN-08 | Phase 1 | Complete |
+| FNDTN-09 | Phase 1 | Complete |
 | NAV-01 | Phase 2 | Pending |
 | NAV-02 | Phase 2 | Pending |
 | HOME-01 | Phase 4 | Pending |

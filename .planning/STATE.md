@@ -76,5 +76,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-02-24
-Stopped at: Completed 01-03-PLAN.md (i18n + theming infrastructure)
+Stopped at: Completed 01-02-PLAN.md (CSS token system and FOUC prevention)
 Resume file: None
