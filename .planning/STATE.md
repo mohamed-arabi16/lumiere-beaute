@@ -10,25 +10,25 @@ See: .planning/PROJECT.md (updated 2026-02-24)
 ## Current Position
 
 Phase: 2 of 6 (Shell)
-Plan: 3 of 4 in current phase
-Status: In progress
-Last activity: 2026-02-25 — Completed 02-03 (Application shell assembly: AnimatedOutlet, RootLayout, five page stubs, vercel.json)
+Plan: 4 of 4 in current phase — COMPLETE
+Status: Phase 2 complete — ready for Phase 3 (Home Page)
+Last activity: 2026-02-25 — Completed 02-04 (Human verification: all four Phase 2 success criteria approved)
 
-Progress: [█████░░░░░] 56%
+Progress: [██████░░░░] 63%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 7 (4 Phase 1 + 3 Phase 2)
-- Average duration: 2 min
-- Total execution time: 0.1 hours
+- Total plans completed: 8 (4 Phase 1 + 4 Phase 2)
+- Average duration: 3 min
+- Total execution time: 0.5 hours
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
 | 01-foundation | 4/4 | 11 min | 3 min |
-| 02-shell | 3/4 | 6 min | 2 min |
+| 02-shell | 4/4 | 21 min | 5 min |
 
 **Recent Trend:**
 - Last 5 plans: 2 min
@@ -42,6 +42,7 @@ Progress: [█████░░░░░] 56%
 | Phase 02-shell P01 | 2 | 2 tasks | 11 files |
 | Phase 02-shell P02 | 2 | 2 tasks | 4 files |
 | Phase 02-shell P03 | 2 | 2 tasks | 7 files |
+| Phase 02-shell P04 | 15 | 2 tasks | 3 files |
 
 ## Accumulated Context
 
@@ -79,6 +80,9 @@ Recent decisions affecting current work:
 - [02-03]: Navbar placed outside <main> and outside AnimatePresence — never participates in page transitions
 - [02-03]: custom={dir} on each page motion.div — AnimatePresence preserves custom on exiting components for correct RTL exit direction
 - [02-03]: vercel.json catch-all rewrite ensures direct URL access works for BrowserRouter (HTML5 history API)
+- [02-04]: ScrollRestoration requires createBrowserRouter (data router) — BrowserRouter users must use useEffect scroll-to-top pattern
+- [02-04]: Arabic font-size must be set in rem (not em) to prevent compounding on nested elements — :lang(ar) { font-size: 1.05rem }
+- [02-04]: Tajawal chosen over Noto Sans Arabic for modern geometric feel aligned with luxury editorial brand — 300/400/500/700 weights loaded
 
 ### Pending Todos
 
@@ -94,5 +98,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-02-25
-Stopped at: Completed 02-03-PLAN.md (Application shell: AnimatedOutlet, RootLayout, five page stubs, vercel.json)
+Stopped at: Completed 02-04-PLAN.md (Phase 2 human verification complete — all success criteria approved)
 Resume file: None

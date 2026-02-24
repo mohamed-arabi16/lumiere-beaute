@@ -13,7 +13,7 @@ Six phases build the site in strict dependency order: establish design tokens an
 Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Foundation** - Color system, typography, i18n config, theming infrastructure, and CSS gradient system
-- [ ] **Phase 2: Shell** - App layout, routing, page transitions, and navbar with language/theme controls
+- [x] **Phase 2: Shell** - App layout, routing, page transitions, and navbar with language/theme controls
 - [ ] **Phase 3: Shared Components** - UI primitives, RTL-aware animation wrappers, and performance baseline
 - [ ] **Phase 4: Homepage and Services** - Full hero, stats, teasers, testimonials, and filterable treatment catalog
 - [ ] **Phase 5: Academy and Contact** - Course pages, enrollment CTA, booking form, and WhatsApp integration
@@ -54,7 +54,7 @@ Plans:
 - [x] 02-01-PLAN.md — Router infrastructure: BrowserRouter in AppProviders, router.tsx with 5 routes, App.tsx update, RTL animation variants
 - [x] 02-02-PLAN.md — Navigation components: Navbar, LanguageSwitcher, ThemeToggle, MobileMenu with AnimatePresence
 - [x] 02-03-PLAN.md — Shell assembly: AnimatedOutlet, RootLayout, 5 page stubs with transition wrappers, vercel.json
-- [ ] 02-04-PLAN.md — Human verify: all 4 Phase 2 success criteria confirmed interactively
+- [x] 02-04-PLAN.md — Human verify: all 4 Phase 2 success criteria confirmed interactively
 
 ### Phase 3: Shared Components
 **Goal**: A library of reusable UI primitives and RTL-aware animation wrappers exists so that page sections can be composed consistently and performantly
@@ -113,7 +113,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation | 4/4 | Complete    | 2026-02-24 |
-| 2. Shell | 3/4 | In Progress|  |
+| 2. Shell | 4/4 | Complete    | 2026-02-25 |
 | 3. Shared Components | 0/TBD | Not started | - |
 | 4. Homepage and Services | 0/TBD | Not started | - |
 | 5. Academy and Contact | 0/TBD | Not started | - |
@@ -121,4 +121,4 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6
 
 ---
 *Roadmap created: 2026-02-24*
-*Last updated: 2026-02-24 after Phase 2 planning — 4 plans created across 3 waves*
+*Last updated: 2026-02-25 after Phase 2 completion — all 4 plans verified and complete*
