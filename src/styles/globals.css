@@ -46,8 +46,8 @@ body {
 /* Arabic language overrides — Cormorant Garamond has no Arabic glyphs */
 :lang(ar) {
   font-family: var(--font-arabic);
-  font-size: 1.2em;
-  line-height: 1.8;
+  font-size: 1.05rem;
+  line-height: 1.7;
 }
 :lang(ar) h1,
 :lang(ar) h2,
