@@ -51,9 +51,9 @@ Plans:
 **Plans**: 4 plans
 
 Plans:
-- [ ] 02-01-PLAN.md — Router infrastructure: BrowserRouter in AppProviders, router.tsx with 5 routes, App.tsx update, RTL animation variants
-- [ ] 02-02-PLAN.md — Navigation components: Navbar, LanguageSwitcher, ThemeToggle, MobileMenu with AnimatePresence
-- [ ] 02-03-PLAN.md — Shell assembly: AnimatedOutlet, RootLayout, 5 page stubs with transition wrappers, vercel.json
+- [x] 02-01-PLAN.md — Router infrastructure: BrowserRouter in AppProviders, router.tsx with 5 routes, App.tsx update, RTL animation variants
+- [x] 02-02-PLAN.md — Navigation components: Navbar, LanguageSwitcher, ThemeToggle, MobileMenu with AnimatePresence
+- [x] 02-03-PLAN.md — Shell assembly: AnimatedOutlet, RootLayout, 5 page stubs with transition wrappers, vercel.json
 - [ ] 02-04-PLAN.md — Human verify: all 4 Phase 2 success criteria confirmed interactively
 
 ### Phase 3: Shared Components
@@ -113,7 +113,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation | 4/4 | Complete    | 2026-02-24 |
-| 2. Shell | 2/4 | In Progress|  |
+| 2. Shell | 3/4 | In Progress|  |
 | 3. Shared Components | 0/TBD | Not started | - |
 | 4. Homepage and Services | 0/TBD | Not started | - |
 | 5. Academy and Contact | 0/TBD | Not started | - |

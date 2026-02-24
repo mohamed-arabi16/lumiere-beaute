@@ -10,16 +10,16 @@ See: .planning/PROJECT.md (updated 2026-02-24)
 ## Current Position
 
 Phase: 2 of 6 (Shell)
-Plan: 2 of 4 in current phase
+Plan: 3 of 4 in current phase
 Status: In progress
-Last activity: 2026-02-25 — Completed 02-02 (Navigation components: Navbar, LanguageSwitcher, ThemeToggle, MobileMenu)
+Last activity: 2026-02-25 — Completed 02-03 (Application shell assembly: AnimatedOutlet, RootLayout, five page stubs, vercel.json)
 
-Progress: [████░░░░░░] 44%
+Progress: [█████░░░░░] 56%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 5 (4 Phase 1 + 1 Phase 2 + 02-02)
+- Total plans completed: 7 (4 Phase 1 + 3 Phase 2)
 - Average duration: 2 min
 - Total execution time: 0.1 hours
 
@@ -28,7 +28,7 @@ Progress: [████░░░░░░] 44%
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
 | 01-foundation | 4/4 | 11 min | 3 min |
-| 02-shell | 2/4 | 4 min | 2 min |
+| 02-shell | 3/4 | 6 min | 2 min |
 
 **Recent Trend:**
 - Last 5 plans: 2 min
@@ -41,6 +41,7 @@ Progress: [████░░░░░░] 44%
 | Phase 01-foundation P04 | 5 | 2 tasks | 2 files |
 | Phase 02-shell P01 | 2 | 2 tasks | 11 files |
 | Phase 02-shell P02 | 2 | 2 tasks | 4 files |
+| Phase 02-shell P03 | 2 | 2 tasks | 7 files |
 
 ## Accumulated Context
 
@@ -73,6 +74,11 @@ Recent decisions affecting current work:
 - [02-02]: NAV_LINKS defined outside Navbar component as const for stable reference across renders
 - [02-02]: MobileMenu placed inside <header> but outside <nav> — ensures full-viewport overlay for AnimatePresence
 - [02-02]: end={link.to === '/'} on home NavLink prevents index route from matching all paths as active
+- [02-03]: AnimatedOutlet uses useOutlet + cloneElement (not direct Outlet) — only pattern that fires exit animations in React Router
+- [02-03]: AnimatePresence mode='wait' initial={false} — cinematic feel, no entrance animation on initial load
+- [02-03]: Navbar placed outside <main> and outside AnimatePresence — never participates in page transitions
+- [02-03]: custom={dir} on each page motion.div — AnimatePresence preserves custom on exiting components for correct RTL exit direction
+- [02-03]: vercel.json catch-all rewrite ensures direct URL access works for BrowserRouter (HTML5 history API)
 
 ### Pending Todos
 
@@ -88,5 +94,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-02-25
-Stopped at: Completed 02-02-PLAN.md (Navigation components: Navbar, LanguageSwitcher, ThemeToggle, MobileMenu)
+Stopped at: Completed 02-03-PLAN.md (Application shell: AnimatedOutlet, RootLayout, five page stubs, vercel.json)
 Resume file: None
