@@ -1,0 +1,17 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "services": "Hizmetler",
+    "academy": "Akademi",
+    "about": "Hakkımızda",
+    "contact": "İletişim"
+  },
+  "test": {
+    "heading": "Lumiere Beaute",
+    "body": "Güzellik ve zarafet, her dilde.",
+    "colorLabel": "Renk paleti",
+    "toggleTheme": "Tema Değiştir",
+    "dir": "Yön",
+    "lang": "Dil"
+  }
+}

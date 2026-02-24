@@ -1,0 +1,17 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "academy": "Academy",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "test": {
+    "heading": "Lumiere Beaute",
+    "body": "Beauty and elegance, in every language.",
+    "colorLabel": "Color palette",
+    "toggleTheme": "Toggle Theme",
+    "dir": "Direction",
+    "lang": "Language"
+  }
+}
