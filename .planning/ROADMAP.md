@@ -66,7 +66,13 @@ Plans:
   3. All horizontal slide animations play in the correct direction for Arabic (right-to-left entrance becomes left-to-right entrance when RTL is active)
   4. All animation wrappers respect `prefers-reduced-motion` — users with that system setting see static content with no animation
   5. Running animations with 4x CPU throttle in DevTools produces no dropped frames on a 20-card staggered reveal
-**Plans**: TBD
+**Plans**: 4 plans
+
+Plans:
+- [ ] 03-01-PLAN.md — Infrastructure: MotionConfig in AppProviders + scroll/stagger/typewriter variants in variants.ts
+- [ ] 03-02-PLAN.md — Animation components: FadeInSection + StaggerContainer with whileInView + viewport once
+- [ ] 03-03-PLAN.md — UI primitives + TypewriterText: Button, Card, Typography, TypewriterText with RTL-safe tagMap
+- [ ] 03-04-PLAN.md — Verification scaffold + human verify: all 5 Phase 3 success criteria confirmed interactively
 
 ### Phase 4: Homepage and Services
 **Goal**: Visitors can experience the full homepage and browse the complete services catalog with working category filtering
@@ -114,11 +120,11 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6
 |-------|----------------|--------|-----------|
 | 1. Foundation | 4/4 | Complete    | 2026-02-24 |
 | 2. Shell | 4/4 | Complete    | 2026-02-24 |
-| 3. Shared Components | 0/TBD | Not started | - |
+| 3. Shared Components | 0/4 | Not started | - |
 | 4. Homepage and Services | 0/TBD | Not started | - |
 | 5. Academy and Contact | 0/TBD | Not started | - |
 | 6. Content and QA | 0/TBD | Not started | - |
 
 ---
 *Roadmap created: 2026-02-24*
-*Last updated: 2026-02-25 after Phase 2 completion — all 4 plans verified and complete*
+*Last updated: 2026-02-25 after Phase 3 planning — 4 plans created*
