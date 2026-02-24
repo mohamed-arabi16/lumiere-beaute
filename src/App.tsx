@@ -1,5 +1,5 @@
-import { ThemeTestComponent } from './components/ThemeTestComponent';
+import { AppRouter } from './router';
 
 export default function App() {
-  return <ThemeTestComponent />;
+  return <AppRouter />;
 }
