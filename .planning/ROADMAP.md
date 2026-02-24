@@ -48,7 +48,13 @@ Plans:
   2. The navbar is visible and sticky at all scroll positions on all five pages, displaying the language switcher and theme toggle
   3. On a 390px mobile viewport, the navbar collapses into a hamburger icon that opens an animated full-screen or slide-out menu
   4. The site is fully usable at every viewport width from 390px to 1440px with no horizontal scroll or content overflow
-**Plans**: TBD
+**Plans**: 4 plans
+
+Plans:
+- [ ] 02-01-PLAN.md — Router infrastructure: BrowserRouter in AppProviders, router.tsx with 5 routes, App.tsx update, RTL animation variants
+- [ ] 02-02-PLAN.md — Navigation components: Navbar, LanguageSwitcher, ThemeToggle, MobileMenu with AnimatePresence
+- [ ] 02-03-PLAN.md — Shell assembly: AnimatedOutlet, RootLayout, 5 page stubs with transition wrappers, vercel.json
+- [ ] 02-04-PLAN.md — Human verify: all 4 Phase 2 success criteria confirmed interactively
 
 ### Phase 3: Shared Components
 **Goal**: A library of reusable UI primitives and RTL-aware animation wrappers exists so that page sections can be composed consistently and performantly
@@ -107,7 +113,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation | 4/4 | Complete    | 2026-02-24 |
-| 2. Shell | 0/TBD | Not started | - |
+| 2. Shell | 0/4 | Not started | - |
 | 3. Shared Components | 0/TBD | Not started | - |
 | 4. Homepage and Services | 0/TBD | Not started | - |
 | 5. Academy and Contact | 0/TBD | Not started | - |
@@ -115,4 +121,4 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6
 
 ---
 *Roadmap created: 2026-02-24*
-*Last updated: 2026-02-24 after Phase 1 completion — all 4 plans executed and human-verified*
+*Last updated: 2026-02-24 after Phase 2 planning — 4 plans created across 3 waves*
