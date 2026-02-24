@@ -12,7 +12,7 @@ Six phases build the site in strict dependency order: establish design tokens an
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: Foundation** - Color system, typography, i18n config, theming infrastructure, and CSS gradient system
+- [x] **Phase 1: Foundation** - Color system, typography, i18n config, theming infrastructure, and CSS gradient system
 - [ ] **Phase 2: Shell** - App layout, routing, page transitions, and navbar with language/theme controls
 - [ ] **Phase 3: Shared Components** - UI primitives, RTL-aware animation wrappers, and performance baseline
 - [ ] **Phase 4: Homepage and Services** - Full hero, stats, teasers, testimonials, and filterable treatment catalog
@@ -34,10 +34,10 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Plans**: 4 plans
 
 Plans:
-- [ ] 01-01-PLAN.md — Infra bootstrap: Vite 7 downgrade, TypeScript setup, @tailwindcss/vite install, i18n packages
-- [ ] 01-02-PLAN.md — CSS system: globals.css color tokens + dark mode + typography + gradients, index.html blocking script + Google Fonts
-- [ ] 01-03-PLAN.md — Providers: i18n config + trilingual locales, ThemeProvider + AppProviders + hooks + main.tsx
-- [ ] 01-04-PLAN.md — Verification: ThemeTestComponent exercising all Phase 1 success criteria + human verify
+- [x] 01-01-PLAN.md — Infra bootstrap: Vite 7 downgrade, TypeScript setup, @tailwindcss/vite install, i18n packages
+- [x] 01-02-PLAN.md — CSS system: globals.css color tokens + dark mode + typography + gradients, index.html blocking script + Google Fonts
+- [x] 01-03-PLAN.md — Providers: i18n config + trilingual locales, ThemeProvider + AppProviders + hooks + main.tsx
+- [x] 01-04-PLAN.md — Verification: ThemeTestComponent exercising all Phase 1 success criteria + human verify
 
 ### Phase 2: Shell
 **Goal**: The complete application shell exists — routing, page transitions, and a fully functional navbar — so that pages can be built into a working, navigable structure
@@ -106,7 +106,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation | 3/4 | In Progress|  |
+| 1. Foundation | 4/4 | Complete | 2026-02-24 |
 | 2. Shell | 0/TBD | Not started | - |
 | 3. Shared Components | 0/TBD | Not started | - |
 | 4. Homepage and Services | 0/TBD | Not started | - |
@@ -115,4 +115,4 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6
 
 ---
 *Roadmap created: 2026-02-24*
-*Last updated: 2026-02-24 after Phase 1 planning — 4 plans created*
+*Last updated: 2026-02-24 after Phase 1 completion — all 4 plans executed and human-verified*
