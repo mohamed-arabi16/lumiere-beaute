@@ -5,21 +5,21 @@
 See: .planning/PROJECT.md (updated 2026-02-24)
 
 **Core value:** The website must feel like a premium, editorial experience — visitors should immediately sense luxury and trust, regardless of language or device.
-**Current focus:** Phase 2 — Shell
+**Current focus:** Phase 3 — Shared Components
 
 ## Current Position
 
-Phase: 2 of 6 (Shell)
-Plan: 4 of 4 in current phase — COMPLETE
-Status: Phase 2 complete — ready for Phase 3 (Home Page)
-Last activity: 2026-02-25 — Completed 02-04 (Human verification: all four Phase 2 success criteria approved)
+Phase: 3 of 6 (Shared Components)
+Plan: 1 of 4 in current phase — COMPLETE
+Status: Phase 3 in progress — 03-01 complete, ready for 03-02
+Last activity: 2026-02-25 — Completed 03-01 (MotionConfig provider + scroll-reveal/stagger variant exports)
 
-Progress: [██████░░░░] 63%
+Progress: [███████░░░] 68%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 8 (4 Phase 1 + 4 Phase 2)
+- Total plans completed: 9 (4 Phase 1 + 4 Phase 2 + 1 Phase 3)
 - Average duration: 3 min
 - Total execution time: 0.5 hours
 
@@ -29,6 +29,7 @@ Progress: [██████░░░░] 63%
 |-------|-------|-------|----------|
 | 01-foundation | 4/4 | 11 min | 3 min |
 | 02-shell | 4/4 | 21 min | 5 min |
+| 03-shared-components | 1/4 | 2 min | 2 min |
 
 **Recent Trend:**
 - Last 5 plans: 2 min
@@ -43,6 +44,7 @@ Progress: [██████░░░░] 63%
 | Phase 02-shell P02 | 2 | 2 tasks | 4 files |
 | Phase 02-shell P03 | 2 | 2 tasks | 7 files |
 | Phase 02-shell P04 | 15 | 2 tasks | 3 files |
+| Phase 03-shared-components P01 | 2 | 2 tasks | 2 files |
 
 ## Accumulated Context
 
@@ -83,6 +85,9 @@ Recent decisions affecting current work:
 - [02-04]: ScrollRestoration requires createBrowserRouter (data router) — BrowserRouter users must use useEffect scroll-to-top pattern
 - [02-04]: Arabic font-size must be set in rem (not em) to prevent compounding on nested elements — :lang(ar) { font-size: 1.05rem }
 - [02-04]: Tajawal chosen over Noto Sans Arabic for modern geometric feel aligned with luxury editorial brand — 300/400/500/700 weights loaded
+- [03-01]: MotionConfig imported from framer-motion (not motion/react) — project only has framer-motion installed
+- [03-01]: MotionConfig placed outermost (outside BrowserRouter) — prevents theme-toggle re-renders from interrupting in-progress animations
+- [03-01]: staggerContainerVariants implemented as factory function with default staggerDelay=0.06 — allows per-instance configuration
 
 ### Pending Todos
 
@@ -98,5 +103,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-02-25
-Stopped at: Completed 02-04-PLAN.md (Phase 2 human verification complete — all success criteria approved)
+Stopped at: Completed 03-01-PLAN.md (MotionConfig provider + scroll-reveal/stagger variants)
 Resume file: None
