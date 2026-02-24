@@ -5,16 +5,16 @@
 See: .planning/PROJECT.md (updated 2026-02-24)
 
 **Core value:** The website must feel like a premium, editorial experience — visitors should immediately sense luxury and trust, regardless of language or device.
-**Current focus:** Phase 1 — Foundation
+**Current focus:** Phase 2 — Shell
 
 ## Current Position
 
-Phase: 1 of 6 (Foundation)
-Plan: 4 of 4 in current phase
-Status: Phase complete
-Last activity: 2026-02-24 — Completed 01-04 (Phase 1 verification component — all 7 success criteria human-verified)
+Phase: 2 of 6 (Shell)
+Plan: 1 of 4 in current phase
+Status: In progress
+Last activity: 2026-02-24 — Completed 02-01 (Router infrastructure and RTL animation variants)
 
-Progress: [████░░░░░░] 40%
+Progress: [████░░░░░░] 42%
 
 ## Performance Metrics
 
@@ -28,6 +28,7 @@ Progress: [████░░░░░░] 40%
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
 | 01-foundation | 4/4 | 11 min | 3 min |
+| 02-shell | 1/4 | 2 min | 2 min |
 
 **Recent Trend:**
 - Last 5 plans: 2 min
@@ -38,6 +39,7 @@ Progress: [████░░░░░░] 40%
 | Phase 01-foundation P02 | 1 | 2 tasks | 3 files |
 | Phase 01-foundation P03 | 2 | 2 tasks | 9 files |
 | Phase 01-foundation P04 | 5 | 2 tasks | 2 files |
+| Phase 02-shell P01 | 2 | 2 tasks | 11 files |
 
 ## Accumulated Context
 
@@ -64,6 +66,9 @@ Recent decisions affecting current work:
 - [01-03]: BrowserRouter intentionally omitted from AppProviders — Phase 2 Shell adds it as outermost wrapper
 - [01-04]: ThemeTestComponent is a temporary Phase 1 verification scaffold — will be replaced by Phase 2 Shell
 - [01-04]: Tailwind logical properties (ms-, me-, ps-, pe-) only confirmed as RTL-safe — no physical ml-/mr-/pl-/pr- ever
+- [02-01]: BrowserRouter added as outermost wrapper in AppProviders — wraps ThemeProvider + I18nextProvider
+- [02-01]: pageTransitionVariants uses function-form initial/exit for RTL-aware AnimatePresence direction
+- [02-01]: Cubic-bezier ease typed as [number,number,number,number] tuple for framer-motion v12 TypeScript strictness
 
 ### Pending Todos
 
@@ -79,5 +84,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-02-24
-Stopped at: Completed 01-04-PLAN.md (Phase 1 verification component — Phase 1 fully complete)
+Stopped at: Completed 02-01-PLAN.md (Router infrastructure, BrowserRouter provider, RTL animation variants)
 Resume file: None
