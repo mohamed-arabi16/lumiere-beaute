@@ -9,9 +9,11 @@
     <!-- Must be FIRST in <head> before any stylesheet link -->
     <script>
       (function() {
-        // Restore dark/light mode from localStorage or fall back to system preference
+        // Light mode is the default — only switch to dark if the user
+        // has explicitly toggled it (saved === 'dark' in localStorage).
+        // System preference is intentionally ignored.
         var saved = localStorage.getItem('theme');
-        if (saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        if (saved === 'dark') {
           document.documentElement.classList.add('dark');
         }
 

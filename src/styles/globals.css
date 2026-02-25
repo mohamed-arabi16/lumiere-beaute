@@ -23,9 +23,9 @@
 
   /* Semantic surface colors */
   --color-surface-ivory: #F8FCFA;
-  --color-surface-dark: #041413;
-  --color-surface-dark-card: #0A2624;
-  --color-surface-dark-elevated: #0F3230;
+  --color-surface-dark: #0A2624;
+  --color-surface-dark-card: #0F3230;
+  --color-surface-dark-elevated: #163835;
 
   /* Typography */
   --font-display: "Cormorant Garamond", Georgia, serif;
