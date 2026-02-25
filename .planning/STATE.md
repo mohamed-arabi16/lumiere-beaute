@@ -51,6 +51,7 @@ Progress: [██████████] 85%
 | Phase 04-homepage-and-services P01 | 3 | 2 tasks | 4 files |
 | Phase 04-homepage-and-services P03 | 2 | 2 tasks | 3 files |
 | Phase 04-homepage-and-services P05 | 2 | 2 tasks | 3 files |
+| Phase 04-homepage-and-services P04 | 2 | 1 tasks | 1 files |
 
 ## Accumulated Context
 
@@ -117,6 +118,7 @@ Recent decisions affecting current work:
 - [04-05]: LayoutGroup id="services-category-tabs" scopes layoutId="active-tab-indicator" — prevents sliding underline leakage during AnimatePresence page transitions
 - [04-05]: AnimatePresence mode="popLayout" for treatment grid — exiting cards leave layout flow immediately, no grid snap on filter switch
 - [04-05]: layout prop on each motion.div card wrapper enables smooth repositioning for cards remaining after filter switch
+- [Phase 04-04]: HomePage.tsx is a pure composition — no inline JSX content, all rendering delegated to section components; motion.div page transition wrapper preserved per locked decision 02-03
 
 ### Pending Todos
 
@@ -132,5 +134,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-02-25
-Stopped at: Completed 04-05-PLAN.md (CategoryTabs + TreatmentGrid + full ServicesPage — Phase 4 COMPLETE)
+Stopped at: Completed 04-04-PLAN.md (Phase 3 scaffold replaced with real HomePage composing all five sections)
 Resume file: None
