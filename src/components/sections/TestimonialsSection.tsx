@@ -1,4 +1,5 @@
-import { motion } from 'framer-motion';
+import { useRef } from 'react';
+import { motion, useScroll, useTransform } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import type { Testimonial } from '../../types/content';
 import { FadeInSection } from '../animations/FadeInSection';
@@ -13,6 +14,11 @@ import { Heading, BodyText } from '../ui/Typography';
  * visual contrast against ivory sections above and below. This is an
  * intentional luxury editorial pattern — light/dark alternation adds rhythm.
  *
+ * The section element uses scroll-driven scale via useScroll+useTransform
+ * (continuous, not whileInView). Subtle zoom-in (1.04 → 1.0) as the dark
+ * background scrolls into center viewport. RTL-safe: scale only — no X axis.
+ * MotionConfig reducedMotion="user" in AppProviders handles prefers-reduced-motion.
+ *
  * Key design decisions:
  * - testimonial.id used as React key (never array index) — AnimatePresence safety
  * - All text from t() — no hardcoded strings (quotation marks are JSX punctuation)
@@ -22,8 +28,19 @@ export function TestimonialsSection() {
   const { t } = useTranslation('common');
   const testimonials = t('home.testimonials', { returnObjects: true }) as Testimonial[];
 
+  const testimonialsRef = useRef<HTMLElement>(null);
+  const { scrollYProgress: testimonialsProgress } = useScroll({
+    target: testimonialsRef,
+    offset: ['start end', 'center center'],
+  });
+  const bgScale = useTransform(testimonialsProgress, [0, 1], [1.04, 1]);
+
   return (
-    <section className="py-20 px-6 bg-surface-dark dark:bg-surface-dark">
+    <motion.section
+      ref={testimonialsRef}
+      style={{ scale: bgScale }}
+      className="py-20 px-6 bg-surface-dark dark:bg-surface-dark"
+    >
       <FadeInSection className="text-center mb-12">
         <Heading level={2} className="text-celadon-100 dark:text-celadon-100">
           {t('home.testimonials_heading')}
@@ -49,6 +66,6 @@ export function TestimonialsSection() {
           </motion.div>
         ))}
       </StaggerContainer>
-    </section>
+    </motion.section>
   );
 }
