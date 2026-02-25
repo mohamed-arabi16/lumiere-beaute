@@ -105,7 +105,13 @@ Plans:
   3. Submitting the contact form with valid data (name, email, service, message) delivers the inquiry via EmailJS and the user sees a success confirmation
   4. Clicking the WhatsApp CTA button opens WhatsApp (web or app) with a pre-filled message in the correct language
   5. The Contact page displays the salon's address, business hours, and contact details
-**Plans**: TBD
+**Plans**: 4 plans
+
+Plans:
+- [ ] 05-01-PLAN.md — Content foundation: Course interface, Button target/rel extension, trilingual academy+contact locale keys
+- [ ] 05-02-PLAN.md — Academy page: CoursesSection (2 course cards with WhatsApp enroll + Contact CTAs), AcademyPage composition
+- [ ] 05-03-PLAN.md — Contact sections: ContactFormSection (EmailJS form + WhatsApp CTA), ContactInfoSection (location info)
+- [ ] 05-04-PLAN.md — ContactPage composition + human verification of all 5 Phase 5 success criteria
 
 ### Phase 6: Content and QA
 **Goal**: All three language versions are fully populated with real content and the site passes RTL, performance, and accessibility checks across all pages
