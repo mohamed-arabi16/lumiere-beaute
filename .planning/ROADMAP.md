@@ -15,7 +15,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 1: Foundation** - Color system, typography, i18n config, theming infrastructure, and CSS gradient system
 - [x] **Phase 2: Shell** - App layout, routing, page transitions, and navbar with language/theme controls
 - [x] **Phase 3: Shared Components** - UI primitives, RTL-aware animation wrappers, and performance baseline
-- [ ] **Phase 4: Homepage and Services** - Full hero, stats, teasers, testimonials, and filterable treatment catalog
+- [x] **Phase 4: Homepage and Services** - Full hero, stats, teasers, testimonials, and filterable treatment catalog (completed 2026-02-25)
 - [ ] **Phase 5: Academy and Contact** - Course pages, enrollment CTA, booking form, and WhatsApp integration
 - [ ] **Phase 6: Content and QA** - Full trilingual content population, RTL audit, and mobile performance validation
 
@@ -129,7 +129,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6
 | 1. Foundation | 4/4 | Complete    | 2026-02-24 |
 | 2. Shell | 4/4 | Complete    | 2026-02-24 |
 | 3. Shared Components | 4/4 | Complete    | 2026-02-24 |
-| 4. Homepage and Services | 5/6 | In Progress|  |
+| 4. Homepage and Services | 6/6 | Complete   | 2026-02-25 |
 | 5. Academy and Contact | 0/TBD | Not started | - |
 | 6. Content and QA | 0/TBD | Not started | - |
 

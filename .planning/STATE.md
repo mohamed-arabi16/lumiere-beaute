@@ -10,11 +10,11 @@ See: .planning/PROJECT.md (updated 2026-02-24)
 ## Current Position
 
 Phase: 4 of 6 (Page Sections)
-Plan: 5 of 5 in current phase — 04-05 complete
-Status: Phase 4 IN PROGRESS — 5/5 plans done
-Last activity: 2026-02-25 — Completed 04-05 (CategoryTabs animated tab filter + TreatmentGrid AnimatePresence grid + full ServicesPage replacing Phase 2 stub)
+Plan: 6 of 6 in current phase — 04-06 complete
+Status: Phase 4 COMPLETE — all 6 plans done (including human-verify plan 04-06)
+Last activity: 2026-02-25 — Completed 04-06 (human visual verification of all Phase 4 criteria; Arabic typography upgraded to Amiri+Cairo; 8 Tailwind color class bugs fixed)
 
-Progress: [██████████] 85%
+Progress: [██████████] 90%
 
 ## Performance Metrics
 
@@ -52,6 +52,7 @@ Progress: [██████████] 85%
 | Phase 04-homepage-and-services P03 | 2 | 2 tasks | 3 files |
 | Phase 04-homepage-and-services P05 | 2 | 2 tasks | 3 files |
 | Phase 04-homepage-and-services P04 | 2 | 1 tasks | 1 files |
+| Phase 04-homepage-and-services P06 | 15 | 2 tasks | 8 files |
 
 ## Accumulated Context
 
@@ -119,6 +120,9 @@ Recent decisions affecting current work:
 - [04-05]: AnimatePresence mode="popLayout" for treatment grid — exiting cards leave layout flow immediately, no grid snap on filter switch
 - [04-05]: layout prop on each motion.div card wrapper enables smooth repositioning for cards remaining after filter switch
 - [Phase 04-04]: HomePage.tsx is a pure composition — no inline JSX content, all rendering delegated to section components; motion.div page transition wrapper preserved per locked decision 02-03
+- [04-06]: Arabic font pair upgraded to Amiri (display serif, pairs with Cormorant Garamond) + Cairo (body sans) — Tajawal too geometric for luxury editorial tone; heading size nudges added (h1: 1.1em, h2: 1.08em) because Amiri renders smaller than Tajawal at same rem
+- [04-06]: Hero text is text-white globally — teal gradient provides insufficient contrast for any colored text; white is accessible and editorially correct
+- [04-06]: All Tailwind color references must use only tokens in @theme block — seagrass-* tokens never existed; 8 silent class failures corrected across 5 components
 
 ### Pending Todos
 
@@ -134,5 +138,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-02-25
-Stopped at: Completed 04-04-PLAN.md (Phase 3 scaffold replaced with real HomePage composing all five sections)
+Stopped at: Completed 04-06-PLAN.md (Phase 4 human verification — all 6 success criteria approved; Arabic typography + color class fixes applied)
 Resume file: None
