@@ -87,5 +87,71 @@
       { "id": "brow-lamination", "category": "eye", "name": "Brow Lamination", "description": "Sleek, groomed brows that stay in place all day.", "duration": "45 min", "price": "₺400" },
       { "id": "eye-treatment", "category": "eye", "name": "Eye Revive Treatment", "description": "Targeted treatment for dark circles, puffiness, and fine lines.", "duration": "30 min", "price": "₺350" }
     ]
+  },
+  "academy": {
+    "hero": {
+      "headline": "Lumiere Academy",
+      "subtitle": "Professional certification courses taught by industry experts."
+    },
+    "courses_heading": "Our Courses",
+    "courses": [
+      {
+        "id": "aesthetic-practitioner",
+        "title": "Aesthetic Practitioner",
+        "description": "Master advanced facial and skin treatment techniques used by professionals worldwide. Includes HydraFacial, chemical peels, microneedling, and skin analysis.",
+        "duration": "12 weeks",
+        "price": "₺8,500"
+      },
+      {
+        "id": "professional-cosmetology",
+        "title": "Professional Cosmetology",
+        "description": "Comprehensive training in hair care, nail techniques, and body treatments. Full certification program with hands-on clinic hours.",
+        "duration": "16 weeks",
+        "price": "₺10,500"
+      }
+    ],
+    "enroll_cta": "Enroll via WhatsApp",
+    "contact_cta": "Book a Consultation"
+  },
+  "contact": {
+    "hero": {
+      "headline": "Contact Us",
+      "subtitle": "Book a treatment, ask a question, or start your academy journey."
+    },
+    "form": {
+      "heading": "Send Us a Message",
+      "name_label": "Your Name",
+      "email_label": "Email Address",
+      "service_label": "Service of Interest",
+      "service_options": [
+        "Facial Treatments",
+        "Body Treatments",
+        "Hair Care",
+        "Nail Care",
+        "Eye Treatments",
+        "Academy Enrollment",
+        "General Inquiry"
+      ],
+      "message_label": "Your Message",
+      "submit_cta": "Send Message",
+      "sending": "Sending...",
+      "success_heading": "Message Sent!",
+      "success_body": "Thank you — we'll be in touch within 24 hours.",
+      "error_generic": "Something went wrong. Please try again or contact us via WhatsApp."
+    },
+    "whatsapp_cta": "Chat on WhatsApp",
+    "whatsapp_message": "Hello, I'm interested in booking a treatment at Lumiere Beaute.",
+    "location": {
+      "heading": "Find Us",
+      "address": "Nişantaşı, Istanbul, Turkey",
+      "phone": "+90 (212) XXX-XXXX",
+      "email": "hello@lumierebeaute.com",
+      "hours_heading": "Business Hours",
+      "hours": [
+        { "days": "Monday – Friday", "hours": "09:00 – 20:00" },
+        { "days": "Saturday", "hours": "10:00 – 18:00" },
+        { "days": "Sunday", "hours": "Closed" }
+      ]
+    }
   }
 }
