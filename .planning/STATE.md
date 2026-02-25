@@ -150,6 +150,12 @@ Recent decisions affecting current work:
 - [Phase 07-03]: ServicesTeaserSection heading uses offset ['start end', 'center start'] — animation plays from when section top enters viewport bottom until section center reaches viewport top
 - [Phase 07-03]: Only Y-axis and opacity used for heading (no X) — RTL-safe per locked Phase 1 decision; scale only for TestimonialsSection background — also RTL-safe
 - [Phase 07-03]: No per-component reducedMotion handling needed — AppProviders MotionConfig reducedMotion='user' covers all Framer Motion instances globally
+- [07-04]: CustomCursor uses x/y motion values (transform: translate) not top/left CSS — no layout reflow on every frame
+- [07-04]: cursor:none uses !important to override Tailwind cursor-pointer classes on interactive elements
+- [07-04]: CustomCursor placed before Navbar in RootLayout — mounts once, never re-mounts on AnimatedOutlet page transitions
+- [07-04]: left-0 used (not start-0) for cursor positioning — mouse coordinates are physical viewport-relative, RTL has no effect
+- [07-04]: useReducedMotion() returns null — full component disabled for prefers-reduced-motion users, not just slowed
+- [07-04]: isVisible state: cursor starts at opacity 0, becomes visible on first mousemove — prevents flash at (0,0) on load
 
 ### Pending Todos
 
@@ -165,5 +171,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-02-25
-Stopped at: Completed 07-03-PLAN.md (scroll-driven Y+opacity on ServicesTeaserSection heading + scale on TestimonialsSection background)
+Stopped at: Completed 07-04-PLAN.md (CustomCursor with spring physics, hover ring, touch-safe CSS cursor:none — Phase 7 COMPLETE)
 Resume file: None
