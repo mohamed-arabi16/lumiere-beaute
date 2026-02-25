@@ -16,7 +16,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 2: Shell** - App layout, routing, page transitions, and navbar with language/theme controls
 - [x] **Phase 3: Shared Components** - UI primitives, RTL-aware animation wrappers, and performance baseline
 - [x] **Phase 4: Homepage and Services** - Full hero, stats, teasers, testimonials, and filterable treatment catalog (completed 2026-02-25)
-- [ ] **Phase 5: Academy and Contact** - Course pages, enrollment CTA, booking form, and WhatsApp integration
+- [x] **Phase 5: Academy and Contact** - Course pages, enrollment CTA, booking form, and WhatsApp integration
 - [ ] **Phase 6: Content and QA** - Full trilingual content population, RTL audit, and mobile performance validation
 
 ## Phase Details
@@ -108,10 +108,10 @@ Plans:
 **Plans**: 4 plans
 
 Plans:
-- [ ] 05-01-PLAN.md — Content foundation: Course interface, Button target/rel extension, trilingual academy+contact locale keys
-- [ ] 05-02-PLAN.md — Academy page: CoursesSection (2 course cards with WhatsApp enroll + Contact CTAs), AcademyPage composition
-- [ ] 05-03-PLAN.md — Contact sections: ContactFormSection (EmailJS form + WhatsApp CTA), ContactInfoSection (location info)
-- [ ] 05-04-PLAN.md — ContactPage composition + human verification of all 5 Phase 5 success criteria
+- [x] 05-01-PLAN.md — Content foundation: Course interface, Button target/rel extension, trilingual academy+contact locale keys
+- [x] 05-02-PLAN.md — Academy page: CoursesSection (2 course cards with WhatsApp enroll + Contact CTAs), AcademyPage composition
+- [x] 05-03-PLAN.md — Contact sections: ContactFormSection (EmailJS form + WhatsApp CTA), ContactInfoSection (location info)
+- [x] 05-04-PLAN.md — ContactPage composition + human verification of all 5 Phase 5 success criteria
 
 ### Phase 6: Content and QA
 **Goal**: All three language versions are fully populated with real content and the site passes RTL, performance, and accessibility checks across all pages
@@ -136,7 +136,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6
 | 2. Shell | 4/4 | Complete    | 2026-02-24 |
 | 3. Shared Components | 4/4 | Complete    | 2026-02-24 |
 | 4. Homepage and Services | 6/6 | Complete    | 2026-02-25 |
-| 5. Academy and Contact | 3/4 | In Progress|  |
+| 5. Academy and Contact | 4/4 | Complete    | 2026-02-25 |
 | 6. Content and QA | 0/TBD | Not started | - |
 | 7. Polish and UX Enhancements | 0/TBD | Not started | - |
 
@@ -154,4 +154,4 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6
 
 ---
 *Roadmap created: 2026-02-24*
-*Last updated: 2026-02-25 after 04-05 complete — ServicesPage with CategoryTabs + TreatmentGrid AnimatePresence filter done; 5/6 Phase 4 plans complete*
+*Last updated: 2026-02-25 after 05-04 complete — ContactPage composed + all 5 Phase 5 success criteria verified; Phase 5 COMPLETE*
