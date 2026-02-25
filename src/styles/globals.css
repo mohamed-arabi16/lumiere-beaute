@@ -82,11 +82,6 @@ body {
   letter-spacing: 0;
 }
 
-/* Amiri renders visually larger than Cormorant at the same rem size —
-   scale h1 down so the Arabic hero headline fits on mobile screens. */
-:lang(ar) h1 {
-  font-size: 0.8em;
-}
 
 /* Amiri renders proportionally well at Tailwind rem-based heading sizes — no font-size override needed.
    Inline em overrides were removed: they had higher specificity than .text-* Tailwind classes (pseudo-class

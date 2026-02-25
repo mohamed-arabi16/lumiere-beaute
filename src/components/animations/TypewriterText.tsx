@@ -24,6 +24,15 @@ interface TypewriterTextProps {
   as?: 'h1' | 'h2' | 'h3' | 'p' | 'span';
 }
 
+// Arabic Unicode block — per-character spans break the shaping algorithm,
+// causing every letter to render in its isolated (disconnected) form.
+const ARABIC_RE = /[\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF]/;
+
+const fadeVariants: Variants = {
+  hidden: { opacity: 0 },
+  visible: { opacity: 1, transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] } },
+};
+
 export function TypewriterText({ text, className, as = 'h1' }: TypewriterTextProps) {
   const tagMap = {
     h1: motion.h1,
@@ -34,6 +43,21 @@ export function TypewriterText({ text, className, as = 'h1' }: TypewriterTextPro
   } as const;
 
   const MotionTag = tagMap[as];
+
+  // For Arabic/RTL text render the whole string in one element so the
+  // browser's text shaping engine can connect letters correctly.
+  if (ARABIC_RE.test(text)) {
+    return (
+      <MotionTag
+        className={className}
+        variants={fadeVariants}
+        initial="hidden"
+        animate="visible"
+      >
+        {text}
+      </MotionTag>
+    );
+  }
 
   return (
     <MotionTag
