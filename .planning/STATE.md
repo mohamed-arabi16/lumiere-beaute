@@ -10,9 +10,9 @@ See: .planning/PROJECT.md (updated 2026-02-24)
 ## Current Position
 
 Phase: 6 of 7 (Content and QA) — IN PROGRESS
-Plan: 2 of 4 in Phase 6 — 06-01, 06-02 complete
-Status: Plan 06-02 COMPLETE — Playwright RTL snapshot tests for all 5 pages, GitHub Actions CI workflow (FNDTN-04)
-Last activity: 2026-02-25 — Completed 06-02 (Playwright RTL snapshots + CI workflow)
+Plan: 3 of 4 in Phase 6 — 06-01, 06-02, 06-03 complete
+Status: Plan 06-03 COMPLETE — Lighthouse mobile performance audits + remediation, all 5 pages 83-89 (FNDTN-03 satisfied)
+Last activity: 2026-02-25 — Completed 06-03 (Lighthouse audits, image compression, React.lazy code splitting)
 
 Progress: [██████████] 100%
 
@@ -63,6 +63,7 @@ Progress: [██████████] 100%
 | Phase 07-polish-and-ux P02 | 2 | 1 tasks | 1 files |
 | Phase 06-content-and-qa P01 | 2 | 2 tasks | 7 files |
 | Phase 06-content-and-qa P02 | 9 | 2 tasks | 18 files |
+| Phase 06-content-and-qa P03 | 11 | 2 tasks | 13 files |
 
 ## Accumulated Context
 
@@ -170,6 +171,9 @@ Recent decisions affecting current work:
 - [Phase 06-content-and-qa]: emulateMedia(reducedMotion:reduce) in Playwright beforeEach disables Framer Motion JS animations via MotionConfig reducedMotion=user for stable RTL screenshots
 - [Phase 06-content-and-qa]: waitForLoadState(networkidle) required in all RTL tests to ensure hero-bg.jpg background image loads before snapshot
 - [Phase 06-content-and-qa]: RTL snapshot baselines must be regenerated with --workers=1 to prevent Vite dev server overload under parallel test load
+- [Phase 06-content-and-qa]: [06-03]: Image compression primary performance lever — 7MB PNG/JPG -> 30-117KB JPEG reduced LCP from 39.8s to passing on Lighthouse mobile simulation
+- [Phase 06-content-and-qa]: [06-03]: React.lazy() in router.tsx with per-route Suspense boundaries; Vite manualChunks splits framer-motion/router/i18n into cacheable vendor chunks
+- [Phase 06-content-and-qa]: [06-03]: useMediaQuery('(max-width: 768px)') disables StatCounter Framer Motion animation on mobile — static numbers shown instead
 
 ### Pending Todos
 
@@ -185,5 +189,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-02-25
-Stopped at: Completed 06-02-PLAN.md (Playwright RTL snapshot tests + GitHub Actions CI workflow — FNDTN-04 satisfied)
+Stopped at: Completed 06-03-PLAN.md (Lighthouse mobile audits + performance remediation — FNDTN-03 satisfied, all 5 pages 83-89)
 Resume file: None
