@@ -10,16 +10,16 @@ See: .planning/PROJECT.md (updated 2026-02-24)
 ## Current Position
 
 Phase: 4 of 6 (Page Sections)
-Plan: 0 of 5 in current phase — ready to start
-Status: Phase 3 COMPLETE — all 4 plans done; Phase 4 next
-Last activity: 2026-02-25 — Completed 03-04 (Phase 3 verification scaffold + human sign-off on all 5 SC3 success criteria)
+Plan: 1 of 5 in current phase — 04-01 complete
+Status: Phase 4 IN PROGRESS — 1/5 plans done
+Last activity: 2026-02-25 — Completed 04-01 (TypeScript content types + trilingual locale JSON for all Phase 4 sections)
 
-Progress: [██████████] 83%
+Progress: [██████████] 85%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 12 (4 Phase 1 + 4 Phase 2 + 4 Phase 3)
+- Total plans completed: 13 (4 Phase 1 + 4 Phase 2 + 4 Phase 3 + 1 Phase 4)
 - Average duration: 3 min
 - Total execution time: 0.5 hours
 
@@ -48,6 +48,7 @@ Progress: [██████████] 83%
 | Phase 03-shared-components P02 | 2 | 2 tasks | 2 files |
 | Phase 03-shared-components P03 | 5 | 2 tasks | 4 files |
 | Phase 03-shared-components P04 | 3 | 2 tasks | 1 files |
+| Phase 04-homepage-and-services P01 | 3 | 2 tasks | 4 files |
 
 ## Accumulated Context
 
@@ -100,6 +101,11 @@ Recent decisions affecting current work:
 - [03-03]: Button uses logical spacing ps-6/pe-6 (not pl-/pr-) — RTL-safe per locked Phase 1 decision
 - [03-04]: Verification scaffold is temporary — replaced entirely in Phase 4; comment at top of HomePage.tsx documents this intent
 - [03-04]: 20-item StaggerContainer grid chosen for performance baseline test (0.06s × 20 = 1.2s stagger spread at 4x CPU throttle)
+- [04-01]: StatItem.value is a JSON number (not string) — StatCounter uses animate(0, target) where target must be numeric
+- [04-01]: Treatment IDs are stable kebab-case slugs (hydra-facial etc.) — never array indices — AnimatePresence key safety
+- [04-01]: Arabic hero headline kept to 2 words (جمالك. فنّنا.) — TypewriterText renders short strings cleanly without mid-render stagger issues
+- [04-01]: Treatment brand names (HydraFacial, Keratin, etc.) kept in international form across all locales — only UI copy translated
+- [04-01]: Prices use ₺ + Western digits across all three locales for consistent readability regardless of text direction
 
 ### Pending Todos
 
@@ -110,10 +116,10 @@ None yet.
 - Arabic content requires idiomatic copywriting — technical JSON structure is ready but content needs human Arabic review
 - EmailJS production credentials (VITE_EMAILJS_SERVICE_ID, VITE_EMAILJS_TEMPLATE_ID, VITE_EMAILJS_PUBLIC_KEY) must be configured before Phase 5 validation
 - WhatsApp business number in E.164 format (90XXXXXXXXXX) must be known before Phase 5 WhatsApp CTA wiring
-- 20+ treatment names/descriptions and 2 course curricula must be finalized before Phase 4/5 translation JSON can be populated
+- 20+ treatment names/descriptions populated in 04-01 — course curricula (Aesthetic Practitioner, Professional Cosmetology) still need detailed curriculum content for Academy page
 
 ## Session Continuity
 
 Last session: 2026-02-25
-Stopped at: Completed 03-04-PLAN.md (Phase 3 verification scaffold + human sign-off — Phase 3 COMPLETE)
+Stopped at: Completed 04-01-PLAN.md (TypeScript content types + trilingual locale JSON foundation for Phase 4)
 Resume file: None

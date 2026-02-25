@@ -88,7 +88,7 @@ Plans:
 **Plans**: 6 plans
 
 Plans:
-- [ ] 04-01-PLAN.md — Content foundation: TypeScript interfaces + trilingual locale JSON (stats, teasers, testimonials, 20 treatments)
+- [x] 04-01-PLAN.md — Content foundation: TypeScript interfaces + trilingual locale JSON (stats, teasers, testimonials, 20 treatments)
 - [ ] 04-02-PLAN.md — Hero + Stats sections: parallax gradient HeroSection + animated count-up StatsSection
 - [ ] 04-03-PLAN.md — Teaser + Testimonials sections: ServicesTeaserSection, AcademyTeaserSection, TestimonialsSection
 - [ ] 04-04-PLAN.md — HomePage composition: replace Phase 3 scaffold, compose all 5 sections
@@ -129,10 +129,10 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6
 | 1. Foundation | 4/4 | Complete    | 2026-02-24 |
 | 2. Shell | 4/4 | Complete    | 2026-02-24 |
 | 3. Shared Components | 4/4 | Complete    | 2026-02-24 |
-| 4. Homepage and Services | 0/TBD | Not started | - |
+| 4. Homepage and Services | 1/6 | In Progress | - |
 | 5. Academy and Contact | 0/TBD | Not started | - |
 | 6. Content and QA | 0/TBD | Not started | - |
 
 ---
 *Roadmap created: 2026-02-24*
-*Last updated: 2026-02-25 after Phase 3 complete — all 4 plans executed and human-verified*
+*Last updated: 2026-02-25 after 04-01 complete — Phase 4 content foundation (types + locale JSON) done*
