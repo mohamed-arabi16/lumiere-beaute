@@ -1,11 +1,28 @@
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
+import type { Category, Treatment } from '../types/content';
 import { useDirection } from '../hooks/useDirection';
 import { pageTransitionVariants } from '../animations/variants';
+import { FadeInSection } from '../components/animations/FadeInSection';
+import { Heading, BodyText } from '../components/ui/Typography';
+import { CategoryTabs } from '../components/sections/CategoryTabs';
+import { TreatmentGrid } from '../components/sections/TreatmentGrid';
 
 export function ServicesPage() {
   const { t } = useTranslation('common');
   const { dir } = useDirection();
+
+  const categories = t('services.categories', { returnObjects: true }) as Category[];
+  const allTreatments = t('services.treatments', { returnObjects: true }) as Treatment[];
+
+  const [activeCategory, setActiveCategory] = useState<string>(
+    () => categories[0]?.id ?? 'facial'
+  );
+
+  const filteredTreatments = allTreatments.filter(
+    (treatment) => treatment.category === activeCategory
+  );
 
   return (
     <motion.div
@@ -14,15 +31,26 @@ export function ServicesPage() {
       initial="initial"
       animate="animate"
       exit="exit"
-      className="min-h-screen px-4 py-16 sm:px-6 lg:px-8"
+      className="min-h-screen"
     >
-      <div className="mx-auto max-w-7xl">
-        <h1 className="font-display text-4xl text-stormy-teal-950 dark:text-celadon-100">
-          {t('nav.services')}
-        </h1>
-        <p className="mt-4 font-body text-seagrass-600 dark:text-seagrass-400">
-          Phase 2 stub — content coming in Phase 4
-        </p>
+      {/* Page hero */}
+      <FadeInSection className="py-20 px-6 text-center">
+        <Heading level={1} className="text-stormy-teal-950 dark:text-celadon-100">
+          {t('services.hero.headline')}
+        </Heading>
+        <BodyText size="lg" className="mt-4 text-jungle-teal-700 dark:text-mint-leaf-300 max-w-2xl mx-auto">
+          {t('services.hero.subtitle')}
+        </BodyText>
+      </FadeInSection>
+
+      {/* Category filter + treatment grid */}
+      <div className="px-6 pb-20 max-w-7xl mx-auto">
+        <CategoryTabs
+          categories={categories}
+          activeCategory={activeCategory}
+          onSelect={setActiveCategory}
+        />
+        <TreatmentGrid treatments={filteredTreatments} />
       </div>
     </motion.div>
   );
