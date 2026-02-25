@@ -39,14 +39,14 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Academy
 
-- [ ] **ACAD-01**: User sees 2 course overview cards with title, description, duration, and price
-- [ ] **ACAD-02**: User can tap an enroll button that opens WhatsApp or navigates to contact form
+- [x] **ACAD-01**: User sees 2 course overview cards with title, description, duration, and price
+- [x] **ACAD-02**: User can tap an enroll button that opens WhatsApp or navigates to contact form
 
 ### Contact
 
-- [ ] **CNTC-01**: User can submit a booking inquiry via form (name, email, service, message) sent through EmailJS
-- [ ] **CNTC-02**: User can tap a WhatsApp button that opens a pre-filled message in WhatsApp
-- [ ] **CNTC-03**: User sees location information including address, business hours, and contact details
+- [x] **CNTC-01**: User can submit a booking inquiry via form (name, email, service, message) sent through EmailJS
+- [x] **CNTC-02**: User can tap a WhatsApp button that opens a pre-filled message in WhatsApp
+- [x] **CNTC-03**: User sees location information including address, business hours, and contact details
 
 ## v2 Requirements
 
@@ -113,11 +113,11 @@ Which phases cover which requirements. Updated during roadmap creation.
 | HOME-05 | Phase 4 | Complete |
 | SRVC-01 | Phase 4 | Complete |
 | SRVC-02 | Phase 4 | Complete |
-| ACAD-01 | Phase 5 | Pending |
-| ACAD-02 | Phase 5 | Pending |
-| CNTC-01 | Phase 5 | Pending |
-| CNTC-02 | Phase 5 | Pending |
-| CNTC-03 | Phase 5 | Pending |
+| ACAD-01 | Phase 5 | Complete |
+| ACAD-02 | Phase 5 | Complete |
+| CNTC-01 | Phase 5 | Complete |
+| CNTC-02 | Phase 5 | Complete |
+| CNTC-03 | Phase 5 | Complete |
 
 **Coverage:**
 - v1 requirements: 23 total

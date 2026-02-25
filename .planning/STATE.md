@@ -5,21 +5,21 @@
 See: .planning/PROJECT.md (updated 2026-02-24)
 
 **Core value:** The website must feel like a premium, editorial experience — visitors should immediately sense luxury and trust, regardless of language or device.
-**Current focus:** Phase 4 — Page Sections
+**Current focus:** Phase 5 — Academy and Contact
 
 ## Current Position
 
-Phase: 4 of 6 (Page Sections)
-Plan: 6 of 6 in current phase — 04-06 complete
-Status: Phase 4 COMPLETE — all 6 plans done (including human-verify plan 04-06)
-Last activity: 2026-02-25 — Completed 04-06 (human visual verification of all Phase 4 criteria; Arabic typography upgraded to Amiri+Cairo; 8 Tailwind color class bugs fixed)
+Phase: 5 of 6 (Academy and Contact)
+Plan: 1 of 3 in current phase — 05-01 complete
+Status: Phase 5 IN PROGRESS — Plan 01 done (content foundation)
+Last activity: 2026-02-25 — Completed 05-01 (Course interface, Button target/rel extension, trilingual academy+contact locale keys)
 
-Progress: [██████████] 90%
+Progress: [██████████] 92%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 18 (4 Phase 1 + 4 Phase 2 + 4 Phase 3 + 5 Phase 4 — Phase 4 COMPLETE)
+- Total plans completed: 19 (4 Phase 1 + 4 Phase 2 + 4 Phase 3 + 6 Phase 4 + 1 Phase 5)
 - Average duration: 3 min
 - Total execution time: 0.5 hours
 
@@ -53,6 +53,7 @@ Progress: [██████████] 90%
 | Phase 04-homepage-and-services P05 | 2 | 2 tasks | 3 files |
 | Phase 04-homepage-and-services P04 | 2 | 1 tasks | 1 files |
 | Phase 04-homepage-and-services P06 | 15 | 2 tasks | 8 files |
+| Phase 05-academy-and-contact P01 | 2 | 2 tasks | 5 files |
 
 ## Accumulated Context
 
@@ -127,6 +128,10 @@ Recent decisions affecting current work:
 - [04-06]: Arabic font pair upgraded to Amiri (display serif, pairs with Cormorant Garamond) + Cairo (body sans) — Tajawal too geometric for luxury editorial tone; heading size nudges added (h1: 1.1em, h2: 1.08em) because Amiri renders smaller than Tajawal at same rem
 - [04-06]: Hero text is text-white globally — teal gradient provides insufficient contrast for any colored text; white is accessible and editorially correct
 - [04-06]: All Tailwind color references must use only tokens in @theme block — seagrass-* tokens never existed; 8 silent class failures corrected across 5 components
+- [05-01]: Course.price is a string (not number) matching Treatment.price — ₺ prefix and locale-specific thousands separators embedded in JSON
+- [05-01]: Turkish prices use dot thousands separator (₺8.500) per TR locale convention; EN/AR use comma (₺8,500)
+- [05-01]: Button target/rel props spread directly onto Tag element — browsers ignore on button, work correctly on anchor
+- [05-01]: Arabic course durations use Arabic-Indic numerals (١٢ أسبوعًا) consistent with services.treatments Arabic pattern
 
 ### Pending Todos
 
@@ -142,5 +147,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-02-25
-Stopped at: Completed 04-06-PLAN.md (Phase 4 human verification — all 6 success criteria approved; Arabic typography + color class fixes applied)
+Stopped at: Completed 05-01-PLAN.md (content foundation — Course interface, Button target/rel extension, trilingual academy+contact locale keys)
 Resume file: None
