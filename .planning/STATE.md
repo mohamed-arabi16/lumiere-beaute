@@ -10,16 +10,16 @@ See: .planning/PROJECT.md (updated 2026-02-24)
 ## Current Position
 
 Phase: 5 of 6 (Academy and Contact)
-Plan: 1 of 3 in current phase — 05-01 complete
-Status: Phase 5 IN PROGRESS — Plan 01 done (content foundation)
-Last activity: 2026-02-25 — Completed 05-01 (Course interface, Button target/rel extension, trilingual academy+contact locale keys)
+Plan: 3 of 4 in current phase — 05-01, 05-02, 05-03 complete
+Status: Phase 5 IN PROGRESS — Plan 03 done (ContactFormSection + ContactInfoSection)
+Last activity: 2026-02-25 — Completed 05-03 (EmailJS contact form, WhatsApp CTA, location info card)
 
 Progress: [██████████] 92%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 19 (4 Phase 1 + 4 Phase 2 + 4 Phase 3 + 6 Phase 4 + 1 Phase 5)
+- Total plans completed: 21 (4 Phase 1 + 4 Phase 2 + 4 Phase 3 + 6 Phase 4 + 3 Phase 5)
 - Average duration: 3 min
 - Total execution time: 0.5 hours
 
@@ -54,6 +54,8 @@ Progress: [██████████] 92%
 | Phase 04-homepage-and-services P04 | 2 | 1 tasks | 1 files |
 | Phase 04-homepage-and-services P06 | 15 | 2 tasks | 8 files |
 | Phase 05-academy-and-contact P01 | 2 | 2 tasks | 5 files |
+| Phase 05-academy-and-contact P02 | 2 | 2 tasks | 2 files |
+| Phase 05-academy-and-contact P03 | 2 | 2 tasks | 4 files |
 
 ## Accumulated Context
 
@@ -132,6 +134,10 @@ Recent decisions affecting current work:
 - [05-01]: Turkish prices use dot thousands separator (₺8.500) per TR locale convention; EN/AR use comma (₺8,500)
 - [05-01]: Button target/rel props spread directly onto Tag element — browsers ignore on button, work correctly on anchor
 - [05-01]: Arabic course durations use Arabic-Indic numerals (١٢ أسبوعًا) consistent with services.treatments Arabic pattern
+- [05-03]: EmailJSResponseStatus imported as value (not type) — instanceof check requires runtime value, not type-only import
+- [05-03]: WhatsApp phone defaults to '905XXXXXXXXX' placeholder when VITE_WHATSAPP_NUMBER absent — degrades gracefully in dev
+- [05-03]: Service options sourced from locale JSON via returnObjects:true — all 7 options translate automatically with language switch
+- [05-03]: dl/dt/dd semantic HTML for business hours — accessibility-correct for term/definition pairs
 
 ### Pending Todos
 
@@ -147,5 +153,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-02-25
-Stopped at: Completed 05-01-PLAN.md (content foundation — Course interface, Button target/rel extension, trilingual academy+contact locale keys)
+Stopped at: Completed 05-03-PLAN.md (ContactFormSection + ContactInfoSection — EmailJS wiring, WhatsApp CTA, location info card)
 Resume file: None
