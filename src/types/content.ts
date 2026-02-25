@@ -30,3 +30,11 @@ export interface TeaserCard {
   title: string;
   description: string;
 }
+
+export interface Course {
+  id: string;         // stable slug e.g. "aesthetic-practitioner"
+  title: string;
+  description: string;
+  duration: string;   // e.g. "12 weeks" / "١٢ أسبوعًا" / "12 hafta"
+  price: string;      // e.g. "₺8,500"
+}

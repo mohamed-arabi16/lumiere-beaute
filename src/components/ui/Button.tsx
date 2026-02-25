@@ -9,6 +9,8 @@ interface ButtonProps {
   href?: string;
   type?: 'button' | 'submit' | 'reset';
   disabled?: boolean;
+  target?: string;   // for external links opened in new tab
+  rel?: string;      // rel="noopener noreferrer" for _blank security
 }
 
 export function Button({
@@ -20,6 +22,8 @@ export function Button({
   href,
   type = 'button',
   disabled,
+  target,
+  rel,
 }: ButtonProps) {
   const base =
     'inline-flex items-center ps-6 pe-6 py-3 font-body text-sm font-medium transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-seagrass-500 rounded-sm';
@@ -32,6 +36,8 @@ export function Button({
   return (
     <Tag
       href={href}
+      target={target}
+      rel={rel}
       type={Tag === 'button' ? type : undefined}
       onClick={onClick}
       disabled={Tag === 'button' ? disabled : undefined}
