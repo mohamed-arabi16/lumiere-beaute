@@ -59,6 +59,7 @@ Progress: [██████████] 100%
 | Phase 05-academy-and-contact P04 | 3 | 2 tasks | 1 files |
 | Phase 07-polish-and-ux P03 | 1 | 2 tasks | 2 files |
 | Phase 07-polish-and-ux P04 | 4 | 2 tasks | 3 files |
+| Phase 07-polish-and-ux P01 | 3 | 2 tasks | 4 files |
 
 ## Accumulated Context
 
@@ -156,6 +157,7 @@ Recent decisions affecting current work:
 - [07-04]: left-0 used (not start-0) for cursor positioning — mouse coordinates are physical viewport-relative, RTL has no effect
 - [07-04]: useReducedMotion() returns null — full component disabled for prefers-reduced-motion users, not just slowed
 - [07-04]: isVisible state: cursor starts at opacity 0, becomes visible on first mousemove — prevents flash at (0,0) on load
+- [Phase 07-polish-and-ux]: [07-01]: Locale JSON file name decoupled from i18next namespace key — files renamed to ar/en/tr.json but namespace stays 'common', preserving all useTranslation calls with zero component changes
 
 ### Pending Todos
 
@@ -171,5 +173,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-02-25
-Stopped at: Completed 07-04-PLAN.md (CustomCursor with spring physics, hover ring, touch-safe CSS cursor:none — Phase 7 COMPLETE)
+Stopped at: Completed 07-01-PLAN.md (locale JSON rename ar/en/tr.json — POL-01 satisfied)
 Resume file: None
