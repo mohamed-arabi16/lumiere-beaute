@@ -29,7 +29,7 @@ export function CategoryTabs({ categories, activeCategory, onSelect }: CategoryT
               'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-seagrass-500 rounded-sm',
               activeCategory === cat.id
                 ? 'text-stormy-teal-950 dark:text-celadon-100 font-medium'
-                : 'text-jungle-teal-700 dark:text-mint-leaf-400 hover:text-seagrass-600 dark:hover:text-seagrass-300',
+                : 'text-jungle-teal-700 dark:text-mint-leaf-400 hover:text-seagrass-600 dark:hover:text-mint-leaf-300',
             ]
               .filter(Boolean)
               .join(' ')}
@@ -38,7 +38,7 @@ export function CategoryTabs({ categories, activeCategory, onSelect }: CategoryT
             {activeCategory === cat.id && (
               <motion.div
                 layoutId="active-tab-indicator"
-                className="absolute inset-x-0 bottom-0 h-0.5 bg-seagrass-600 dark:bg-seagrass-400"
+                className="absolute inset-x-0 bottom-0 h-0.5 bg-seagrass-600 dark:bg-mint-leaf-400"
               />
             )}
           </motion.button>

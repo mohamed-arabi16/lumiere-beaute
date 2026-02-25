@@ -27,20 +27,20 @@ export function HeroSection() {
         <TypewriterText
           text={t('home.hero.headline')}
           as="h1"
-          className="font-display text-5xl md:text-7xl text-stormy-teal-950 dark:text-celadon-100"
+          className="font-display text-5xl md:text-7xl text-white"
         />
         <BodyText
           size="lg"
-          className="text-jungle-teal-700 dark:text-mint-leaf-300 max-w-xl"
+          className="text-white/85 max-w-xl"
         >
           {t('home.hero.subtitle')}
         </BodyText>
         <div className="flex gap-4 flex-wrap justify-center">
           <Link to="/services">
-            <Button variant="primary">{t('home.hero.cta_primary')}</Button>
+            <Button variant="primary" className="bg-white text-stormy-teal-950 hover:bg-celadon-100 dark:bg-white dark:text-stormy-teal-950 dark:hover:bg-celadon-100">{t('home.hero.cta_primary')}</Button>
           </Link>
           <Link to="/services">
-            <Button variant="ghost">{t('home.hero.cta_secondary')}</Button>
+            <Button variant="ghost" className="border-white/60 text-white hover:bg-white/10 dark:border-white/60 dark:text-white">{t('home.hero.cta_secondary')}</Button>
           </Link>
         </div>
       </div>

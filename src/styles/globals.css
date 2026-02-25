@@ -21,7 +21,8 @@
   /* Typography */
   --font-display: "Cormorant Garamond", Georgia, serif;
   --font-body: "Inter", system-ui, -apple-system, sans-serif;
-  --font-arabic: "Tajawal", "Cairo", sans-serif;
+  --font-arabic: "Cairo", system-ui, sans-serif;
+  --font-arabic-display: "Amiri", Georgia, serif;
 }
 
 @custom-variant dark (&:where(.dark, .dark *));
@@ -46,17 +47,20 @@ body {
 /* Arabic language overrides — Cormorant Garamond has no Arabic glyphs */
 :lang(ar) {
   font-family: var(--font-arabic);
-  font-size: 1.05rem;
-  line-height: 1.7;
+  font-size: 1.1rem;
+  line-height: 1.85;
 }
 :lang(ar) h1,
 :lang(ar) h2,
 :lang(ar) h3,
 :lang(ar) h4 {
-  font-family: var(--font-arabic);
-  font-weight: 600;
+  font-family: var(--font-arabic-display);
+  font-weight: 700;
   letter-spacing: 0;
 }
+/* Amiri is proportionally smaller than Cormorant at the same rem — nudge up */
+:lang(ar) h1 { font-size: 1.1em; }
+:lang(ar) h2 { font-size: 1.08em; }
 
 /* CSS gradient placeholder classes — all image slots use these (FNDTN-09) */
 .placeholder-gradient-primary {

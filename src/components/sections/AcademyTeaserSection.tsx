@@ -28,7 +28,7 @@ export function AcademyTeaserSection() {
         <Heading level={2}>
           {t('home.academy_teaser.heading')}
         </Heading>
-        <BodyText className="mt-3 text-seagrass-700 dark:text-seagrass-400">
+        <BodyText className="mt-3 text-jungle-teal-700 dark:text-mint-leaf-400">
           {t('home.academy_teaser.subtitle')}
         </BodyText>
       </FadeInSection>
@@ -39,7 +39,7 @@ export function AcademyTeaserSection() {
             <Link to="/academy" className="block h-full">
               <Card hasPlaceholder placeholderVariant="card" className="h-full">
                 <Heading level={3}>{card.title}</Heading>
-                <BodyText size="sm" className="mt-2 text-seagrass-700 dark:text-seagrass-400">
+                <BodyText size="sm" className="mt-2 text-jungle-teal-700 dark:text-mint-leaf-400">
                   {card.description}
                 </BodyText>
               </Card>

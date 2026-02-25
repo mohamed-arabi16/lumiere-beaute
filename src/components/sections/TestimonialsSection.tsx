@@ -34,14 +34,14 @@ export function TestimonialsSection() {
         {testimonials.map((testimonial) => (
           <motion.div key={testimonial.id} variants={staggerItemVariants}>
             <Card className="h-full flex flex-col gap-4 bg-surface-dark-card dark:bg-surface-dark-card border border-seagrass-600/30">
-              <BodyText className="text-mint-leaf-200 italic leading-relaxed">
+              <BodyText className="text-celadon-200 italic leading-relaxed">
                 &ldquo;{testimonial.quote}&rdquo;
               </BodyText>
               <div className="mt-auto">
                 <BodyText size="sm" className="text-celadon-100 font-medium">
                   {testimonial.author}
                 </BodyText>
-                <BodyText size="sm" className="text-seagrass-400">
+                <BodyText size="sm" className="text-mint-leaf-400">
                   {testimonial.role}
                 </BodyText>
               </div>

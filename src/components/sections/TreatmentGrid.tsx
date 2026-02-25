@@ -31,8 +31,8 @@ export function TreatmentGrid({ treatments }: TreatmentGridProps) {
                 <BodyText size="sm" className="text-jungle-teal-700 dark:text-mint-leaf-400 flex-grow">
                   {treatment.description}
                 </BodyText>
-                <div className="flex items-center justify-between gap-4 pt-2 border-t border-seagrass-200 dark:border-seagrass-700">
-                  <BodyText size="sm" className="text-seagrass-600 dark:text-seagrass-400 font-medium">
+                <div className="flex items-center justify-between gap-4 pt-2 border-t border-celadon-200 dark:border-jungle-teal-700">
+                  <BodyText size="sm" className="text-seagrass-600 dark:text-mint-leaf-400 font-medium">
                     {treatment.duration}
                   </BodyText>
                   <BodyText size="sm" className="text-stormy-teal-950 dark:text-celadon-100 font-semibold font-display">
