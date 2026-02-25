@@ -60,7 +60,7 @@ export function HeroSection() {
           <TypewriterText
             text={t('home.hero.headline')}
             as="h1"
-            className="font-display text-[2.6rem] sm:text-5xl md:text-7xl leading-tight"
+            className="font-display text-[1.85rem] sm:text-4xl md:text-6xl leading-tight"
           />
         </div>
 
