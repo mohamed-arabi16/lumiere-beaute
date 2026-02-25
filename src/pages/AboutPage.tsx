@@ -21,7 +21,7 @@ export function AboutPage() {
           {t('nav.about')}
         </h1>
         <p className="mt-4 font-body text-seagrass-600 dark:text-seagrass-400">
-          Phase 2 stub — content coming in Phase 4
+          {t('nav.about_coming_soon')}
         </p>
       </div>
     </motion.div>
