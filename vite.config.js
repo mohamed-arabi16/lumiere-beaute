@@ -10,11 +10,21 @@ export default defineConfig({
   build: {
     rollupOptions: {
       output: {
-        manualChunks: {
-          'vendor-framer': ['framer-motion'],
-          'vendor-react': ['react', 'react-dom'],
-          'vendor-router': ['react-router-dom'],
-          'vendor-i18n': ['react-i18next', 'i18next'],
+        // Function form is required — the object form silently produces empty
+        // chunks when packages share circular dependencies at build time.
+        manualChunks(id) {
+          if (id.includes('/node_modules/react/') || id.includes('/node_modules/react-dom/') || id.includes('/node_modules/scheduler/')) {
+            return 'vendor-react';
+          }
+          if (id.includes('/node_modules/framer-motion/')) {
+            return 'vendor-framer';
+          }
+          if (id.includes('/node_modules/react-router') || id.includes('/node_modules/@remix-run/')) {
+            return 'vendor-router';
+          }
+          if (id.includes('/node_modules/i18next') || id.includes('/node_modules/react-i18next')) {
+            return 'vendor-i18n';
+          }
         },
       },
     },
