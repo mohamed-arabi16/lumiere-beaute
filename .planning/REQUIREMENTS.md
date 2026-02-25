@@ -28,9 +28,9 @@ Requirements for initial release. Each maps to roadmap phases.
 
 - [ ] **HOME-01**: User sees a full-screen hero section with parallax gradient, typewriter text animation, and call-to-action
 - [ ] **HOME-02**: User sees animated counting statistics (clients served, years of experience, treatments offered)
-- [ ] **HOME-03**: User sees services teaser cards that link to the Services page
-- [ ] **HOME-04**: User sees academy teaser cards that link to the Academy page
-- [ ] **HOME-05**: User sees client testimonials section with quotes
+- [x] **HOME-03**: User sees services teaser cards that link to the Services page
+- [x] **HOME-04**: User sees academy teaser cards that link to the Academy page
+- [x] **HOME-05**: User sees client testimonials section with quotes
 
 ### Services
 
@@ -108,9 +108,9 @@ Which phases cover which requirements. Updated during roadmap creation.
 | NAV-02 | Phase 2 | Complete |
 | HOME-01 | Phase 4 | Pending |
 | HOME-02 | Phase 4 | Pending |
-| HOME-03 | Phase 4 | Pending |
-| HOME-04 | Phase 4 | Pending |
-| HOME-05 | Phase 4 | Pending |
+| HOME-03 | Phase 4 | Complete |
+| HOME-04 | Phase 4 | Complete |
+| HOME-05 | Phase 4 | Complete |
 | SRVC-01 | Phase 4 | Pending |
 | SRVC-02 | Phase 4 | Pending |
 | ACAD-01 | Phase 5 | Pending |

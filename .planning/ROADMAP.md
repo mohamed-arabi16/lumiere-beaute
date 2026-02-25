@@ -129,7 +129,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6
 | 1. Foundation | 4/4 | Complete    | 2026-02-24 |
 | 2. Shell | 4/4 | Complete    | 2026-02-24 |
 | 3. Shared Components | 4/4 | Complete    | 2026-02-24 |
-| 4. Homepage and Services | 1/6 | In Progress | - |
+| 4. Homepage and Services | 4/6 | In Progress|  |
 | 5. Academy and Contact | 0/TBD | Not started | - |
 | 6. Content and QA | 0/TBD | Not started | - |
 

@@ -10,16 +10,16 @@ See: .planning/PROJECT.md (updated 2026-02-24)
 ## Current Position
 
 Phase: 4 of 6 (Page Sections)
-Plan: 1 of 5 in current phase — 04-01 complete
-Status: Phase 4 IN PROGRESS — 1/5 plans done
-Last activity: 2026-02-25 — Completed 04-01 (TypeScript content types + trilingual locale JSON for all Phase 4 sections)
+Plan: 5 of 5 in current phase — 04-05 complete
+Status: Phase 4 IN PROGRESS — 5/5 plans done
+Last activity: 2026-02-25 — Completed 04-05 (CategoryTabs animated tab filter + TreatmentGrid AnimatePresence grid + full ServicesPage replacing Phase 2 stub)
 
 Progress: [██████████] 85%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 13 (4 Phase 1 + 4 Phase 2 + 4 Phase 3 + 1 Phase 4)
+- Total plans completed: 18 (4 Phase 1 + 4 Phase 2 + 4 Phase 3 + 5 Phase 4 — Phase 4 COMPLETE)
 - Average duration: 3 min
 - Total execution time: 0.5 hours
 
@@ -49,6 +49,8 @@ Progress: [██████████] 85%
 | Phase 03-shared-components P03 | 5 | 2 tasks | 4 files |
 | Phase 03-shared-components P04 | 3 | 2 tasks | 1 files |
 | Phase 04-homepage-and-services P01 | 3 | 2 tasks | 4 files |
+| Phase 04-homepage-and-services P03 | 2 | 2 tasks | 3 files |
+| Phase 04-homepage-and-services P05 | 2 | 2 tasks | 3 files |
 
 ## Accumulated Context
 
@@ -106,6 +108,15 @@ Recent decisions affecting current work:
 - [04-01]: Arabic hero headline kept to 2 words (جمالك. فنّنا.) — TypewriterText renders short strings cleanly without mid-render stagger issues
 - [04-01]: Treatment brand names (HydraFacial, Keratin, etc.) kept in international form across all locales — only UI copy translated
 - [04-01]: Prices use ₺ + Western digits across all three locales for consistent readability regardless of text direction
+- [04-02]: Parallax uses backgroundPositionY (not transform:translateY) — avoids z-index stacking issues with sticky Navbar
+- [04-02]: StatCounter inner component not exported — animation state co-located with rendering, isolated from section orchestration
+- [04-02]: ease cast as [number,number,number,number] tuple in StatCounter animate() for framer-motion v12 TypeScript strictness
+- [Phase 04-03]: React Router Link used exclusively for /services and /academy navigation — <a href> bypasses AnimatePresence exit animations
+- [Phase 04-03]: AcademyTeaserSection uses ghost Button variant, ServicesTeaserSection uses primary — visual differentiation between adjacent sections
+- [Phase 04-03]: TestimonialsSection bg-surface-dark applies in both light and dark modes — intentional editorial contrast rhythm, not a dark-mode concern
+- [04-05]: LayoutGroup id="services-category-tabs" scopes layoutId="active-tab-indicator" — prevents sliding underline leakage during AnimatePresence page transitions
+- [04-05]: AnimatePresence mode="popLayout" for treatment grid — exiting cards leave layout flow immediately, no grid snap on filter switch
+- [04-05]: layout prop on each motion.div card wrapper enables smooth repositioning for cards remaining after filter switch
 
 ### Pending Todos
 
@@ -121,5 +132,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-02-25
-Stopped at: Completed 04-01-PLAN.md (TypeScript content types + trilingual locale JSON foundation for Phase 4)
+Stopped at: Completed 04-05-PLAN.md (CategoryTabs + TreatmentGrid + full ServicesPage — Phase 4 COMPLETE)
 Resume file: None
