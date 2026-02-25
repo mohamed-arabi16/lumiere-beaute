@@ -122,6 +122,8 @@
       "heading": "Send Us a Message",
       "name_label": "Your Name",
       "email_label": "Email Address",
+      "phone_label": "Phone Number",
+      "phone_placeholder": "Optional",
       "service_label": "Service of Interest",
       "service_options": [
         "Facial Treatments",

@@ -122,6 +122,8 @@
       "heading": "Bize Mesaj Gönderin",
       "name_label": "Adınız",
       "email_label": "E-posta Adresiniz",
+      "phone_label": "Telefon Numarası",
+      "phone_placeholder": "İsteğe bağlı",
       "service_label": "İlgilendiğiniz Hizmet",
       "service_options": [
         "Yüz Bakımları",

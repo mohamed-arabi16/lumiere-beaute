@@ -6,7 +6,7 @@ import { Heading, BodyText } from '../ui/Typography';
 import { Button } from '../ui/Button';
 
 /**
- * ContactFormSection — EmailJS-wired 4-field contact form.
+ * ContactFormSection — EmailJS-wired 5-field contact form.
  *
  * State machine: idle | loading | success | error
  * - idle: form visible, submit button enabled
@@ -17,6 +17,7 @@ import { Button } from '../ui/Button';
  * EmailJS template variable mapping (must match EmailJS dashboard template):
  * - {{from_name}}  ← values.name
  * - {{from_email}} ← values.email
+ * - {{phone}}       ← values.phone (optional — not required)
  * - {{service}}    ← values.service
  * - {{message}}    ← values.message
  *
@@ -32,6 +33,7 @@ type FormStatus = 'idle' | 'loading' | 'success' | 'error';
 interface FormValues {
   name: string;
   email: string;
+  phone: string;
   service: string;
   message: string;
 }
@@ -41,13 +43,14 @@ function buildWhatsAppURL(phone: string, message: string): string {
 }
 
 const inputBase =
-  'w-full rounded-sm border border-seagrass-300 bg-white px-4 py-2.5 font-body text-sm text-stormy-teal-950 placeholder:text-seagrass-400 focus:border-seagrass-500 focus:outline-none focus:ring-2 focus:ring-seagrass-500/30 dark:border-seagrass-700 dark:bg-surface-dark-card dark:text-celadon-100 dark:placeholder:text-seagrass-500 dark:focus:border-seagrass-400 transition-colors';
+  'w-full rounded-xl border border-seagrass-200/50 bg-white/60 px-5 py-3.5 font-body text-sm text-stormy-teal-950 placeholder:text-seagrass-400 focus:border-seagrass-500 focus:bg-white focus:outline-none focus:ring-4 focus:ring-seagrass-500/10 dark:border-white/10 dark:bg-surface-dark-card/60 dark:text-celadon-100 dark:placeholder:text-seagrass-500/70 dark:focus:border-seagrass-400 dark:focus:bg-surface-dark-card dark:focus:ring-seagrass-400/10 backdrop-blur-md shadow-sm transition-all duration-300';
 
 export function ContactFormSection() {
   const { t } = useTranslation('common');
   const [values, setValues] = useState<FormValues>({
     name: '',
     email: '',
+    phone: '',
     service: '',
     message: '',
   });
@@ -77,13 +80,14 @@ export function ContactFormSection() {
         {
           from_name: values.name,
           from_email: values.email,
+          phone: values.phone,
           service: values.service,
           message: values.message,
         },
         { publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY }
       );
       setStatus('success');
-      setValues({ name: '', email: '', service: '', message: '' });
+      setValues({ name: '', email: '', phone: '', service: '', message: '' });
     } catch (err) {
       if (err instanceof EmailJSResponseStatus) {
         setErrorMessage(err.text);
@@ -149,6 +153,21 @@ export function ContactFormSection() {
                 required
                 value={values.email}
                 onChange={handleChange}
+                className={inputBase}
+              />
+            </div>
+
+            <div>
+              <label htmlFor="phone" className="mb-1.5 block font-body text-sm font-medium text-stormy-teal-950 dark:text-celadon-100">
+                {t('contact.form.phone_label')}
+              </label>
+              <input
+                id="phone"
+                name="phone"
+                type="tel"
+                value={values.phone}
+                onChange={handleChange}
+                placeholder={t('contact.form.phone_placeholder')}
                 className={inputBase}
               />
             </div>

@@ -122,6 +122,8 @@
       "heading": "أرسل لنا رسالة",
       "name_label": "اسمك",
       "email_label": "عنوان البريد الإلكتروني",
+      "phone_label": "رقم الهاتف",
+      "phone_placeholder": "اختياري",
       "service_label": "الخدمة التي تهمك",
       "service_options": [
         "علاجات الوجه",
