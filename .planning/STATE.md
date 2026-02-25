@@ -11,8 +11,8 @@ See: .planning/PROJECT.md (updated 2026-02-24)
 
 Phase: 7 of 7 (Polish and UX) — IN PROGRESS
 Plan: 4 of 4 in Phase 7 — 07-01, 07-02, 07-03, 07-04 complete
-Status: Plan 07-04 COMPLETE — CustomCursor with spring physics, hover ring, touch-safe CSS cursor:none
-Last activity: 2026-02-25 — Completed 07-04 (CustomCursor component + RootLayout mount + CSS cursor hide)
+Status: Plan 07-02 COMPLETE — Arabic copy corrections: دورات replacing كورسات, em dashes removed, Arabic full stops applied (POL-02)
+Last activity: 2026-02-25 — Completed 07-02 (ar.json Arabic copy audit and correction — punctuation, loanword, luxury register)
 
 Progress: [██████████] 100%
 
@@ -60,6 +60,7 @@ Progress: [██████████] 100%
 | Phase 07-polish-and-ux P03 | 1 | 2 tasks | 2 files |
 | Phase 07-polish-and-ux P04 | 4 | 2 tasks | 3 files |
 | Phase 07-polish-and-ux P01 | 3 | 2 tasks | 4 files |
+| Phase 07-polish-and-ux P02 | 2 | 1 tasks | 1 files |
 
 ## Accumulated Context
 
@@ -158,6 +159,9 @@ Recent decisions affecting current work:
 - [07-04]: useReducedMotion() returns null — full component disabled for prefers-reduced-motion users, not just slowed
 - [07-04]: isVisible state: cursor starts at opacity 0, becomes visible on first mousemove — prevents flash at (0,0) on load
 - [Phase 07-polish-and-ux]: [07-01]: Locale JSON file name decoupled from i18next namespace key — files renamed to ar/en/tr.json but namespace stays 'common', preserving all useTranslation calls with zero component changes
+- [Phase 07-02]: [07-02]: Arabic full stop ۔ (U+06D4) replaces Latin period at sentence ends in all Arabic prose strings
+- [Phase 07-02]: [07-02]: كورسات replaced by دورات throughout — formal Arabic term consistent with academy section
+- [Phase 07-02]: [07-02]: Hero headline جمالك. فنّنا. retains Latin periods — stylistic design separators matching EN/TR locales, not typography errors
 
 ### Pending Todos
 
