@@ -24,18 +24,42 @@
     },
     "stats_heading": "Lumiere by the Numbers",
     "stats": [
-      { "value": 500, "suffix": "+", "label": "Happy Clients" },
-      { "value": 8, "suffix": "", "label": "Years of Excellence" },
-      { "value": 20, "suffix": "+", "label": "Treatments Offered" }
+      {
+        "value": 500,
+        "suffix": "+",
+        "label": "Happy Clients"
+      },
+      {
+        "value": 8,
+        "suffix": "",
+        "label": "Years of Excellence"
+      },
+      {
+        "value": 20,
+        "suffix": "+",
+        "label": "Treatments Offered"
+      }
     ],
     "services_teaser": {
       "heading": "Our Treatments",
       "subtitle": "From hydrating facials to relaxing body rituals — curated for your wellbeing.",
       "cta": "View All Treatments",
       "cards": [
-        { "id": "teaser-facial", "title": "Facial Treatments", "description": "Deep cleanse, hydrate, and renew with our curated facial rituals." },
-        { "id": "teaser-body", "title": "Body Treatments", "description": "Sculpting and relaxation therapies for full-body wellness." },
-        { "id": "teaser-hair", "title": "Hair Care", "description": "Nourishing treatments and expert styling for every hair type." }
+        {
+          "id": "teaser-facial",
+          "title": "Facial Treatments",
+          "description": "Deep cleanse, hydrate, and renew with our curated facial rituals."
+        },
+        {
+          "id": "teaser-body",
+          "title": "Body Treatments",
+          "description": "Sculpting and relaxation therapies for full-body wellness."
+        },
+        {
+          "id": "teaser-hair",
+          "title": "Hair Care",
+          "description": "Nourishing treatments and expert styling for every hair type."
+        }
       ]
     },
     "academy_teaser": {
@@ -43,15 +67,38 @@
       "subtitle": "Professional beauty certification courses taught by industry experts.",
       "cta": "Explore Courses",
       "cards": [
-        { "id": "teaser-aesthetic", "title": "Aesthetic Practitioner", "description": "Master advanced facial and skin treatment techniques." },
-        { "id": "teaser-cosmetology", "title": "Professional Cosmetology", "description": "Comprehensive training in hair, nail, and body care." }
+        {
+          "id": "teaser-aesthetic",
+          "title": "Aesthetic Practitioner",
+          "description": "Master advanced facial and skin treatment techniques."
+        },
+        {
+          "id": "teaser-cosmetology",
+          "title": "Professional Cosmetology",
+          "description": "Comprehensive training in hair, nail, and body care."
+        }
       ]
     },
     "testimonials_heading": "What Our Clients Say",
     "testimonials": [
-      { "id": "testimonial-1", "quote": "The HydraFacial completely transformed my skin. I leave every session glowing.", "author": "Elif K.", "role": "Loyal Client" },
-      { "id": "testimonial-2", "quote": "Lumiere Academy gave me the confidence and skills to launch my own beauty studio.", "author": "Melis D.", "role": "Certified Graduate" },
-      { "id": "testimonial-3", "quote": "The atmosphere is pure luxury. Worth every lira — I recommend it to everyone.", "author": "Sara A.", "role": "Regular Client" }
+      {
+        "id": "testimonial-1",
+        "quote": "The HydraFacial completely transformed my skin. I leave every session glowing.",
+        "author": "Elif K.",
+        "role": "Loyal Client"
+      },
+      {
+        "id": "testimonial-2",
+        "quote": "Lumiere Academy gave me the confidence and skills to launch my own beauty studio.",
+        "author": "Melis D.",
+        "role": "Certified Graduate"
+      },
+      {
+        "id": "testimonial-3",
+        "quote": "The atmosphere is pure luxury. Worth every lira — I recommend it to everyone.",
+        "author": "Sara A.",
+        "role": "Regular Client"
+      }
     ]
   },
   "services": {
@@ -60,33 +107,188 @@
       "subtitle": "Explore our full catalog of premium beauty treatments."
     },
     "categories": [
-      { "id": "facial", "label": "Facial" },
-      { "id": "body", "label": "Body" },
-      { "id": "hair", "label": "Hair" },
-      { "id": "nail", "label": "Nail" },
-      { "id": "eye", "label": "Eye" }
+      {
+        "id": "facial",
+        "label": "Facial"
+      },
+      {
+        "id": "body",
+        "label": "Body"
+      },
+      {
+        "id": "hair",
+        "label": "Hair"
+      },
+      {
+        "id": "nail",
+        "label": "Nail"
+      },
+      {
+        "id": "eye",
+        "label": "Eye"
+      }
     ],
     "treatments": [
-      { "id": "hydra-facial", "category": "facial", "name": "HydraFacial", "description": "Multi-step deep cleanse and hydration infusion.", "duration": "60 min", "price": "₺850" },
-      { "id": "vitamin-c-facial", "category": "facial", "name": "Vitamin C Brightening", "description": "Brightening facial with antioxidant infusion to even skin tone.", "duration": "45 min", "price": "₺650" },
-      { "id": "anti-aging-facial", "category": "facial", "name": "Anti-Aging Lift", "description": "Firming and lifting treatment with peptide serums.", "duration": "75 min", "price": "₺950" },
-      { "id": "deep-cleanse-facial", "category": "facial", "name": "Deep Cleanse", "description": "Thorough pore cleansing and balancing for oily or acne-prone skin.", "duration": "50 min", "price": "₺550" },
-      { "id": "gold-facial", "category": "facial", "name": "24K Gold Radiance", "description": "Luxurious gold-infused facial for luminous, rejuvenated skin.", "duration": "90 min", "price": "₺1200" },
-      { "id": "lymphatic-drainage", "category": "body", "name": "Lymphatic Drainage", "description": "Manual massage to stimulate circulation and reduce puffiness.", "duration": "60 min", "price": "₺700" },
-      { "id": "body-scrub", "category": "body", "name": "Exfoliating Body Scrub", "description": "Full-body exfoliation to reveal smooth, renewed skin.", "duration": "45 min", "price": "₺500" },
-      { "id": "body-wrap", "category": "body", "name": "Detox Body Wrap", "description": "Mineralizing wrap that draws out impurities and tones the skin.", "duration": "60 min", "price": "₺750" },
-      { "id": "back-facial", "category": "body", "name": "Back Facial", "description": "Deep cleanse and treatment for the back and shoulders.", "duration": "50 min", "price": "₺600" },
-      { "id": "keratin-treatment", "category": "hair", "name": "Keratin Smoothing", "description": "Frizz-eliminating treatment for silky, manageable hair.", "duration": "120 min", "price": "₺1500" },
-      { "id": "hair-mask", "category": "hair", "name": "Intensive Hair Mask", "description": "Deep conditioning mask to restore moisture and shine.", "duration": "40 min", "price": "₺400" },
-      { "id": "scalp-treatment", "category": "hair", "name": "Scalp Revitalizer", "description": "Nourishing scalp treatment to strengthen roots and reduce shedding.", "duration": "45 min", "price": "₺450" },
-      { "id": "hair-gloss", "category": "hair", "name": "Hair Gloss Treatment", "description": "Shine-boosting gloss that enhances color and adds luminosity.", "duration": "30 min", "price": "₺350" },
-      { "id": "gel-manicure", "category": "nail", "name": "Gel Manicure", "description": "Long-lasting gel color application with cuticle care.", "duration": "45 min", "price": "₺300" },
-      { "id": "spa-pedicure", "category": "nail", "name": "Spa Pedicure", "description": "Relaxing foot soak, exfoliation, and nail grooming.", "duration": "60 min", "price": "₺400" },
-      { "id": "nail-art", "category": "nail", "name": "Nail Art Design", "description": "Custom nail art created by our expert nail technicians.", "duration": "60 min", "price": "₺450" },
-      { "id": "paraffin-nail", "category": "nail", "name": "Paraffin Nail Treatment", "description": "Moisturizing paraffin wax treatment for hands and nails.", "duration": "30 min", "price": "₺250" },
-      { "id": "lash-lift", "category": "eye", "name": "Lash Lift & Tint", "description": "Curling and darkening treatment for naturally striking lashes.", "duration": "60 min", "price": "₺500" },
-      { "id": "brow-lamination", "category": "eye", "name": "Brow Lamination", "description": "Sleek, groomed brows that stay in place all day.", "duration": "45 min", "price": "₺400" },
-      { "id": "eye-treatment", "category": "eye", "name": "Eye Revive Treatment", "description": "Targeted treatment for dark circles, puffiness, and fine lines.", "duration": "30 min", "price": "₺350" }
+      {
+        "id": "hydra-facial",
+        "category": "facial",
+        "name": "HydraFacial",
+        "description": "Multi-step deep cleanse and hydration infusion.",
+        "duration": "60 min",
+        "price": "₺850"
+      },
+      {
+        "id": "vitamin-c-facial",
+        "category": "facial",
+        "name": "Vitamin C Brightening",
+        "description": "Brightening facial with antioxidant infusion to even skin tone.",
+        "duration": "45 min",
+        "price": "₺650"
+      },
+      {
+        "id": "anti-aging-facial",
+        "category": "facial",
+        "name": "Anti-Aging Lift",
+        "description": "Firming and lifting treatment with peptide serums.",
+        "duration": "75 min",
+        "price": "₺950"
+      },
+      {
+        "id": "deep-cleanse-facial",
+        "category": "facial",
+        "name": "Deep Cleanse",
+        "description": "Thorough pore cleansing and balancing for oily or acne-prone skin.",
+        "duration": "50 min",
+        "price": "₺550"
+      },
+      {
+        "id": "gold-facial",
+        "category": "facial",
+        "name": "24K Gold Radiance",
+        "description": "Luxurious gold-infused facial for luminous, rejuvenated skin.",
+        "duration": "90 min",
+        "price": "₺1200"
+      },
+      {
+        "id": "lymphatic-drainage",
+        "category": "body",
+        "name": "Lymphatic Drainage",
+        "description": "Manual massage to stimulate circulation and reduce puffiness.",
+        "duration": "60 min",
+        "price": "₺700"
+      },
+      {
+        "id": "body-scrub",
+        "category": "body",
+        "name": "Exfoliating Body Scrub",
+        "description": "Full-body exfoliation to reveal smooth, renewed skin.",
+        "duration": "45 min",
+        "price": "₺500"
+      },
+      {
+        "id": "body-wrap",
+        "category": "body",
+        "name": "Detox Body Wrap",
+        "description": "Mineralizing wrap that draws out impurities and tones the skin.",
+        "duration": "60 min",
+        "price": "₺750"
+      },
+      {
+        "id": "back-facial",
+        "category": "body",
+        "name": "Back Facial",
+        "description": "Deep cleanse and treatment for the back and shoulders.",
+        "duration": "50 min",
+        "price": "₺600"
+      },
+      {
+        "id": "keratin-treatment",
+        "category": "hair",
+        "name": "Keratin Smoothing",
+        "description": "Frizz-eliminating treatment for silky, manageable hair.",
+        "duration": "120 min",
+        "price": "₺1500"
+      },
+      {
+        "id": "hair-mask",
+        "category": "hair",
+        "name": "Intensive Hair Mask",
+        "description": "Deep conditioning mask to restore moisture and shine.",
+        "duration": "40 min",
+        "price": "₺400"
+      },
+      {
+        "id": "scalp-treatment",
+        "category": "hair",
+        "name": "Scalp Revitalizer",
+        "description": "Nourishing scalp treatment to strengthen roots and reduce shedding.",
+        "duration": "45 min",
+        "price": "₺450"
+      },
+      {
+        "id": "hair-gloss",
+        "category": "hair",
+        "name": "Hair Gloss Treatment",
+        "description": "Shine-boosting gloss that enhances color and adds luminosity.",
+        "duration": "30 min",
+        "price": "₺350"
+      },
+      {
+        "id": "gel-manicure",
+        "category": "nail",
+        "name": "Gel Manicure",
+        "description": "Long-lasting gel color application with cuticle care.",
+        "duration": "45 min",
+        "price": "₺300"
+      },
+      {
+        "id": "spa-pedicure",
+        "category": "nail",
+        "name": "Spa Pedicure",
+        "description": "Relaxing foot soak, exfoliation, and nail grooming.",
+        "duration": "60 min",
+        "price": "₺400"
+      },
+      {
+        "id": "nail-art",
+        "category": "nail",
+        "name": "Nail Art Design",
+        "description": "Custom nail art created by our expert nail technicians.",
+        "duration": "60 min",
+        "price": "₺450"
+      },
+      {
+        "id": "paraffin-nail",
+        "category": "nail",
+        "name": "Paraffin Nail Treatment",
+        "description": "Moisturizing paraffin wax treatment for hands and nails.",
+        "duration": "30 min",
+        "price": "₺250"
+      },
+      {
+        "id": "lash-lift",
+        "category": "eye",
+        "name": "Lash Lift & Tint",
+        "description": "Curling and darkening treatment for naturally striking lashes.",
+        "duration": "60 min",
+        "price": "₺500"
+      },
+      {
+        "id": "brow-lamination",
+        "category": "eye",
+        "name": "Brow Lamination",
+        "description": "Sleek, groomed brows that stay in place all day.",
+        "duration": "45 min",
+        "price": "₺400"
+      },
+      {
+        "id": "eye-treatment",
+        "category": "eye",
+        "name": "Eye Revive Treatment",
+        "description": "Targeted treatment for dark circles, puffiness, and fine lines.",
+        "duration": "30 min",
+        "price": "₺350"
+      }
     ]
   },
   "academy": {
@@ -151,10 +353,21 @@
       "email": "hello@lumierebeaute.com",
       "hours_heading": "Business Hours",
       "hours": [
-        { "days": "Monday – Friday", "hours": "09:00 – 20:00" },
-        { "days": "Saturday", "hours": "10:00 – 18:00" },
-        { "days": "Sunday", "hours": "Closed" }
-      ]
+        {
+          "days": "Monday – Friday",
+          "hours": "09:00 – 20:00"
+        },
+        {
+          "days": "Saturday",
+          "hours": "10:00 – 18:00"
+        },
+        {
+          "days": "Sunday",
+          "hours": "Closed"
+        }
+      ],
+      "label_address": "Location",
+      "label_contact": "Contact"
     }
   }
 }

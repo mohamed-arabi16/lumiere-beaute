@@ -24,18 +24,42 @@
     },
     "stats_heading": "لوميير بالأرقام",
     "stats": [
-      { "value": 500, "suffix": "+", "label": "عميل سعيد" },
-      { "value": 8, "suffix": "", "label": "سنوات من التميز" },
-      { "value": 20, "suffix": "+", "label": "علاج متاح" }
+      {
+        "value": 500,
+        "suffix": "+",
+        "label": "عميل سعيد"
+      },
+      {
+        "value": 8,
+        "suffix": "",
+        "label": "سنوات من التميز"
+      },
+      {
+        "value": 20,
+        "suffix": "+",
+        "label": "علاج متاح"
+      }
     ],
     "services_teaser": {
       "heading": "علاجاتنا",
       "subtitle": "من جلسات الترطيب العميق إلى طقوس الجسم المريحة، مُختارة بعناية لصحتك وراحتك۔",
       "cta": "عرض جميع العلاجات",
       "cards": [
-        { "id": "teaser-facial", "title": "علاجات الوجه", "description": "تنظيف عميق وترطيب وتجديد مع جلسات الوجه المنتقاة۔" },
-        { "id": "teaser-body", "title": "علاجات الجسم", "description": "جلسات نحت وتدليك للاسترخاء التام وصحة الجسم الكاملة۔" },
-        { "id": "teaser-hair", "title": "العناية بالشعر", "description": "علاجات مغذية وتصفيف احترافي لكل أنواع الشعر۔" }
+        {
+          "id": "teaser-facial",
+          "title": "علاجات الوجه",
+          "description": "تنظيف عميق وترطيب وتجديد مع جلسات الوجه المنتقاة۔"
+        },
+        {
+          "id": "teaser-body",
+          "title": "علاجات الجسم",
+          "description": "جلسات نحت وتدليك للاسترخاء التام وصحة الجسم الكاملة۔"
+        },
+        {
+          "id": "teaser-hair",
+          "title": "العناية بالشعر",
+          "description": "علاجات مغذية وتصفيف احترافي لكل أنواع الشعر۔"
+        }
       ]
     },
     "academy_teaser": {
@@ -43,15 +67,38 @@
       "subtitle": "دورات احترافية معتمدة في مجال التجميل يُدرّسها خبراء الصناعة۔",
       "cta": "اكتشف الدورات",
       "cards": [
-        { "id": "teaser-aesthetic", "title": "ممارس التجميل الجمالي", "description": "أتقن تقنيات الوجه والبشرة المتقدمة۔" },
-        { "id": "teaser-cosmetology", "title": "كوزمتولوجيا احترافية", "description": "تدريب شامل في العناية بالشعر والأظافر والجسم۔" }
+        {
+          "id": "teaser-aesthetic",
+          "title": "ممارس التجميل الجمالي",
+          "description": "أتقن تقنيات الوجه والبشرة المتقدمة۔"
+        },
+        {
+          "id": "teaser-cosmetology",
+          "title": "كوزمتولوجيا احترافية",
+          "description": "تدريب شامل في العناية بالشعر والأظافر والجسم۔"
+        }
       ]
     },
     "testimonials_heading": "ما يقوله عملاؤنا",
     "testimonials": [
-      { "id": "testimonial-1", "quote": "غيّرت جلسة HydraFacial بشرتي تمامًا۔ أخرج من كل جلسة بإشراقة لا تُصدق۔", "author": "Elif K.", "role": "عميلة وفية" },
-      { "id": "testimonial-2", "quote": "أكاديمية لوميير منحتني الثقة والمهارات لأفتتح استوديو التجميل الخاص بي۔", "author": "Melis D.", "role": "خريجة معتمدة" },
-      { "id": "testimonial-3", "quote": "الأجواء فخامة خالصة۔ كل لحظة تستحق عناءها، تجربة أوصي بها للجميع۔", "author": "Sara A.", "role": "عميلة منتظمة" }
+      {
+        "id": "testimonial-1",
+        "quote": "غيّرت جلسة HydraFacial بشرتي تمامًا۔ أخرج من كل جلسة بإشراقة لا تُصدق۔",
+        "author": "Elif K.",
+        "role": "عميلة وفية"
+      },
+      {
+        "id": "testimonial-2",
+        "quote": "أكاديمية لوميير منحتني الثقة والمهارات لأفتتح استوديو التجميل الخاص بي۔",
+        "author": "Melis D.",
+        "role": "خريجة معتمدة"
+      },
+      {
+        "id": "testimonial-3",
+        "quote": "الأجواء فخامة خالصة۔ كل لحظة تستحق عناءها، تجربة أوصي بها للجميع۔",
+        "author": "Sara A.",
+        "role": "عميلة منتظمة"
+      }
     ]
   },
   "services": {
@@ -60,33 +107,188 @@
       "subtitle": "استكشف الكتالوج الكامل لعلاجات التجميل الفاخرة۔"
     },
     "categories": [
-      { "id": "facial", "label": "الوجه" },
-      { "id": "body", "label": "الجسم" },
-      { "id": "hair", "label": "الشعر" },
-      { "id": "nail", "label": "الأظافر" },
-      { "id": "eye", "label": "العيون" }
+      {
+        "id": "facial",
+        "label": "الوجه"
+      },
+      {
+        "id": "body",
+        "label": "الجسم"
+      },
+      {
+        "id": "hair",
+        "label": "الشعر"
+      },
+      {
+        "id": "nail",
+        "label": "الأظافر"
+      },
+      {
+        "id": "eye",
+        "label": "العيون"
+      }
     ],
     "treatments": [
-      { "id": "hydra-facial", "category": "facial", "name": "HydraFacial", "description": "تنظيف عميق متعدد المراحل وحقن الترطيب۔", "duration": "٦٠ دقيقة", "price": "₺850" },
-      { "id": "vitamin-c-facial", "category": "facial", "name": "Vitamin C Brightening", "description": "جلسة تفتيح بحقن مضادات الأكسدة لتوحيد لون البشرة۔", "duration": "٤٥ دقيقة", "price": "₺650" },
-      { "id": "anti-aging-facial", "category": "facial", "name": "Anti-Aging Lift", "description": "علاج شد ورفع بأمصال الببتيد لمكافحة التجاعيد۔", "duration": "٧٥ دقيقة", "price": "₺950" },
-      { "id": "deep-cleanse-facial", "category": "facial", "name": "Deep Cleanse", "description": "تنظيف شامل للمسام وموازنة البشرة الدهنية والمعرضة للحبوب۔", "duration": "٥٠ دقيقة", "price": "₺550" },
-      { "id": "gold-facial", "category": "facial", "name": "24K Gold Radiance", "description": "جلسة وجه فاخرة بالذهب لبشرة مضيئة ومتجددة۔", "duration": "٩٠ دقيقة", "price": "₺1200" },
-      { "id": "lymphatic-drainage", "category": "body", "name": "Lymphatic Drainage", "description": "تدليك يدوي لتحفيز الدورة الدموية وتخفيف الانتفاخ۔", "duration": "٦٠ دقيقة", "price": "₺700" },
-      { "id": "body-scrub", "category": "body", "name": "Exfoliating Body Scrub", "description": "تقشير كامل للجسم للكشف عن بشرة ناعمة ومتجددة۔", "duration": "٤٥ دقيقة", "price": "₺500" },
-      { "id": "body-wrap", "category": "body", "name": "Detox Body Wrap", "description": "لفافة معدنية تطرد الشوائب وتشد البشرة۔", "duration": "٦٠ دقيقة", "price": "₺750" },
-      { "id": "back-facial", "category": "body", "name": "Back Facial", "description": "تنظيف عميق وعلاج للظهر والكتفين۔", "duration": "٥٠ دقيقة", "price": "₺600" },
-      { "id": "keratin-treatment", "category": "hair", "name": "Keratin Smoothing", "description": "علاج كيراتين لإزالة التجعد للحصول على شعر حريري سهل التحكم۔", "duration": "١٢٠ دقيقة", "price": "₺1500" },
-      { "id": "hair-mask", "category": "hair", "name": "Intensive Hair Mask", "description": "قناع ترطيب عميق يستعيد الرطوبة والبريق۔", "duration": "٤٠ دقيقة", "price": "₺400" },
-      { "id": "scalp-treatment", "category": "hair", "name": "Scalp Revitalizer", "description": "علاج مغذٍّ لفروة الرأس يقوي الجذور ويقلل التساقط۔", "duration": "٤٥ دقيقة", "price": "₺450" },
-      { "id": "hair-gloss", "category": "hair", "name": "Hair Gloss Treatment", "description": "غلوس يعزز الألوان ويضيف لمعاناً ساطعاً۔", "duration": "٣٠ دقيقة", "price": "₺350" },
-      { "id": "gel-manicure", "category": "nail", "name": "Gel Manicure", "description": "تطبيق جل طويل الأمد مع العناية بحواف الأظافر۔", "duration": "٤٥ دقيقة", "price": "₺300" },
-      { "id": "spa-pedicure", "category": "nail", "name": "Spa Pedicure", "description": "حمام قدم مريح وتقشير وتهذيب الأظافر۔", "duration": "٦٠ دقيقة", "price": "₺400" },
-      { "id": "nail-art", "category": "nail", "name": "Nail Art Design", "description": "فن أظافر مخصص يبدعه فنيو الأظافر لدينا۔", "duration": "٦٠ دقيقة", "price": "₺450" },
-      { "id": "paraffin-nail", "category": "nail", "name": "Paraffin Nail Treatment", "description": "علاج شمع البارافين المرطب للأيدي والأظافر۔", "duration": "٣٠ دقيقة", "price": "₺250" },
-      { "id": "lash-lift", "category": "eye", "name": "Lash Lift & Tint", "description": "علاج تجعيد وتلوين الرموش لإطلالة طبيعية جذابة۔", "duration": "٦٠ دقيقة", "price": "₺500" },
-      { "id": "brow-lamination", "category": "eye", "name": "Brow Lamination", "description": "حواجب أنيقة ومرتبة تبقى في مكانها طوال اليوم۔", "duration": "٤٥ دقيقة", "price": "₺400" },
-      { "id": "eye-treatment", "category": "eye", "name": "Eye Revive Treatment", "description": "علاج موجه للهالات السوداء والانتفاخ والخطوط الرفيعة۔", "duration": "٣٠ دقيقة", "price": "₺350" }
+      {
+        "id": "hydra-facial",
+        "category": "facial",
+        "name": "HydraFacial",
+        "description": "تنظيف عميق متعدد المراحل وحقن الترطيب۔",
+        "duration": "٦٠ دقيقة",
+        "price": "₺850"
+      },
+      {
+        "id": "vitamin-c-facial",
+        "category": "facial",
+        "name": "Vitamin C Brightening",
+        "description": "جلسة تفتيح بحقن مضادات الأكسدة لتوحيد لون البشرة۔",
+        "duration": "٤٥ دقيقة",
+        "price": "₺650"
+      },
+      {
+        "id": "anti-aging-facial",
+        "category": "facial",
+        "name": "Anti-Aging Lift",
+        "description": "علاج شد ورفع بأمصال الببتيد لمكافحة التجاعيد۔",
+        "duration": "٧٥ دقيقة",
+        "price": "₺950"
+      },
+      {
+        "id": "deep-cleanse-facial",
+        "category": "facial",
+        "name": "Deep Cleanse",
+        "description": "تنظيف شامل للمسام وموازنة البشرة الدهنية والمعرضة للحبوب۔",
+        "duration": "٥٠ دقيقة",
+        "price": "₺550"
+      },
+      {
+        "id": "gold-facial",
+        "category": "facial",
+        "name": "24K Gold Radiance",
+        "description": "جلسة وجه فاخرة بالذهب لبشرة مضيئة ومتجددة۔",
+        "duration": "٩٠ دقيقة",
+        "price": "₺1200"
+      },
+      {
+        "id": "lymphatic-drainage",
+        "category": "body",
+        "name": "Lymphatic Drainage",
+        "description": "تدليك يدوي لتحفيز الدورة الدموية وتخفيف الانتفاخ۔",
+        "duration": "٦٠ دقيقة",
+        "price": "₺700"
+      },
+      {
+        "id": "body-scrub",
+        "category": "body",
+        "name": "Exfoliating Body Scrub",
+        "description": "تقشير كامل للجسم للكشف عن بشرة ناعمة ومتجددة۔",
+        "duration": "٤٥ دقيقة",
+        "price": "₺500"
+      },
+      {
+        "id": "body-wrap",
+        "category": "body",
+        "name": "Detox Body Wrap",
+        "description": "لفافة معدنية تطرد الشوائب وتشد البشرة۔",
+        "duration": "٦٠ دقيقة",
+        "price": "₺750"
+      },
+      {
+        "id": "back-facial",
+        "category": "body",
+        "name": "Back Facial",
+        "description": "تنظيف عميق وعلاج للظهر والكتفين۔",
+        "duration": "٥٠ دقيقة",
+        "price": "₺600"
+      },
+      {
+        "id": "keratin-treatment",
+        "category": "hair",
+        "name": "Keratin Smoothing",
+        "description": "علاج كيراتين لإزالة التجعد للحصول على شعر حريري سهل التحكم۔",
+        "duration": "١٢٠ دقيقة",
+        "price": "₺1500"
+      },
+      {
+        "id": "hair-mask",
+        "category": "hair",
+        "name": "Intensive Hair Mask",
+        "description": "قناع ترطيب عميق يستعيد الرطوبة والبريق۔",
+        "duration": "٤٠ دقيقة",
+        "price": "₺400"
+      },
+      {
+        "id": "scalp-treatment",
+        "category": "hair",
+        "name": "Scalp Revitalizer",
+        "description": "علاج مغذٍّ لفروة الرأس يقوي الجذور ويقلل التساقط۔",
+        "duration": "٤٥ دقيقة",
+        "price": "₺450"
+      },
+      {
+        "id": "hair-gloss",
+        "category": "hair",
+        "name": "Hair Gloss Treatment",
+        "description": "غلوس يعزز الألوان ويضيف لمعاناً ساطعاً۔",
+        "duration": "٣٠ دقيقة",
+        "price": "₺350"
+      },
+      {
+        "id": "gel-manicure",
+        "category": "nail",
+        "name": "Gel Manicure",
+        "description": "تطبيق جل طويل الأمد مع العناية بحواف الأظافر۔",
+        "duration": "٤٥ دقيقة",
+        "price": "₺300"
+      },
+      {
+        "id": "spa-pedicure",
+        "category": "nail",
+        "name": "Spa Pedicure",
+        "description": "حمام قدم مريح وتقشير وتهذيب الأظافر۔",
+        "duration": "٦٠ دقيقة",
+        "price": "₺400"
+      },
+      {
+        "id": "nail-art",
+        "category": "nail",
+        "name": "Nail Art Design",
+        "description": "فن أظافر مخصص يبدعه فنيو الأظافر لدينا۔",
+        "duration": "٦٠ دقيقة",
+        "price": "₺450"
+      },
+      {
+        "id": "paraffin-nail",
+        "category": "nail",
+        "name": "Paraffin Nail Treatment",
+        "description": "علاج شمع البارافين المرطب للأيدي والأظافر۔",
+        "duration": "٣٠ دقيقة",
+        "price": "₺250"
+      },
+      {
+        "id": "lash-lift",
+        "category": "eye",
+        "name": "Lash Lift & Tint",
+        "description": "علاج تجعيد وتلوين الرموش لإطلالة طبيعية جذابة۔",
+        "duration": "٦٠ دقيقة",
+        "price": "₺500"
+      },
+      {
+        "id": "brow-lamination",
+        "category": "eye",
+        "name": "Brow Lamination",
+        "description": "حواجب أنيقة ومرتبة تبقى في مكانها طوال اليوم۔",
+        "duration": "٤٥ دقيقة",
+        "price": "₺400"
+      },
+      {
+        "id": "eye-treatment",
+        "category": "eye",
+        "name": "Eye Revive Treatment",
+        "description": "علاج موجه للهالات السوداء والانتفاخ والخطوط الرفيعة۔",
+        "duration": "٣٠ دقيقة",
+        "price": "₺350"
+      }
     ]
   },
   "academy": {
@@ -151,10 +353,21 @@
       "email": "hello@lumierebeaute.com",
       "hours_heading": "ساعات العمل",
       "hours": [
-        { "days": "الاثنين – الجمعة", "hours": "٠٩:٠٠ – ٢٠:٠٠" },
-        { "days": "السبت", "hours": "١٠:٠٠ – ١٨:٠٠" },
-        { "days": "الأحد", "hours": "مغلق" }
-      ]
+        {
+          "days": "الاثنين – الجمعة",
+          "hours": "٠٩:٠٠ – ٢٠:٠٠"
+        },
+        {
+          "days": "السبت",
+          "hours": "١٠:٠٠ – ١٨:٠٠"
+        },
+        {
+          "days": "الأحد",
+          "hours": "مغلق"
+        }
+      ],
+      "label_address": "الموقع",
+      "label_contact": "التواصل"
     }
   }
 }

@@ -24,18 +24,42 @@
     },
     "stats_heading": "Lumiere Rakamlarla",
     "stats": [
-      { "value": 500, "suffix": "+", "label": "Mutlu Müşteri" },
-      { "value": 8, "suffix": "", "label": "Yıllık Deneyim" },
-      { "value": 20, "suffix": "+", "label": "Uygulanan Tedavi" }
+      {
+        "value": 500,
+        "suffix": "+",
+        "label": "Mutlu Müşteri"
+      },
+      {
+        "value": 8,
+        "suffix": "",
+        "label": "Yıllık Deneyim"
+      },
+      {
+        "value": 20,
+        "suffix": "+",
+        "label": "Uygulanan Tedavi"
+      }
     ],
     "services_teaser": {
       "heading": "Tedavilerimiz",
       "subtitle": "Nemlendirici yüz bakımlarından gevşetici vücut ritüellerine — sizin için özenle hazırlandı.",
       "cta": "Tüm Tedavileri Gör",
       "cards": [
-        { "id": "teaser-facial", "title": "Yüz Bakımı", "description": "Özenle seçilmiş yüz ritüelleriyle derin temizlik, nemlendirme ve yenileme." },
-        { "id": "teaser-body", "title": "Vücut Bakımı", "description": "Tam vücut sağlığı için şekillendirme ve rahatlama terapileri." },
-        { "id": "teaser-hair", "title": "Saç Bakımı", "description": "Her saç tipine uygun besleyici tedaviler ve uzman şekillendirme." }
+        {
+          "id": "teaser-facial",
+          "title": "Yüz Bakımı",
+          "description": "Özenle seçilmiş yüz ritüelleriyle derin temizlik, nemlendirme ve yenileme."
+        },
+        {
+          "id": "teaser-body",
+          "title": "Vücut Bakımı",
+          "description": "Tam vücut sağlığı için şekillendirme ve rahatlama terapileri."
+        },
+        {
+          "id": "teaser-hair",
+          "title": "Saç Bakımı",
+          "description": "Her saç tipine uygun besleyici tedaviler ve uzman şekillendirme."
+        }
       ]
     },
     "academy_teaser": {
@@ -43,15 +67,38 @@
       "subtitle": "Sektör uzmanları tarafından verilen profesyonel güzellik sertifika kursları.",
       "cta": "Kursları Keşfet",
       "cards": [
-        { "id": "teaser-aesthetic", "title": "Estetik Uygulayıcı", "description": "İleri düzey yüz ve cilt bakımı tekniklerinde ustalaşın." },
-        { "id": "teaser-cosmetology", "title": "Profesyonel Kozmetoloji", "description": "Saç, tırnak ve vücut bakımında kapsamlı eğitim." }
+        {
+          "id": "teaser-aesthetic",
+          "title": "Estetik Uygulayıcı",
+          "description": "İleri düzey yüz ve cilt bakımı tekniklerinde ustalaşın."
+        },
+        {
+          "id": "teaser-cosmetology",
+          "title": "Profesyonel Kozmetoloji",
+          "description": "Saç, tırnak ve vücut bakımında kapsamlı eğitim."
+        }
       ]
     },
     "testimonials_heading": "Müşterilerimiz Ne Diyor",
     "testimonials": [
-      { "id": "testimonial-1", "quote": "HydraFacial cildimi tamamen dönüştürdü. Her seanstan parlayarak çıkıyorum.", "author": "Elif K.", "role": "Sadık Müşteri" },
-      { "id": "testimonial-2", "quote": "Lumiere Akademi, kendi güzellik stüdyomu açmam için gereken özgüveni ve becerileri kazandırdı.", "author": "Melis D.", "role": "Sertifikalı Mezun" },
-      { "id": "testimonial-3", "quote": "Atmosfer tam anlamıyla lüks. Her liraya değer — herkese tavsiye ediyorum.", "author": "Sara A.", "role": "Düzenli Müşteri" }
+      {
+        "id": "testimonial-1",
+        "quote": "HydraFacial cildimi tamamen dönüştürdü. Her seanstan parlayarak çıkıyorum.",
+        "author": "Elif K.",
+        "role": "Sadık Müşteri"
+      },
+      {
+        "id": "testimonial-2",
+        "quote": "Lumiere Akademi, kendi güzellik stüdyomu açmam için gereken özgüveni ve becerileri kazandırdı.",
+        "author": "Melis D.",
+        "role": "Sertifikalı Mezun"
+      },
+      {
+        "id": "testimonial-3",
+        "quote": "Atmosfer tam anlamıyla lüks. Her liraya değer — herkese tavsiye ediyorum.",
+        "author": "Sara A.",
+        "role": "Düzenli Müşteri"
+      }
     ]
   },
   "services": {
@@ -60,33 +107,188 @@
       "subtitle": "Premium güzellik tedavilerinin tam kataloğunu keşfedin."
     },
     "categories": [
-      { "id": "facial", "label": "Yüz" },
-      { "id": "body", "label": "Vücut" },
-      { "id": "hair", "label": "Saç" },
-      { "id": "nail", "label": "Tırnak" },
-      { "id": "eye", "label": "Göz" }
+      {
+        "id": "facial",
+        "label": "Yüz"
+      },
+      {
+        "id": "body",
+        "label": "Vücut"
+      },
+      {
+        "id": "hair",
+        "label": "Saç"
+      },
+      {
+        "id": "nail",
+        "label": "Tırnak"
+      },
+      {
+        "id": "eye",
+        "label": "Göz"
+      }
     ],
     "treatments": [
-      { "id": "hydra-facial", "category": "facial", "name": "HydraFacial", "description": "Çok aşamalı derin temizlik ve nemlendirme infüzyonu.", "duration": "60 dk", "price": "₺850" },
-      { "id": "vitamin-c-facial", "category": "facial", "name": "Vitamin C Aydınlatma", "description": "Cilt tonunu eşitleyen antioksidan infüzyonlu aydınlatıcı yüz bakımı.", "duration": "45 dk", "price": "₺650" },
-      { "id": "anti-aging-facial", "category": "facial", "name": "Anti-Aging Kaldırma", "description": "Peptit serumlarıyla sıkılaştırma ve kaldırma tedavisi.", "duration": "75 dk", "price": "₺950" },
-      { "id": "deep-cleanse-facial", "category": "facial", "name": "Derin Temizlik", "description": "Yağlı veya sivilceli ciltler için kapsamlı gözenek temizliği ve dengeleme.", "duration": "50 dk", "price": "₺550" },
-      { "id": "gold-facial", "category": "facial", "name": "24K Altın Parlaklığı", "description": "Işıltılı ve gençleştirilmiş cilt için altın özlü lüks yüz bakımı.", "duration": "90 dk", "price": "₺1200" },
-      { "id": "lymphatic-drainage", "category": "body", "name": "Lenf Drenajı", "description": "Kan dolaşımını uyarıcı ve şişliği azaltıcı manuel masaj.", "duration": "60 dk", "price": "₺700" },
-      { "id": "body-scrub", "category": "body", "name": "Peeling Vücut Ovması", "description": "Pürüzsüz ve yenilenmiş cilt için tam vücut peeling.", "duration": "45 dk", "price": "₺500" },
-      { "id": "body-wrap", "category": "body", "name": "Detoks Vücut Sargısı", "description": "Toksinleri çeken ve cildi sıkılaştıran mineralleştirici sargı.", "duration": "60 dk", "price": "₺750" },
-      { "id": "back-facial", "category": "body", "name": "Sırt Bakımı", "description": "Sırt ve omuzlar için derin temizlik ve tedavi.", "duration": "50 dk", "price": "₺600" },
-      { "id": "keratin-treatment", "category": "hair", "name": "Keratin Düzleştirme", "description": "İpeksi ve kolay yönetilebilir saçlar için kıvrım önleyici tedavi.", "duration": "120 dk", "price": "₺1500" },
-      { "id": "hair-mask", "category": "hair", "name": "Yoğun Saç Maskesi", "description": "Nem ve parlaklığı geri kazandıran derin bakım maskesi.", "duration": "40 dk", "price": "₺400" },
-      { "id": "scalp-treatment", "category": "hair", "name": "Saç Derisi Canlandırıcı", "description": "Kökleri güçlendiren ve dökülmeyi azaltan besleyici saç derisi tedavisi.", "duration": "45 dk", "price": "₺450" },
-      { "id": "hair-gloss", "category": "hair", "name": "Saç Parlaklık Tedavisi", "description": "Rengi canlandıran ve ışıltı katan parlaklık artırıcı gloss.", "duration": "30 dk", "price": "₺350" },
-      { "id": "gel-manicure", "category": "nail", "name": "Jel Manikür", "description": "Tırnak eti bakımıyla uzun süre kalıcı jel renk uygulaması.", "duration": "45 dk", "price": "₺300" },
-      { "id": "spa-pedicure", "category": "nail", "name": "Spa Pedikür", "description": "Gevşetici ayak banyosu, peeling ve tırnak bakımı.", "duration": "60 dk", "price": "₺400" },
-      { "id": "nail-art", "category": "nail", "name": "Tırnak Sanatı Tasarımı", "description": "Uzman tırnak teknisyenlerimiz tarafından oluşturulan özel tırnak sanatı.", "duration": "60 dk", "price": "₺450" },
-      { "id": "paraffin-nail", "category": "nail", "name": "Parafin Tırnak Tedavisi", "description": "Eller ve tırnaklar için nemlendirici parafin banyosu.", "duration": "30 dk", "price": "₺250" },
-      { "id": "lash-lift", "category": "eye", "name": "Kirpik Kaldırma ve Renklendirme", "description": "Doğal çarpıcı kirpikler için kıvırma ve renklendirme tedavisi.", "duration": "60 dk", "price": "₺500" },
-      { "id": "brow-lamination", "category": "eye", "name": "Kaş Laminasyonu", "description": "Gün boyu yerinde duran düzgün ve bakımlı kaşlar.", "duration": "45 dk", "price": "₺400" },
-      { "id": "eye-treatment", "category": "eye", "name": "Göz Canlandırma Tedavisi", "description": "Halka, şişlik ve ince çizgiler için hedefli göz tedavisi.", "duration": "30 dk", "price": "₺350" }
+      {
+        "id": "hydra-facial",
+        "category": "facial",
+        "name": "HydraFacial",
+        "description": "Çok aşamalı derin temizlik ve nemlendirme infüzyonu.",
+        "duration": "60 dk",
+        "price": "₺850"
+      },
+      {
+        "id": "vitamin-c-facial",
+        "category": "facial",
+        "name": "Vitamin C Aydınlatma",
+        "description": "Cilt tonunu eşitleyen antioksidan infüzyonlu aydınlatıcı yüz bakımı.",
+        "duration": "45 dk",
+        "price": "₺650"
+      },
+      {
+        "id": "anti-aging-facial",
+        "category": "facial",
+        "name": "Anti-Aging Kaldırma",
+        "description": "Peptit serumlarıyla sıkılaştırma ve kaldırma tedavisi.",
+        "duration": "75 dk",
+        "price": "₺950"
+      },
+      {
+        "id": "deep-cleanse-facial",
+        "category": "facial",
+        "name": "Derin Temizlik",
+        "description": "Yağlı veya sivilceli ciltler için kapsamlı gözenek temizliği ve dengeleme.",
+        "duration": "50 dk",
+        "price": "₺550"
+      },
+      {
+        "id": "gold-facial",
+        "category": "facial",
+        "name": "24K Altın Parlaklığı",
+        "description": "Işıltılı ve gençleştirilmiş cilt için altın özlü lüks yüz bakımı.",
+        "duration": "90 dk",
+        "price": "₺1200"
+      },
+      {
+        "id": "lymphatic-drainage",
+        "category": "body",
+        "name": "Lenf Drenajı",
+        "description": "Kan dolaşımını uyarıcı ve şişliği azaltıcı manuel masaj.",
+        "duration": "60 dk",
+        "price": "₺700"
+      },
+      {
+        "id": "body-scrub",
+        "category": "body",
+        "name": "Peeling Vücut Ovması",
+        "description": "Pürüzsüz ve yenilenmiş cilt için tam vücut peeling.",
+        "duration": "45 dk",
+        "price": "₺500"
+      },
+      {
+        "id": "body-wrap",
+        "category": "body",
+        "name": "Detoks Vücut Sargısı",
+        "description": "Toksinleri çeken ve cildi sıkılaştıran mineralleştirici sargı.",
+        "duration": "60 dk",
+        "price": "₺750"
+      },
+      {
+        "id": "back-facial",
+        "category": "body",
+        "name": "Sırt Bakımı",
+        "description": "Sırt ve omuzlar için derin temizlik ve tedavi.",
+        "duration": "50 dk",
+        "price": "₺600"
+      },
+      {
+        "id": "keratin-treatment",
+        "category": "hair",
+        "name": "Keratin Düzleştirme",
+        "description": "İpeksi ve kolay yönetilebilir saçlar için kıvrım önleyici tedavi.",
+        "duration": "120 dk",
+        "price": "₺1500"
+      },
+      {
+        "id": "hair-mask",
+        "category": "hair",
+        "name": "Yoğun Saç Maskesi",
+        "description": "Nem ve parlaklığı geri kazandıran derin bakım maskesi.",
+        "duration": "40 dk",
+        "price": "₺400"
+      },
+      {
+        "id": "scalp-treatment",
+        "category": "hair",
+        "name": "Saç Derisi Canlandırıcı",
+        "description": "Kökleri güçlendiren ve dökülmeyi azaltan besleyici saç derisi tedavisi.",
+        "duration": "45 dk",
+        "price": "₺450"
+      },
+      {
+        "id": "hair-gloss",
+        "category": "hair",
+        "name": "Saç Parlaklık Tedavisi",
+        "description": "Rengi canlandıran ve ışıltı katan parlaklık artırıcı gloss.",
+        "duration": "30 dk",
+        "price": "₺350"
+      },
+      {
+        "id": "gel-manicure",
+        "category": "nail",
+        "name": "Jel Manikür",
+        "description": "Tırnak eti bakımıyla uzun süre kalıcı jel renk uygulaması.",
+        "duration": "45 dk",
+        "price": "₺300"
+      },
+      {
+        "id": "spa-pedicure",
+        "category": "nail",
+        "name": "Spa Pedikür",
+        "description": "Gevşetici ayak banyosu, peeling ve tırnak bakımı.",
+        "duration": "60 dk",
+        "price": "₺400"
+      },
+      {
+        "id": "nail-art",
+        "category": "nail",
+        "name": "Tırnak Sanatı Tasarımı",
+        "description": "Uzman tırnak teknisyenlerimiz tarafından oluşturulan özel tırnak sanatı.",
+        "duration": "60 dk",
+        "price": "₺450"
+      },
+      {
+        "id": "paraffin-nail",
+        "category": "nail",
+        "name": "Parafin Tırnak Tedavisi",
+        "description": "Eller ve tırnaklar için nemlendirici parafin banyosu.",
+        "duration": "30 dk",
+        "price": "₺250"
+      },
+      {
+        "id": "lash-lift",
+        "category": "eye",
+        "name": "Kirpik Kaldırma ve Renklendirme",
+        "description": "Doğal çarpıcı kirpikler için kıvırma ve renklendirme tedavisi.",
+        "duration": "60 dk",
+        "price": "₺500"
+      },
+      {
+        "id": "brow-lamination",
+        "category": "eye",
+        "name": "Kaş Laminasyonu",
+        "description": "Gün boyu yerinde duran düzgün ve bakımlı kaşlar.",
+        "duration": "45 dk",
+        "price": "₺400"
+      },
+      {
+        "id": "eye-treatment",
+        "category": "eye",
+        "name": "Göz Canlandırma Tedavisi",
+        "description": "Halka, şişlik ve ince çizgiler için hedefli göz tedavisi.",
+        "duration": "30 dk",
+        "price": "₺350"
+      }
     ]
   },
   "academy": {
@@ -151,10 +353,21 @@
       "email": "hello@lumierebeaute.com",
       "hours_heading": "Çalışma Saatleri",
       "hours": [
-        { "days": "Pazartesi – Cuma", "hours": "09:00 – 20:00" },
-        { "days": "Cumartesi", "hours": "10:00 – 18:00" },
-        { "days": "Pazar", "hours": "Kapalı" }
-      ]
+        {
+          "days": "Pazartesi – Cuma",
+          "hours": "09:00 – 20:00"
+        },
+        {
+          "days": "Cumartesi",
+          "hours": "10:00 – 18:00"
+        },
+        {
+          "days": "Pazar",
+          "hours": "Kapalı"
+        }
+      ],
+      "label_address": "Konum",
+      "label_contact": "İletişim"
     }
   }
 }
