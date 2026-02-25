@@ -1,5 +1,6 @@
 import { useMotionValue, useSpring, motion, useReducedMotion } from 'framer-motion';
 import { useEffect, useState } from 'react';
+import { useMediaQuery } from '../../hooks/useMediaQuery';
 
 /**
  * CustomCursor — Branded desktop cursor with spring-physics tracking.
@@ -16,6 +17,8 @@ import { useEffect, useState } from 'react';
  */
 export function CustomCursor() {
   const shouldReduceMotion = useReducedMotion();
+  // Only pointer devices (mouse/trackpad) — excludes all touch screens
+  const isPointerDevice = useMediaQuery('(hover: hover) and (pointer: fine)');
   const [isHovering, setIsHovering] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
 
@@ -51,8 +54,8 @@ export function CustomCursor() {
     };
   }, [mouseX, mouseY, isVisible]);
 
-  // Return null for reduced-motion users
-  if (shouldReduceMotion) return null;
+  // Skip on touch devices and for reduced-motion users
+  if (!isPointerDevice || shouldReduceMotion) return null;
 
   return (
     <motion.div

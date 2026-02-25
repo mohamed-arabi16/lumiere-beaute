@@ -13,7 +13,7 @@ export function Footer() {
   const { t } = useTranslation('common');
 
   return (
-    <footer className="bg-stormy-teal-950 text-celadon-100">
+    <footer className="bg-stormy-teal-950 dark:bg-surface-dark-card text-celadon-100">
       {/* ── Main grid ──────────────────────────────────── */}
       <div className="max-w-6xl mx-auto px-6 py-14 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 md:gap-8">
 
@@ -88,7 +88,7 @@ export function Footer() {
       </div>
 
       {/* ── Bottom bar ─────────────────────────────────── */}
-      <div className="border-t border-white/8">
+      <div className="border-t border-white/8 dark:border-white/5">
         <div className="max-w-6xl mx-auto px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-2 text-[0.7rem] font-body text-mint-leaf-400/50">
           <span>{t('footer.copyright')}</span>
           <span className="flex items-center gap-1.5">

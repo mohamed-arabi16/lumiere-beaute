@@ -5,11 +5,14 @@ import { Link } from 'react-router-dom';
 import { TypewriterText } from '../animations/TypewriterText';
 import { Button } from '../ui/Button';
 import { BodyText } from '../ui/Typography';
+import { useMediaQuery } from '../../hooks/useMediaQuery';
 
 export function HeroSection() {
   const { t } = useTranslation('common');
   const sectionRef = useRef<HTMLElement>(null);
   const shouldReduceMotion = useReducedMotion();
+  // Disable heavy effects on touch/mobile devices
+  const isPointerDevice = useMediaQuery('(hover: hover) and (pointer: fine)');
   const { scrollYProgress } = useScroll({
     target: sectionRef,
     offset: ['start start', 'end start'],
@@ -20,7 +23,7 @@ export function HeroSection() {
     <motion.section
       ref={sectionRef}
       style={{
-        backgroundPositionY: shouldReduceMotion ? '0%' : backgroundY,
+        backgroundPositionY: (shouldReduceMotion || !isPointerDevice) ? '0%' : backgroundY,
         backgroundImage: `url('/hero-bg.jpg')`
       }}
       // -mt-28 sm:-mt-36 cancels the main pt-28/pt-36 so the hero bleeds to the top
@@ -33,17 +36,21 @@ export function HeroSection() {
       {/* Radial vignette on sides */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_50%,transparent_40%,rgba(0,0,0,0.38)_100%)] z-0" />
 
-      {/* Ambient glow orbs */}
-      <motion.div
-        animate={{ scale: [1, 1.2, 1], opacity: [0.3, 0.5, 0.3] }}
-        transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }}
-        className="absolute top-1/4 -left-1/4 w-[40rem] h-[40rem] bg-mint-leaf-400/30 rounded-full blur-[120px] z-0 pointer-events-none"
-      />
-      <motion.div
-        animate={{ scale: [1, 1.5, 1], opacity: [0.2, 0.4, 0.2] }}
-        transition={{ duration: 10, repeat: Infinity, ease: 'easeInOut', delay: 2 }}
-        className="absolute bottom-1/4 -right-1/4 w-[50rem] h-[50rem] bg-deep-ocean-900/50 rounded-full blur-[140px] z-0 pointer-events-none"
-      />
+      {/* Ambient glow orbs — desktop only (blur-[120px] is GPU-heavy on mobile) */}
+      {isPointerDevice && (
+        <>
+          <motion.div
+            animate={{ scale: [1, 1.2, 1], opacity: [0.3, 0.5, 0.3] }}
+            transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }}
+            className="absolute top-1/4 -left-1/4 w-[40rem] h-[40rem] bg-mint-leaf-400/30 rounded-full blur-[120px] z-0 pointer-events-none"
+          />
+          <motion.div
+            animate={{ scale: [1, 1.5, 1], opacity: [0.2, 0.4, 0.2] }}
+            transition={{ duration: 10, repeat: Infinity, ease: 'easeInOut', delay: 2 }}
+            className="absolute bottom-1/4 -right-1/4 w-[50rem] h-[50rem] bg-deep-ocean-900/50 rounded-full blur-[140px] z-0 pointer-events-none"
+          />
+        </>
+      )}
 
       {/* Content — pt-32 sm:pt-36 clears the floating navbar */}
       <div className="relative z-10 flex flex-col items-center gap-5 max-w-3xl px-6 pt-32 sm:pt-36">
