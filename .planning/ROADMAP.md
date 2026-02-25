@@ -150,7 +150,14 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6
   2. Arabic copy reads naturally to a native speaker — no machine-translation artifacts, correct gendered forms, proper RTL punctuation
   3. At least two distinct scroll-driven animations are visible on the homepage (beyond the existing hero parallax and count-up)
   4. A custom cursor appears on desktop — replaces the default pointer with a branded element that reacts to hover states on interactive elements
-**Plans**: TBD
+**Plans**: 5 plans
+
+Plans:
+- [ ] 07-01-PLAN.md — Locale file split: rename common.json → ar.json/en.json/tr.json; update config.ts imports
+- [ ] 07-02-PLAN.md — Arabic copy review: fix كورسات→دورات, em dash, punctuation, luxury register audit
+- [ ] 07-03-PLAN.md — Scroll animations: useScroll+useTransform on ServicesTeaserSection heading + TestimonialsSection background
+- [ ] 07-04-PLAN.md — Custom cursor: CustomCursor component with spring physics + hover ring; mount in RootLayout; CSS cursor hide
+- [ ] 07-05-PLAN.md — Human verification: all 4 POL success criteria confirmed in browser
 
 ---
 *Roadmap created: 2026-02-24*
