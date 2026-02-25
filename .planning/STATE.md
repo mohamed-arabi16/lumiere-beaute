@@ -10,9 +10,9 @@ See: .planning/PROJECT.md (updated 2026-02-24)
 ## Current Position
 
 Phase: 6 of 7 (Content and QA) — IN PROGRESS
-Plan: 1 of 4 in Phase 6 — 06-01 complete
-Status: Plan 06-01 COMPLETE — Phone field added to contact form, AboutPage stub fixed, .env.example created, locale gaps filled (FNDTN-03, FNDTN-04)
-Last activity: 2026-02-25 — Completed 06-01 (phone field + locale gaps + AboutPage stub + .env.example)
+Plan: 2 of 4 in Phase 6 — 06-01, 06-02 complete
+Status: Plan 06-02 COMPLETE — Playwright RTL snapshot tests for all 5 pages, GitHub Actions CI workflow (FNDTN-04)
+Last activity: 2026-02-25 — Completed 06-02 (Playwright RTL snapshots + CI workflow)
 
 Progress: [██████████] 100%
 
@@ -62,6 +62,7 @@ Progress: [██████████] 100%
 | Phase 07-polish-and-ux P01 | 3 | 2 tasks | 4 files |
 | Phase 07-polish-and-ux P02 | 2 | 1 tasks | 1 files |
 | Phase 06-content-and-qa P01 | 2 | 2 tasks | 7 files |
+| Phase 06-content-and-qa P02 | 9 | 2 tasks | 18 files |
 
 ## Accumulated Context
 
@@ -166,6 +167,9 @@ Recent decisions affecting current work:
 - [Phase 06-content-and-qa]: Phone field is optional (no required attr) — wired to emailjs.send() for template capture when provided
 - [Phase 06-content-and-qa]: about_coming_soon key placed in nav section — consistent with existing nav key grouping in locale files
 - [Phase 06-content-and-qa]: .env.* excluded in .gitignore with !.env.example whitelist — prevents any env variant from accidental commit
+- [Phase 06-content-and-qa]: emulateMedia(reducedMotion:reduce) in Playwright beforeEach disables Framer Motion JS animations via MotionConfig reducedMotion=user for stable RTL screenshots
+- [Phase 06-content-and-qa]: waitForLoadState(networkidle) required in all RTL tests to ensure hero-bg.jpg background image loads before snapshot
+- [Phase 06-content-and-qa]: RTL snapshot baselines must be regenerated with --workers=1 to prevent Vite dev server overload under parallel test load
 
 ### Pending Todos
 
@@ -181,5 +185,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-02-25
-Stopped at: Completed 06-01-PLAN.md (phone field + locale gaps + AboutPage stub + .env.example — FNDTN-03, FNDTN-04 satisfied)
+Stopped at: Completed 06-02-PLAN.md (Playwright RTL snapshot tests + GitHub Actions CI workflow — FNDTN-04 satisfied)
 Resume file: None
