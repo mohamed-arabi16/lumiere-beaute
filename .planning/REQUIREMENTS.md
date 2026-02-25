@@ -26,8 +26,8 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Home
 
-- [ ] **HOME-01**: User sees a full-screen hero section with parallax gradient, typewriter text animation, and call-to-action
-- [ ] **HOME-02**: User sees animated counting statistics (clients served, years of experience, treatments offered)
+- [x] **HOME-01**: User sees a full-screen hero section with parallax gradient, typewriter text animation, and call-to-action
+- [x] **HOME-02**: User sees animated counting statistics (clients served, years of experience, treatments offered)
 - [x] **HOME-03**: User sees services teaser cards that link to the Services page
 - [x] **HOME-04**: User sees academy teaser cards that link to the Academy page
 - [x] **HOME-05**: User sees client testimonials section with quotes
@@ -106,8 +106,8 @@ Which phases cover which requirements. Updated during roadmap creation.
 | FNDTN-09 | Phase 1 | Complete |
 | NAV-01 | Phase 2 | Complete |
 | NAV-02 | Phase 2 | Complete |
-| HOME-01 | Phase 4 | Pending |
-| HOME-02 | Phase 4 | Pending |
+| HOME-01 | Phase 4 | Complete |
+| HOME-02 | Phase 4 | Complete |
 | HOME-03 | Phase 4 | Complete |
 | HOME-04 | Phase 4 | Complete |
 | HOME-05 | Phase 4 | Complete |
