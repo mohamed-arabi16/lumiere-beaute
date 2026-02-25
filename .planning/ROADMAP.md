@@ -132,6 +132,19 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6
 | 4. Homepage and Services | 6/6 | Complete    | 2026-02-25 |
 | 5. Academy and Contact | 0/TBD | Not started | - |
 | 6. Content and QA | 0/TBD | Not started | - |
+| 7. Polish and UX Enhancements | 0/TBD | Not started | - |
+
+### Phase 7: Polish and UX Enhancements
+
+**Goal**: The site feels premium and bespoke — locale JSON files split into per-language files (ar.json / en.json / tr.json), Arabic copy quality-reviewed and rewritten where needed, scroll-driven Framer Motion effects applied site-wide, and a custom branded cursor replaces the default pointer
+**Depends on**: Phase 5
+**Requirements**: POL-01, POL-02, POL-03, POL-04
+**Success Criteria** (what must be TRUE):
+  1. i18n locale files are split — `ar.json`, `en.json`, and `tr.json` exist as separate files; `common.json` is removed or unused
+  2. Arabic copy reads naturally to a native speaker — no machine-translation artifacts, correct gendered forms, proper RTL punctuation
+  3. At least two distinct scroll-driven animations are visible on the homepage (beyond the existing hero parallax and count-up)
+  4. A custom cursor appears on desktop — replaces the default pointer with a branded element that reacts to hover states on interactive elements
+**Plans**: TBD
 
 ---
 *Roadmap created: 2026-02-24*

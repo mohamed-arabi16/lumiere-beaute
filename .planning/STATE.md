@@ -56,6 +56,10 @@ Progress: [██████████] 90%
 
 ## Accumulated Context
 
+### Roadmap Evolution
+
+- Phase 7 added: Polish and UX Enhancements — locale JSON split (ar/en/tr), Arabic copy review, scroll-driven animations, custom cursor
+
 ### Decisions
 
 Decisions are logged in PROJECT.md Key Decisions table.
