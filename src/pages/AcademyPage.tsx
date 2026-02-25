@@ -2,6 +2,9 @@ import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { useDirection } from '../hooks/useDirection';
 import { pageTransitionVariants } from '../animations/variants';
+import { FadeInSection } from '../components/animations/FadeInSection';
+import { Heading, BodyText } from '../components/ui/Typography';
+import { CoursesSection } from '../components/sections/CoursesSection';
 
 export function AcademyPage() {
   const { t } = useTranslation('common');
@@ -14,16 +17,23 @@ export function AcademyPage() {
       initial="initial"
       animate="animate"
       exit="exit"
-      className="min-h-screen px-4 py-16 sm:px-6 lg:px-8"
     >
-      <div className="mx-auto max-w-7xl">
-        <h1 className="font-display text-4xl text-stormy-teal-950 dark:text-celadon-100">
-          {t('nav.academy')}
-        </h1>
-        <p className="mt-4 font-body text-seagrass-600 dark:text-seagrass-400">
-          Phase 2 stub — content coming in Phase 4
-        </p>
-      </div>
+      <main>
+        {/* Hero */}
+        <section className="py-24 px-6 bg-stormy-teal-950 dark:bg-stormy-teal-950">
+          <FadeInSection className="text-center max-w-3xl mx-auto">
+            <Heading level={1} className="text-celadon-100">
+              {t('academy.hero.headline')}
+            </Heading>
+            <BodyText className="mt-4 text-mint-leaf-300">
+              {t('academy.hero.subtitle')}
+            </BodyText>
+          </FadeInSection>
+        </section>
+
+        {/* Courses */}
+        <CoursesSection />
+      </main>
     </motion.div>
   );
 }
