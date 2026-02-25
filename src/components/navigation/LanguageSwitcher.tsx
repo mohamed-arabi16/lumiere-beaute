@@ -19,11 +19,11 @@ export function LanguageSwitcher() {
             onClick={() => i18n.changeLanguage(lang.code)}
             aria-label={`Switch to ${lang.name}`}
             className={[
-              'text-xs font-body tracking-wide uppercase px-1.5 py-1',
-              index > 0 ? 'border-s-[1px] border-seagrass-500/30' : '',
+              'min-w-[28px] text-center text-xs font-body tracking-wide uppercase px-2 py-1 transition-colors duration-200',
+              index > 0 ? 'border-s border-seagrass-500/30' : '',
               isActive
-                ? 'text-stormy-teal-950 dark:text-celadon-100 font-medium'
-                : 'text-seagrass-600 dark:text-seagrass-400 hover:text-stormy-teal-950 dark:hover:text-celadon-100',
+                ? 'text-stormy-teal-950 dark:text-celadon-100 font-semibold'
+                : 'text-seagrass-600 dark:text-mint-leaf-400 hover:text-stormy-teal-950 dark:hover:text-celadon-100',
             ]
               .filter(Boolean)
               .join(' ')}

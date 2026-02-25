@@ -90,6 +90,19 @@ None - no external service configuration required.
 - Plan 07-02 (Arabic copy review) can now target `src/i18n/locales/ar/ar.json` directly with corrected idiomatic Arabic translations
 - Language switcher loads correct locale content at runtime — no behavioral change from this rename
 
+## Self-Check: PASSED
+
+- FOUND: src/i18n/locales/ar/ar.json
+- FOUND: src/i18n/locales/en/en.json
+- FOUND: src/i18n/locales/tr/tr.json
+- FOUND: src/i18n/config.ts
+- FOUND: .planning/phases/07-polish-and-ux/07-01-SUMMARY.md
+- FOUND commit: fdf87a2
+- FOUND commit: f60029d
+- CONFIRMED: ar/common.json deleted
+- CONFIRMED: en/common.json deleted
+- CONFIRMED: tr/common.json deleted
+
 ---
 *Phase: 07-polish-and-ux*
 *Completed: 2026-02-25*

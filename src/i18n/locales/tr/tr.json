@@ -369,5 +369,14 @@
       "label_address": "Konum",
       "label_contact": "İletişim"
     }
+  },
+  "footer": {
+    "tagline": "İstanbul'un kalbinde premium güzellik tedavileri ve profesyonel kurslar.",
+    "quick_links": "Hızlı Bağlantılar",
+    "contact_heading": "İletişime Geçin",
+    "copyright": "© 2025 Lumière Beauté. Tüm hakları saklıdır.",
+    "developed_by": "Geliştiren",
+    "developer": "Mohamed Khair",
+    "developer_company": "Qobouli"
   }
 }

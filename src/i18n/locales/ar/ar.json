@@ -369,5 +369,14 @@
       "label_address": "الموقع",
       "label_contact": "التواصل"
     }
+  },
+  "footer": {
+    "tagline": "علاجات تجميل راقية ودورات احترافية في قلب إسطنبول.",
+    "quick_links": "روابط سريعة",
+    "contact_heading": "تواصل معنا",
+    "copyright": "© 2025 لوميير بيوتي. جميع الحقوق محفوظة.",
+    "developed_by": "تطوير",
+    "developer": "Mohamed Khair",
+    "developer_company": "Qobouli"
   }
 }

@@ -369,5 +369,14 @@
       "label_address": "Location",
       "label_contact": "Contact"
     }
+  },
+  "footer": {
+    "tagline": "Premium beauty treatments & professional courses in the heart of Istanbul.",
+    "quick_links": "Quick Links",
+    "contact_heading": "Get in Touch",
+    "copyright": "© 2025 Lumière Beauté. All rights reserved.",
+    "developed_by": "Developed by",
+    "developer": "Mohamed Khair",
+    "developer_company": "Qobouli"
   }
 }

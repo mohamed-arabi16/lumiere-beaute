@@ -34,17 +34,22 @@ export function ServicesPage() {
       className="min-h-screen"
     >
       {/* Page hero */}
-      <FadeInSection className="py-20 px-6 text-center">
+      <FadeInSection className="py-12 sm:py-16 px-6 text-center flex flex-col items-center">
+        <div className="flex items-center gap-2 mb-4" aria-hidden="true">
+          <div className="h-px w-8 bg-seagrass-500/35 dark:bg-mint-leaf-400/25" />
+          <div className="w-1 h-1 rounded-full bg-seagrass-500/60 dark:bg-mint-leaf-400/50" />
+          <div className="h-px w-8 bg-seagrass-500/35 dark:bg-mint-leaf-400/25" />
+        </div>
         <Heading level={1} className="text-stormy-teal-950 dark:text-celadon-100">
           {t('services.hero.headline')}
         </Heading>
-        <BodyText size="lg" className="mt-4 text-jungle-teal-700 dark:text-mint-leaf-300 max-w-2xl mx-auto">
+        <BodyText size="lg" className="mt-4 text-jungle-teal-700 dark:text-mint-leaf-300 max-w-xl mx-auto">
           {t('services.hero.subtitle')}
         </BodyText>
       </FadeInSection>
 
       {/* Category filter + treatment grid */}
-      <div className="px-6 pb-20 max-w-7xl mx-auto">
+      <div className="px-4 sm:px-6 pb-20 max-w-7xl mx-auto">
         <CategoryTabs
           categories={categories}
           activeCategory={activeCategory}

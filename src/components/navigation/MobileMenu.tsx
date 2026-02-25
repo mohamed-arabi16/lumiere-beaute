@@ -1,3 +1,4 @@
+import { createPortal } from 'react-dom';
 import { AnimatePresence, motion } from 'framer-motion';
 import { NavLink, Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
@@ -12,151 +13,137 @@ interface MobileMenuProps {
 
 const luxuryEase: [number, number, number, number] = [0.22, 1, 0.36, 1];
 
-const menuVariantsLTR = {
+/* Drawer slides in from the inline-end edge — RTL flips end to left */
+const drawerVariantsLTR = {
   hidden: { x: '100%' },
-  visible: { x: 0, transition: { duration: 0.4, ease: luxuryEase } },
-  exit: { x: '100%', transition: { duration: 0.3, ease: luxuryEase } },
+  visible: { x: 0, transition: { duration: 0.38, ease: luxuryEase } },
+  exit: { x: '100%', transition: { duration: 0.28, ease: luxuryEase } },
 };
 
-const menuVariantsRTL = {
+const drawerVariantsRTL = {
   hidden: { x: '-100%' },
-  visible: { x: 0, transition: { duration: 0.4, ease: luxuryEase } },
-  exit: { x: '-100%', transition: { duration: 0.3, ease: luxuryEase } },
-};
-
-const linkVariants = {
-  hidden: { opacity: 0, y: 16 },
-  visible: (i: number) => ({
-    opacity: 1,
-    y: 0,
-    transition: { delay: 0.15 + i * 0.07, duration: 0.4, ease: luxuryEase },
-  }),
+  visible: { x: 0, transition: { duration: 0.38, ease: luxuryEase } },
+  exit: { x: '-100%', transition: { duration: 0.28, ease: luxuryEase } },
 };
 
 export function MobileMenu({ isOpen, onClose, navLinks }: MobileMenuProps) {
   const { t, i18n } = useTranslation();
   const isRTL = i18n.dir() === 'rtl';
-  const menuVariants = isRTL ? menuVariantsRTL : menuVariantsLTR;
+  const drawerVariants = isRTL ? drawerVariantsRTL : drawerVariantsLTR;
 
-  return (
+  return createPortal(
     <AnimatePresence>
       {isOpen && (
-        /* Full-screen panel — covers entire viewport, no max-width cap */
-        <motion.div
-          key="mobile-panel"
-          variants={menuVariants}
-          initial="hidden"
-          animate="visible"
-          exit="exit"
-          dir={isRTL ? 'rtl' : 'ltr'}
-          className="fixed inset-0 z-50 bg-surface-ivory dark:bg-surface-dark flex flex-col overflow-hidden"
-        >
-          {/* Decorative ambient glow — top corner */}
-          <div
-            className="pointer-events-none absolute -top-32 -end-32 w-80 h-80 rounded-full bg-seagrass-500/10 dark:bg-seagrass-500/15 blur-[80px]"
-            aria-hidden="true"
-          />
-          {/* Decorative ambient glow — bottom corner */}
-          <div
-            className="pointer-events-none absolute -bottom-24 -start-24 w-64 h-64 rounded-full bg-celadon-100/15 dark:bg-celadon-100/5 blur-[60px]"
+        <>
+          {/* ── Backdrop — tap to close ────────────────────────── */}
+          <motion.div
+            key="mobile-backdrop"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.22 }}
+            className="fixed inset-0 z-[199] bg-stormy-teal-950/50 backdrop-blur-sm"
+            onClick={onClose}
             aria-hidden="true"
           />
 
-          {/* ── Header ─────────────────────────────── */}
-          <div className="relative flex items-center justify-center px-6 pt-6 pb-5 border-b border-seagrass-500/10 dark:border-white/5 shrink-0">
-            {/* Close button — always at the inline-end corner */}
-            <button
-              onClick={onClose}
-              aria-label="Close menu"
-              className="absolute end-4 top-1/2 -translate-y-1/2 p-2.5 rounded-full bg-seagrass-500/12 dark:bg-white/8 text-seagrass-600 dark:text-mint-leaf-400 hover:bg-seagrass-500/22 dark:hover:bg-white/15 hover:text-stormy-teal-950 dark:hover:text-celadon-100 transition-all duration-200"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                className="w-5 h-5"
-                aria-hidden="true"
+          {/* ── Drawer panel ─────────────────────────────────────── */}
+          <motion.div
+            key="mobile-drawer"
+            variants={drawerVariants}
+            initial="hidden"
+            animate="visible"
+            exit="exit"
+            dir={isRTL ? 'rtl' : 'ltr'}
+            className="fixed top-0 end-0 h-full z-[200] w-[82%] max-w-xs bg-surface-ivory dark:bg-surface-dark flex flex-col shadow-[−8px_0_40px_rgba(3,102,102,0.15)] overflow-y-auto"
+          >
+            {/* Subtle decorative glow */}
+            <div
+              className="pointer-events-none absolute -top-20 -start-20 w-56 h-56 rounded-full bg-seagrass-500/8 dark:bg-seagrass-500/12 blur-[60px]"
+              aria-hidden="true"
+            />
+
+            {/* ── Header ─────────────────────────────────────────── */}
+            <div className="relative flex items-center justify-between px-5 pt-5 pb-4 border-b border-seagrass-500/10 dark:border-white/5 shrink-0">
+              <Link
+                to="/"
+                onClick={onClose}
+                className="flex flex-col leading-none gap-0.5 hover:opacity-75 transition-opacity duration-200"
+                aria-label="Lumière Beauté — Home"
               >
-                <line x1="18" y1="6" x2="6" y2="18" />
-                <line x1="6" y1="6" x2="18" y2="18" />
-              </svg>
-            </button>
+                <span className="font-display text-lg text-stormy-teal-950 dark:text-celadon-100 tracking-wide">
+                  Lumière Beauté
+                </span>
+                <span className="text-[0.4rem] tracking-[0.22em] uppercase font-body font-semibold text-seagrass-600 dark:text-seagrass-500 opacity-70">
+                  Beauty Studio · Istanbul
+                </span>
+              </Link>
 
-            {/* Centered logo — links to home */}
-            <Link
-              to="/"
-              onClick={onClose}
-              className="flex flex-col items-center leading-none gap-1 hover:opacity-75 transition-opacity duration-200"
-              aria-label="Lumière Beauté — Home"
-            >
-              <span className="font-display text-xl text-stormy-teal-950 dark:text-celadon-100 tracking-wide">
-                Lumière Beauté
-              </span>
-              <span className="text-[0.44rem] tracking-[0.24em] uppercase font-body font-semibold text-seagrass-600 dark:text-seagrass-500 opacity-70">
-                Beauty Studio · Istanbul
-              </span>
-            </Link>
-          </div>
-
-          {/* ── Nav links ──────────────────────────── */}
-          <nav className="flex-1 flex flex-col items-center justify-center gap-2 py-8">
-            {/* Ornamental top rule */}
-            <div className="flex items-center gap-2 mb-6 opacity-30" aria-hidden="true">
-              <div className="h-px w-8 bg-seagrass-500" />
-              <div className="w-1 h-1 rounded-full bg-seagrass-500" />
-              <div className="w-1.5 h-1.5 rounded-full bg-seagrass-500" />
-              <div className="w-1 h-1 rounded-full bg-seagrass-500" />
-              <div className="h-px w-8 bg-seagrass-500" />
-            </div>
-
-            {navLinks.map((link, i) => (
-              <motion.div
-                key={link.key}
-                custom={i}
-                variants={linkVariants}
-                initial="hidden"
-                animate="visible"
-                className="w-full"
+              <button
+                onClick={onClose}
+                aria-label="Close menu"
+                className="p-2 rounded-full bg-seagrass-500/10 dark:bg-white/8 text-seagrass-600 dark:text-mint-leaf-400 hover:bg-seagrass-500/20 dark:hover:bg-white/15 hover:text-stormy-teal-950 dark:hover:text-celadon-100 transition-all duration-200"
               >
-                <NavLink
-                  to={link.to}
-                  onClick={onClose}
-                  end={link.to === '/'}
-                  className={({ isActive }) =>
-                    [
-                      'block font-display text-4xl text-center w-full px-8 py-3 transition-all duration-200',
-                      isActive
-                        ? 'text-stormy-teal-950 dark:text-celadon-100'
-                        : 'text-seagrass-600/80 dark:text-seagrass-400/70 hover:text-stormy-teal-950 dark:hover:text-celadon-100',
-                    ].join(' ')
-                  }
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  className="w-4 h-4"
+                  aria-hidden="true"
                 >
-                  {t(link.key)}
-                </NavLink>
-              </motion.div>
-            ))}
-
-            {/* Ornamental bottom rule */}
-            <div className="flex items-center gap-2 mt-6 opacity-30" aria-hidden="true">
-              <div className="h-px w-8 bg-seagrass-500" />
-              <div className="w-1 h-1 rounded-full bg-seagrass-500" />
-              <div className="w-1.5 h-1.5 rounded-full bg-seagrass-500" />
-              <div className="w-1 h-1 rounded-full bg-seagrass-500" />
-              <div className="h-px w-8 bg-seagrass-500" />
+                  <line x1="18" y1="6" x2="6" y2="18" />
+                  <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+              </button>
             </div>
-          </nav>
 
-          {/* ── Bottom controls ────────────────────── */}
-          <div className="shrink-0 flex items-center justify-center gap-4 px-6 pb-8 pt-4 border-t border-seagrass-500/10 dark:border-white/5">
-            <LanguageSwitcher />
-            <div className="w-px h-4 bg-seagrass-500/20" aria-hidden="true" />
-            <ThemeToggle />
-          </div>
-        </motion.div>
+            {/* ── Nav links ──────────────────────────────────────── */}
+            <nav aria-label="Mobile navigation" className="flex-1 flex flex-col px-3 py-5 gap-1">
+              {navLinks.map((link, i) => (
+                <motion.div
+                  key={link.key}
+                  initial={{ opacity: 0, y: 8 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.1 + i * 0.055, duration: 0.32, ease: luxuryEase }}
+                >
+                  <NavLink
+                    to={link.to}
+                    onClick={onClose}
+                    end={link.to === '/'}
+                    className={({ isActive }) =>
+                      [
+                        'flex items-center gap-3 w-full px-4 py-3 rounded-xl font-display text-xl transition-all duration-200',
+                        isActive
+                          ? 'bg-seagrass-500/12 dark:bg-seagrass-500/18 text-stormy-teal-950 dark:text-celadon-100 font-semibold'
+                          : 'text-seagrass-600/80 dark:text-seagrass-400/70 hover:bg-seagrass-500/8 dark:hover:bg-seagrass-500/10 hover:text-stormy-teal-950 dark:hover:text-celadon-100',
+                      ].join(' ')
+                    }
+                  >
+                    {({ isActive }) => (
+                      <>
+                        {t(link.key)}
+                        {isActive && (
+                          <span className="ms-auto w-1.5 h-1.5 rounded-full bg-seagrass-500 shrink-0" />
+                        )}
+                      </>
+                    )}
+                  </NavLink>
+                </motion.div>
+              ))}
+            </nav>
+
+            {/* ── Bottom controls ─────────────────────────────────── */}
+            <div className="shrink-0 flex items-center justify-between px-5 pb-6 pt-4 border-t border-seagrass-500/10 dark:border-white/5">
+              <LanguageSwitcher />
+              <ThemeToggle />
+            </div>
+          </motion.div>
+        </>
       )}
-    </AnimatePresence>
+    </AnimatePresence>,
+    document.body
   );
 }

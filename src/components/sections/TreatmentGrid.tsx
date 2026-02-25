@@ -25,19 +25,19 @@ export function TreatmentGrid({ treatments }: TreatmentGridProps) {
               }}
             >
               <Card hasPlaceholder={false} className="h-full flex flex-col gap-3">
-                <Heading level={3} className="text-stormy-teal-950 dark:text-celadon-100">
+                <Heading level={3} className="text-stormy-teal-950 dark:text-celadon-100 text-xl md:text-2xl">
                   {treatment.name}
                 </Heading>
-                <BodyText size="sm" className="text-jungle-teal-700 dark:text-mint-leaf-400 flex-grow">
+                <BodyText size="sm" className="text-jungle-teal-700 dark:text-mint-leaf-400 flex-grow leading-relaxed">
                   {treatment.description}
                 </BodyText>
-                <div className="flex items-center justify-between gap-4 pt-2 border-t border-celadon-200 dark:border-jungle-teal-700">
-                  <BodyText size="sm" className="text-seagrass-600 dark:text-mint-leaf-400 font-medium">
+                <div className="flex items-center justify-between gap-4 pt-3 border-t border-seagrass-500/12 dark:border-white/8">
+                  <span className="inline-flex items-center gap-1 font-body text-xs font-semibold tracking-wide text-seagrass-600 dark:text-mint-leaf-400 bg-seagrass-500/8 dark:bg-seagrass-500/15 px-3 py-1.5 rounded-full">
                     {treatment.duration}
-                  </BodyText>
-                  <BodyText size="sm" className="text-stormy-teal-950 dark:text-celadon-100 font-semibold font-display">
+                  </span>
+                  <span className="font-display text-xl font-semibold text-stormy-teal-950 dark:text-celadon-100">
                     {treatment.price}
-                  </BodyText>
+                  </span>
                 </div>
               </Card>
             </motion.div>
