@@ -123,7 +123,13 @@ Plans:
   3. Lighthouse mobile performance score is 75 or higher on the Homepage and Services page
   4. All text in both light mode and dark mode meets WCAG AA contrast ratio (4.5:1 for body, 3:1 for large text)
   5. EmailJS form submission delivers a real email to the configured inbox using production environment variables
-**Plans**: TBD
+**Plans**: 4 plans
+
+Plans:
+- [ ] 06-01-PLAN.md — Phone field + AboutPage stub fix + locale gap audit + .env.example
+- [ ] 06-02-PLAN.md — Playwright install + RTL snapshot tests (5 pages × 2 viewports) + GitHub Actions CI workflow
+- [ ] 06-03-PLAN.md — Lighthouse audit on all 5 pages (production build) + remediation to reach ≥ 75
+- [ ] 06-04-PLAN.md — EmailJS setup checkpoint + final RTL walkthrough + Playwright test gate
 
 ## Progress
 
