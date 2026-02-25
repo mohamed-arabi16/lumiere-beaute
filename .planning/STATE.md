@@ -5,21 +5,21 @@
 See: .planning/PROJECT.md (updated 2026-02-24)
 
 **Core value:** The website must feel like a premium, editorial experience — visitors should immediately sense luxury and trust, regardless of language or device.
-**Current focus:** Phase 5 — Academy and Contact
+**Current focus:** Phase 7 — Polish and UX
 
 ## Current Position
 
-Phase: 5 of 6 (Academy and Contact) — COMPLETE
-Plan: 4 of 4 in Phase 5 — 05-01, 05-02, 05-03, 05-04 complete
-Status: Phase 5 COMPLETE — All 5 success criteria verified interactively (ACAD-01, ACAD-02, CNTC-01, CNTC-02, CNTC-03)
-Last activity: 2026-02-25 — Completed 05-04 (ContactPage composition + Phase 5 human verification)
+Phase: 7 of 7 (Polish and UX) — IN PROGRESS
+Plan: 4 of 4 in Phase 7 — 07-01, 07-02, 07-03, 07-04 complete
+Status: Plan 07-04 COMPLETE — CustomCursor with spring physics, hover ring, touch-safe CSS cursor:none
+Last activity: 2026-02-25 — Completed 07-04 (CustomCursor component + RootLayout mount + CSS cursor hide)
 
-Progress: [██████████] 96%
+Progress: [██████████] 100%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 22 (4 Phase 1 + 4 Phase 2 + 4 Phase 3 + 6 Phase 4 + 4 Phase 5)
+- Total plans completed: 26 (4 Phase 1 + 4 Phase 2 + 4 Phase 3 + 6 Phase 4 + 4 Phase 5 + 4 Phase 7)
 - Average duration: 3 min
 - Total execution time: 0.5 hours
 
@@ -57,6 +57,8 @@ Progress: [██████████] 96%
 | Phase 05-academy-and-contact P02 | 2 | 2 tasks | 2 files |
 | Phase 05-academy-and-contact P03 | 2 | 2 tasks | 4 files |
 | Phase 05-academy-and-contact P04 | 3 | 2 tasks | 1 files |
+| Phase 07-polish-and-ux P03 | 1 | 2 tasks | 2 files |
+| Phase 07-polish-and-ux P04 | 4 | 2 tasks | 3 files |
 
 ## Accumulated Context
 
@@ -145,6 +147,9 @@ Recent decisions affecting current work:
 - [05-04]: ContactPage motion.div has no className — no min-h-screen or padding; sections own their own spacing per locked 04-04 pattern
 - [05-04]: ContactFormSection rendered before ContactInfoSection — form is primary CTA, info card is secondary reference below it
 - [05-04]: Hero uses bg-stormy-teal-950 matching AcademyPage hero for visual consistency across inner page routes
+- [Phase 07-03]: ServicesTeaserSection heading uses offset ['start end', 'center start'] — animation plays from when section top enters viewport bottom until section center reaches viewport top
+- [Phase 07-03]: Only Y-axis and opacity used for heading (no X) — RTL-safe per locked Phase 1 decision; scale only for TestimonialsSection background — also RTL-safe
+- [Phase 07-03]: No per-component reducedMotion handling needed — AppProviders MotionConfig reducedMotion='user' covers all Framer Motion instances globally
 
 ### Pending Todos
 
@@ -160,5 +165,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-02-25
-Stopped at: Completed 05-04-PLAN.md (ContactPage composition + Phase 5 human verification — Phase 5 COMPLETE)
+Stopped at: Completed 07-03-PLAN.md (scroll-driven Y+opacity on ServicesTeaserSection heading + scale on TestimonialsSection background)
 Resume file: None
