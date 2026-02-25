@@ -93,7 +93,7 @@ Plans:
 - [x] 04-03-PLAN.md — Teaser + Testimonials sections: ServicesTeaserSection, AcademyTeaserSection, TestimonialsSection
 - [x] 04-04-PLAN.md — HomePage composition: replace Phase 3 scaffold, compose all 5 sections
 - [x] 04-05-PLAN.md — ServicesPage: CategoryTabs with animated underline, TreatmentGrid with AnimatePresence filter
-- [ ] 04-06-PLAN.md — Human verify: all 6 Phase 4 success criteria confirmed interactively
+- [x] 04-06-PLAN.md — Human verify: all 6 Phase 4 success criteria confirmed interactively (completed 2026-02-25)
 
 ### Phase 5: Academy and Contact
 **Goal**: Visitors can view both certification courses and submit a booking inquiry or open a pre-filled WhatsApp conversation
@@ -129,7 +129,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6
 | 1. Foundation | 4/4 | Complete    | 2026-02-24 |
 | 2. Shell | 4/4 | Complete    | 2026-02-24 |
 | 3. Shared Components | 4/4 | Complete    | 2026-02-24 |
-| 4. Homepage and Services | 6/6 | Complete   | 2026-02-25 |
+| 4. Homepage and Services | 6/6 | Complete    | 2026-02-25 |
 | 5. Academy and Contact | 0/TBD | Not started | - |
 | 6. Content and QA | 0/TBD | Not started | - |
 

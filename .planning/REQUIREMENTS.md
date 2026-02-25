@@ -34,8 +34,8 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Services
 
-- [ ] **SRVC-01**: User can filter 20+ treatments by category using animated tab controls
-- [ ] **SRVC-02**: User sees treatment cards displaying name, description, duration, and price
+- [x] **SRVC-01**: User can filter 20+ treatments by category using animated tab controls
+- [x] **SRVC-02**: User sees treatment cards displaying name, description, duration, and price
 
 ### Academy
 
@@ -111,8 +111,8 @@ Which phases cover which requirements. Updated during roadmap creation.
 | HOME-03 | Phase 4 | Complete |
 | HOME-04 | Phase 4 | Complete |
 | HOME-05 | Phase 4 | Complete |
-| SRVC-01 | Phase 4 | Pending |
-| SRVC-02 | Phase 4 | Pending |
+| SRVC-01 | Phase 4 | Complete |
+| SRVC-02 | Phase 4 | Complete |
 | ACAD-01 | Phase 5 | Pending |
 | ACAD-02 | Phase 5 | Pending |
 | CNTC-01 | Phase 5 | Pending |
