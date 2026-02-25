@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { Navbar } from '../components/navigation/Navbar';
+import { CustomCursor } from '../components/ui/CustomCursor';
 import { useDirection } from '../hooks/useDirection';
 import { AnimatedOutlet } from './AnimatedOutlet';
 
@@ -23,6 +24,7 @@ export function RootLayout() {
 
   return (
     <div className="min-h-screen bg-surface-ivory dark:bg-surface-dark transition-colors duration-300">
+      <CustomCursor />
       <Navbar />
       <main>
         <AnimatedOutlet />

@@ -96,3 +96,12 @@ body {
 .placeholder-aspect-portrait {
   aspect-ratio: 3 / 4;
 }
+
+/* Custom cursor — hide default OS cursor on hover-capable pointer devices only.
+   @media (hover: hover) and (pointer: fine) targets mouse/trackpad devices.
+   Touch devices (mobile, tablet) are excluded — they need their native tap cursors. */
+@media (hover: hover) and (pointer: fine) {
+  * {
+    cursor: none !important;
+  }
+}
