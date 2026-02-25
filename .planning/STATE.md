@@ -134,6 +134,9 @@ Recent decisions affecting current work:
 - [05-01]: Turkish prices use dot thousands separator (₺8.500) per TR locale convention; EN/AR use comma (₺8,500)
 - [05-01]: Button target/rel props spread directly onto Tag element — browsers ignore on button, work correctly on anchor
 - [05-01]: Arabic course durations use Arabic-Indic numerals (١٢ أسبوعًا) consistent with services.treatments Arabic pattern
+- [05-02]: AcademyPage motion.div has no className — no min-h-screen or padding; sections own their own spacing per locked 04-04 pattern
+- [05-02]: WhatsApp URL uses encodeURIComponent with enroll_cta + course.title prefix — business receives course context in message
+- [05-02]: vite-env.d.ts added as missing project file — enables import.meta.env TypeScript typing for VITE_WHATSAPP_NUMBER
 - [05-03]: EmailJSResponseStatus imported as value (not type) — instanceof check requires runtime value, not type-only import
 - [05-03]: WhatsApp phone defaults to '905XXXXXXXXX' placeholder when VITE_WHATSAPP_NUMBER absent — degrades gracefully in dev
 - [05-03]: Service options sourced from locale JSON via returnObjects:true — all 7 options translate automatically with language switch
@@ -153,5 +156,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-02-25
-Stopped at: Completed 05-03-PLAN.md (ContactFormSection + ContactInfoSection — EmailJS wiring, WhatsApp CTA, location info card)
+Stopped at: Completed 05-02-PLAN.md (CoursesSection with WhatsApp enroll CTAs + AcademyPage full composition replacing Phase 2 stub)
 Resume file: None
