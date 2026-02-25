@@ -34,32 +34,48 @@ export function ServicesTeaserSection() {
   const headingOpacity = useTransform(scrollYProgress, [0, 0.4], [0, 1]);
 
   return (
-    <section ref={sectionRef} className="py-20 px-6">
+    <section ref={sectionRef} className="py-20 sm:py-24 px-4 sm:px-6">
       <motion.div
-        className="text-center mb-4"
+        className="text-center mb-4 flex flex-col items-center"
         style={{ y: headingY, opacity: headingOpacity }}
       >
+        <div className="flex items-center gap-2 mb-4" aria-hidden="true">
+          <div className="h-px w-8 bg-seagrass-500/35 dark:bg-mint-leaf-400/25" />
+          <div className="w-1 h-1 rounded-full bg-seagrass-500/60 dark:bg-mint-leaf-400/50" />
+          <div className="h-px w-8 bg-seagrass-500/35 dark:bg-mint-leaf-400/25" />
+        </div>
         <Heading level={2}>
           {t('home.services_teaser.heading')}
         </Heading>
-        <BodyText className="mt-3 text-jungle-teal-700 dark:text-mint-leaf-400">
+        <BodyText className="mt-3 text-jungle-teal-700 dark:text-mint-leaf-400 max-w-md">
           {t('home.services_teaser.subtitle')}
         </BodyText>
       </motion.div>
 
       <StaggerContainer className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
-        {cards.map((card) => (
-          <motion.div key={card.id} variants={staggerItemVariants}>
-            <Link to="/services" className="block h-full">
-              <Card hasPlaceholder placeholderVariant="card" className="h-full">
-                <Heading level={3}>{card.title}</Heading>
-                <BodyText size="sm" className="mt-2 text-jungle-teal-700 dark:text-mint-leaf-400">
-                  {card.description}
-                </BodyText>
-              </Card>
-            </Link>
-          </motion.div>
-        ))}
+        {cards.map((card) => {
+          const imageMap: Record<string, string> = {
+            'teaser-facial': '/service-facial-care.jpg',
+            'teaser-body': '/service-body-care.jpg',
+            'teaser-hair': '/service-hair-care.jpg',
+          };
+          return (
+            <motion.div key={card.id} variants={staggerItemVariants}>
+              <Link to="/services" className="block h-full">
+                <Card
+                  imageSrc={imageMap[card.id]}
+                  imageAlt={card.title}
+                  className="h-full"
+                >
+                  <Heading level={3}>{card.title}</Heading>
+                  <BodyText size="sm" className="mt-2 text-jungle-teal-700 dark:text-mint-leaf-400">
+                    {card.description}
+                  </BodyText>
+                </Card>
+              </Link>
+            </motion.div>
+          );
+        })}
       </StaggerContainer>
 
       <FadeInSection className="flex justify-center mt-10">

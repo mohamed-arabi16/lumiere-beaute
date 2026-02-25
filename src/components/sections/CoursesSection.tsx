@@ -32,8 +32,13 @@ export function CoursesSection() {
   const phone = import.meta.env.VITE_WHATSAPP_NUMBER ?? '905XXXXXXXXX';
 
   return (
-    <section className="py-20 px-6">
-      <FadeInSection className="text-center mb-4">
+    <section className="py-16 sm:py-20 px-4 sm:px-6">
+      <FadeInSection className="text-center mb-4 flex flex-col items-center gap-3">
+        <div className="flex items-center gap-2" aria-hidden="true">
+          <div className="h-px w-8 bg-seagrass-500/35 dark:bg-mint-leaf-400/25" />
+          <div className="w-1 h-1 rounded-full bg-seagrass-500/60 dark:bg-mint-leaf-400/50" />
+          <div className="h-px w-8 bg-seagrass-500/35 dark:bg-mint-leaf-400/25" />
+        </div>
         <Heading level={2}>{t('academy.courses_heading')}</Heading>
       </FadeInSection>
 
@@ -42,14 +47,26 @@ export function CoursesSection() {
           const whatsappMessage = `${t('academy.enroll_cta')}: ${course.title}`;
           return (
             <motion.div key={course.id} variants={staggerItemVariants}>
-              <Card hasPlaceholder placeholderVariant="card" className="h-full flex flex-col">
+              <Card
+                imageSrc={
+                  course.id === 'aesthetic-practitioner'
+                    ? '/aesthetic-practitioner-course.jpg'
+                    : '/prof-cosmetology-course.jpg'
+                }
+                imageAlt={course.title}
+                className="h-full flex flex-col"
+              >
                 <Heading level={3}>{course.title}</Heading>
                 <BodyText size="sm" className="mt-3 flex-1 text-jungle-teal-700 dark:text-mint-leaf-400">
                   {course.description}
                 </BodyText>
-                <div className="mt-4 flex flex-wrap gap-4 text-sm font-body text-seagrass-600 dark:text-seagrass-400">
-                  <span>{course.duration}</span>
-                  <span className="font-medium text-stormy-teal-950 dark:text-celadon-100">{course.price}</span>
+                <div className="mt-4 flex flex-wrap items-center gap-3">
+                  <span className="inline-flex items-center font-body text-xs font-semibold tracking-wide text-seagrass-600 dark:text-mint-leaf-400 bg-seagrass-500/8 dark:bg-seagrass-500/15 px-3 py-1.5 rounded-full">
+                    {course.duration}
+                  </span>
+                  <span className="font-display text-2xl font-semibold text-stormy-teal-950 dark:text-celadon-100">
+                    {course.price}
+                  </span>
                 </div>
                 <div className="mt-6 flex flex-wrap gap-3">
                   <Button

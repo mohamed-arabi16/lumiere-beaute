@@ -23,29 +23,44 @@ export function AcademyTeaserSection() {
   const cards = t('home.academy_teaser.cards', { returnObjects: true }) as TeaserCard[];
 
   return (
-    <section className="py-20 px-6">
-      <FadeInSection className="text-center mb-4">
+    <section className="py-20 sm:py-24 px-4 sm:px-6 bg-seagrass-500/[0.04] dark:bg-surface-dark-elevated/40">
+      <FadeInSection className="text-center mb-4 flex flex-col items-center">
+        <div className="flex items-center gap-2 mb-4" aria-hidden="true">
+          <div className="h-px w-8 bg-seagrass-500/35 dark:bg-mint-leaf-400/25" />
+          <div className="w-1 h-1 rounded-full bg-seagrass-500/60 dark:bg-mint-leaf-400/50" />
+          <div className="h-px w-8 bg-seagrass-500/35 dark:bg-mint-leaf-400/25" />
+        </div>
         <Heading level={2}>
           {t('home.academy_teaser.heading')}
         </Heading>
-        <BodyText className="mt-3 text-jungle-teal-700 dark:text-mint-leaf-400">
+        <BodyText className="mt-3 text-jungle-teal-700 dark:text-mint-leaf-400 max-w-md">
           {t('home.academy_teaser.subtitle')}
         </BodyText>
       </FadeInSection>
 
       <StaggerContainer className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-8">
-        {cards.map((card) => (
-          <motion.div key={card.id} variants={staggerItemVariants}>
-            <Link to="/academy" className="block h-full">
-              <Card hasPlaceholder placeholderVariant="card" className="h-full">
-                <Heading level={3}>{card.title}</Heading>
-                <BodyText size="sm" className="mt-2 text-jungle-teal-700 dark:text-mint-leaf-400">
-                  {card.description}
-                </BodyText>
-              </Card>
-            </Link>
-          </motion.div>
-        ))}
+        {cards.map((card) => {
+          const imageMap: Record<string, string> = {
+            'teaser-aesthetic': '/academy-aesthetic-practitioner.jpg',
+            'teaser-cosmetology': '/academy-prof-cosmetology.jpg',
+          };
+          return (
+            <motion.div key={card.id} variants={staggerItemVariants}>
+              <Link to="/academy" className="block h-full">
+                <Card
+                  imageSrc={imageMap[card.id]}
+                  imageAlt={card.title}
+                  className="h-full"
+                >
+                  <Heading level={3}>{card.title}</Heading>
+                  <BodyText size="sm" className="mt-2 text-jungle-teal-700 dark:text-mint-leaf-400">
+                    {card.description}
+                  </BodyText>
+                </Card>
+              </Link>
+            </motion.div>
+          );
+        })}
       </StaggerContainer>
 
       <FadeInSection className="flex justify-center mt-10">

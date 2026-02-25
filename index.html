@@ -28,13 +28,30 @@
       })();
     </script>
 
+    <!-- Preload LCP image: hero background loads immediately, not after CSS parse -->
+    <link rel="preload" as="image" href="/hero-bg.jpg" fetchpriority="high" />
+
     <!-- Google Fonts: preconnect for performance, then font stylesheet -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!--
+      Non-render-blocking font loading via media="print" trick:
+      Browser downloads font CSS asynchronously (print media won't block rendering).
+      onload switches media to "all" so fonts apply once the stylesheet is ready.
+      noscript fallback ensures fonts load normally without JavaScript.
+    -->
     <link
       href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Cairo:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@400;500&display=swap"
       rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
     />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Cairo:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@400;500&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
 
     <title>Lumiere Beaute</title>
   </head>

@@ -7,4 +7,16 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          'vendor-framer': ['framer-motion'],
+          'vendor-react': ['react', 'react-dom'],
+          'vendor-router': ['react-router-dom'],
+          'vendor-i18n': ['react-i18next', 'i18next'],
+        },
+      },
+    },
+  },
 })
