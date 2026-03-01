@@ -24,7 +24,6 @@ dist-ssr
 *.sw?
 
 # Environment variables — never commit real credentials
-.env
 .env.*
 !.env.example
 
